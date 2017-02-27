@@ -1,0 +1,200 @@
+.titulos{
+    padding: 0px;
+    margin: 0;
+    max-width: 780px;
+    @include max(1200px){
+        margin: auto;
+    }
+    li{
+        margin: 0;
+        padding: 14px;
+        float: left;
+        font-size: .8em;
+        text-align: center;
+        color: #767676;
+        &.id{width: 62px;}
+        &.user{width: 100px;}
+        &.tasa{width: 69px;}
+        &.calif{ width: 58px;}
+        &.destino{ width: 106px;}
+        &.restan{ width: 69px;}
+        &.plazo{max-width:46px; padding:14px 8px; }
+        &.monto,&.faltan{ width: 76px;}
+        &.prestar{width: 120px;}
+    }
+    &:after{
+        content: '';
+        display: block; 
+        clear: both;
+    }
+}//solicitudes
+.sols{
+    @extend .container-fluid;
+    .col-md-9{
+        max-width: 780px;
+        @include max(1200px){
+         max-width: 100%;   
+         width: 100%;   
+        }
+    }//9
+}
+
+.sol{
+    display: block;
+}
+.solicitud{
+    @extend .card;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 780px;
+    padding: 0px;
+    margin: 0;
+    @include max(1200px){
+        margin: auto;
+    }
+    margin-bottom: 10px;
+    > li{
+        float: left;
+        a{
+            display: block;
+            color: #767676;
+            border-right: 1px solid #fff;
+            > ul {
+                >li{
+                    margin: 0;
+                    padding:10px 14px;
+                    float: left;
+                    font-size: .9em;
+                    &.id{
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        span{
+                            background: $gris-claro;
+                            padding:5px;
+                            border-radius: 4px;
+                        }//span
+                    }
+                    &.user{
+                        font-size: .8em;
+                        line-height:1.7em;
+                        white-space: nowrap; 
+                        width:8em; 
+                        overflow: hidden;
+                        text-overflow: ellipsis; 
+                    }
+                    &.plazo{
+                        font-size: 16px;
+                        padding: 8px 14px;
+                    }
+                    &.calif{
+                        padding: 7px 14px;
+                        span{
+                            display: block;
+                            padding:5px 6px;
+                            border:1px solid $aqua;
+                            color: $aqua;
+                            border-radius: 100%;
+                        }
+                    }
+                    &.faltan{
+                        @include min-max(1250px,1200px){
+                            display: none; 
+                        }
+                    }//faltan
+                }
+                &:after{
+                    content: '';
+                    display: block; 
+                    clear: both;
+                }
+                
+            }//ul
+            &:hover{
+                /*background: #e8efef;*/
+                background: #f4fff8;
+                border-right: 1px solid #dae0e0;
+            }
+        }//
+        &.prestar{
+            max-width: 200px;
+            padding: 6px 10px;
+            position: relative;
+            .form-control{
+                padding: 4px 33px 4px 4px;
+                margin: 0;
+                height: 28px;
+                max-height: 40px;
+                max-width: 85px;
+                &:focus {
+                    border-color: $aqua;
+                    outline: 0;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,224,11,.075), 0 0 5px rgba(102,175,233,.6);
+                    box-shadow: inset 0 1px 1px rgba(0,224,11,.075), 0 0 5px rgba(102,175,233,.6);
+                }
+            }
+            .btn{
+                display: none;
+                position: absolute;
+                top: 7px;
+                right: 11px;
+                height: 26px;
+                width: 32px;
+                background:$aqua url(../img/carrito.svg) no-repeat;
+                background-size: 24px;
+                background-position: center;
+                border-top-left-radius: 0; 
+                border-bottom-left-radius: 0; 
+                -webkit-animation-duration: .5s;
+                -moz-animation-duration: .5s;
+                animation-duration: .5s;
+                border-left: 1px solid $botella-logo;
+                &:hover{
+                  background-color: $lima-logo;  
+                }//hover
+            }//btn
+        }
+        &.porcentaje{
+            width: 100%;
+            background:#dedede;
+            height: 4px;
+            .barra{
+                width: 40%;
+                background:$lima-logo;
+                height: 4px;
+            }
+        }
+    }//>li
+    &:after{
+        content: '';
+        display: block; 
+        clear: both;
+    }
+    &:hover{
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    }
+}//solicitudes
+.pre-carrito{
+    @extend .card;
+    font-size: .9em;
+    text-align: center;
+        max-width: 340px;
+    h2{
+        font-size: 1.2em;
+        margin: -20px -20px 10px -20px;
+        padding: 10px;
+        background: #fafafa;
+        font-weight: normal;
+        border-bottom: 1px solid #eee;
+    }
+    .table{
+        tr{
+            &:first-child{
+                td{
+                    border: 0;
+                }
+            }
+        }//tr
+    }
+}//precarrito
+
+
+//<1250= quitar cuanto faltan y arreglar botones de mini carro

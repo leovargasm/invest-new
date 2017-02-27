@@ -1,0 +1,2030 @@
+/*@import "_bootstrap";*/
+/* line 3, /Users/Leo/workspace/invest-new/css/_general.scss */
+* {
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  /*@media only screen and (device-width: 768px) {
+      transition: none;
+    }*/ }
+
+/* line 11, /Users/Leo/workspace/invest-new/css/_general.scss */
+html {
+  /*-webkit-filter:grayscale(100%);
+    filter:grayscale(100%);*/
+  min-height: 100%;
+  height: 100%;
+  position: relative; }
+
+/* line 18, /Users/Leo/workspace/invest-new/css/_general.scss */
+body {
+  height: 100%;
+  position: relative;
+  background: #EFEFEF;
+  font-family: 'Open Sans';
+  /*overflow: hidden;*/ }
+
+/* line 25, /Users/Leo/workspace/invest-new/css/_general.scss */
+.hel {
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/ }
+
+/* line 28, /Users/Leo/workspace/invest-new/css/_general.scss */
+h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 300; }
+  @media screen and (max-width: 992px) {
+    /* line 28, /Users/Leo/workspace/invest-new/css/_general.scss */
+    h1 {
+      font-size: 28px; } }
+
+/* line 36, /Users/Leo/workspace/invest-new/css/_general.scss */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 60px; }
+  @media screen and (max-width: 767px) {
+    /* line 36, /Users/Leo/workspace/invest-new/css/_general.scss */
+    h2 {
+      margin-bottom: 30px; } }
+
+/* line 44, /Users/Leo/workspace/invest-new/css/_general.scss */
+ul {
+  padding: 0px; }
+  /* line 46, /Users/Leo/workspace/invest-new/css/_general.scss */
+  ul li {
+    list-style: none; }
+
+/* line 50, /Users/Leo/workspace/invest-new/css/_general.scss */
+p {
+  color: #6B6B6B;
+  line-height: 180%; }
+
+/* line 55, /Users/Leo/workspace/invest-new/css/_general.scss */
+a:focus, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+/* line 59, /Users/Leo/workspace/invest-new/css/_general.scss */
+label {
+  font-weight: normal;
+  color: #6B6B6B; }
+
+/* line 63, /Users/Leo/workspace/invest-new/css/_general.scss */
+section {
+  padding: 60px 0px; }
+  @media screen and (max-width: 767px) {
+    /* line 63, /Users/Leo/workspace/invest-new/css/_general.scss */
+    section {
+      padding: 30px 0px; } }
+
+/* line 69, /Users/Leo/workspace/invest-new/css/_general.scss */
+video {
+  width: 100%; }
+
+/* line 72, /Users/Leo/workspace/invest-new/css/_general.scss */
+button:focus {
+  outline: 0; }
+
+/*
+<section> 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+            </div><!--col-12-->
+        </div><!--row-->
+    </div><!--container-->
+</section>
+*/
+/* line 84, /Users/Leo/workspace/invest-new/css/_general.scss */
+.card, .solicitud, .pre-carrito {
+  /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+  /* line 91, /Users/Leo/workspace/invest-new/css/_general.scss */
+  .card.cardtab, .cardtab.solicitud, .cardtab.pre-carrito {
+    margin-bottom: 20px;
+    /*padding-bottom: 0px;*/ }
+
+/* line 99, /Users/Leo/workspace/invest-new/css/_general.scss */
+.table-lc-tr tr td:last-child {
+  text-align: right; }
+
+/* line 107, /Users/Leo/workspace/invest-new/css/_general.scss */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+/* line 114, /Users/Leo/workspace/invest-new/css/_general.scss */
+.col-xs-5ths {
+  width: 20%;
+  float: left; }
+
+@media (min-width: 768px) {
+  /* line 120, /Users/Leo/workspace/invest-new/css/_general.scss */
+  .col-sm-5ths {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 992px) {
+  /* line 127, /Users/Leo/workspace/invest-new/css/_general.scss */
+  .col-md-5ths {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 1200px) {
+  /* line 134, /Users/Leo/workspace/invest-new/css/_general.scss */
+  .col-lg-5ths {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 768px) {
+  /* line 146, /Users/Leo/workspace/invest-new/css/_general.scss */
+  div[class^="col"] {
+    padding-left: 5px;
+    padding-right: 5px; } }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 152, /Users/Leo/workspace/invest-new/css/_general.scss */
+  div[class^="col"] {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*default so you don't need this*/
+  /* line 159, /Users/Leo/workspace/invest-new/css/_general.scss */
+  div[class^="col"] {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+/* line 161, /Users/Leo/workspace/invest-new/css/_general.scss */
+.container-fluid, .sols {
+  padding: 20px; }
+
+/* line 3, /Users/Leo/workspace/invest-new/css/_header.scss */
+header {
+  padding: 8px;
+  background: #fff; }
+  /* line 6, /Users/Leo/workspace/invest-new/css/_header.scss */
+  header h1 {
+    font-weight: normal;
+    margin: 0px;
+    float: left;
+    max-width: 400px;
+    /*color: $titulos;*/
+    font-size: 24px;
+    padding: 8px; }
+  /* line 15, /Users/Leo/workspace/invest-new/css/_header.scss */
+  header .menu-toggle {
+    display: block;
+    float: right;
+    border-radius: 0; }
+    /* line 19, /Users/Leo/workspace/invest-new/css/_header.scss */
+    header .menu-toggle span {
+      padding: 4px; }
+  /* line 23, /Users/Leo/workspace/invest-new/css/_header.scss */
+  header > nav {
+    padding: 7px 0px;
+    /*width:460px;*/
+    display: block;
+    float: right; }
+    /* line 28, /Users/Leo/workspace/invest-new/css/_header.scss */
+    header > nav > a {
+      font-size: .9em;
+      display: block;
+      /*float: left;*/
+      color: gray;
+      padding: 9px; }
+    /* line 35, /Users/Leo/workspace/invest-new/css/_header.scss */
+    header > nav .faq {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 9px 12px;
+      display: block;
+      border: 1px solid #ccc;
+      margin-left: 10px; }
+      /* line 42, /Users/Leo/workspace/invest-new/css/_header.scss */
+      header > nav .faq:hover {
+        text-decoration: none;
+        background: #aaa;
+        color: #fff; }
+    /* line 48, /Users/Leo/workspace/invest-new/css/_header.scss */
+    header > nav .sal-disp {
+      padding: 9px 12px;
+      text-align: center;
+      margin-top: 2px;
+      margin-right: 10px;
+      font-size: 14px;
+      color: #999; }
+    /* line 56, /Users/Leo/workspace/invest-new/css/_header.scss */
+    header > nav .carrito {
+      float: left;
+      padding: 6px 20px 6px 20px;
+      border: 1px solid #0ABAB7;
+      color: #0ABAB7;
+      position: relative;
+      font-size: 1em;
+      font-weight: 500;
+      vertical-align: middle;
+      border-radius: 6px;
+      margin-right: 25px; }
+      /* line 67, /Users/Leo/workspace/invest-new/css/_header.scss */
+      header > nav .carrito:hover {
+        text-decoration: none;
+        color: #009D6F;
+        border-color: #bbb;
+        background: #f3f3f3; }
+        /* line 72, /Users/Leo/workspace/invest-new/css/_header.scss */
+        header > nav .carrito:hover .num .border {
+          background: #FC6548;
+          color: #fff; }
+      /* line 77, /Users/Leo/workspace/invest-new/css/_header.scss */
+      header > nav .carrito .num {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        right: -25px;
+        top: -15px;
+        font-weight: 600; }
+        /* line 84, /Users/Leo/workspace/invest-new/css/_header.scss */
+        header > nav .carrito .num .border {
+          position: relative;
+          color: #FC6548;
+          background: #fff;
+          padding: 3px 9px;
+          border-radius: 50%;
+          border: 2px solid #FC6548; }
+      /* line 94, /Users/Leo/workspace/invest-new/css/_header.scss */
+      header > nav .carrito span {
+        display: block;
+        float: left; }
+      /* line 98, /Users/Leo/workspace/invest-new/css/_header.scss */
+      header > nav .carrito span.icon-cart {
+        font-size: 22px;
+        margin: 5px; }
+      /* line 102, /Users/Leo/workspace/invest-new/css/_header.scss */
+      header > nav .carrito .descr {
+        padding: 6px 0px; }
+  /* line 107, /Users/Leo/workspace/invest-new/css/_header.scss */
+  header .dropdown {
+    display: inline-block;
+    margin-left: 10px; }
+  /* line 111, /Users/Leo/workspace/invest-new/css/_header.scss */
+  header .btn {
+    color: #aaa; }
+
+/* line 115, /Users/Leo/workspace/invest-new/css/_header.scss */
+.logo {
+  float: left;
+  max-width: 160px; }
+
+/* line 120, /Users/Leo/workspace/invest-new/css/_header.scss */
+.icon-ham {
+  background: url(../img/ham.svg) no-repeat;
+  display: block;
+  height: 40px;
+  width: 60px; }
+
+@media screen and (max-width: 767px) {
+  /* line 127, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .menu-wrap a {
+    color: #b8b7ad; }
+  /* Menu Button */
+  /* line 131, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .menu-button {
+    position: fixed;
+    z-index: 1000;
+    margin: 1em;
+    padding: 0;
+    width: 2.5em;
+    height: 2.25em;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent; }
+  /* line 144, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .menu-button::before {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+    content: ''; }
+  /* line 153, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .menu-button:hover {
+    opacity: 0.6; }
+  /* Close Button */
+  /* line 157, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .close-button {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    overflow: hidden;
+    text-indent: 1em;
+    font-size: 0.75em;
+    border: none;
+    background: transparent;
+    color: transparent; }
+  /* line 171, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .close-button::before,
+  .close-button::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: #bdc3c7; }
+  /* line 180, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .close-button::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  /* line 184, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .close-button::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  /* Menu */
+  /* line 189, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .menu-wrap {
+    margin-left: -10px;
+    position: fixed;
+    top: 47px;
+    z-index: 1001;
+    width: 300px;
+    height: 100%;
+    background: #242424;
+    padding: 0;
+    font-size: 1.15em;
+    -webkit-transform: translate3d(-320px, 0, 0);
+    transform: translate3d(-320px, 0, 0);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+    /* line 205, /Users/Leo/workspace/invest-new/css/_header.scss */
+    .menu-wrap ul {
+      width: 100%; }
+      /* line 207, /Users/Leo/workspace/invest-new/css/_header.scss */
+      .menu-wrap ul li {
+        border-bottom: 1px solid #494d5c;
+        width: 100%;
+        float: none; }
+        /* line 211, /Users/Leo/workspace/invest-new/css/_header.scss */
+        .menu-wrap ul li a {
+          padding: 15px 20px; }
+  /* Shown menu */
+  /* line 220, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .show-menu .menu-wrap {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+  /* line 228, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .show-menu .content::before {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    width: 100%; } }
+
+/*.btn-default {
+    svg{
+        max-width: 40px;
+        margin:-10px -45px -10px -10px;
+        .mp{
+            fill:#ddd;
+        }
+    }
+    span{
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+}*/
+/* line 253, /Users/Leo/workspace/invest-new/css/_header.scss */
+.dropdown-menu {
+  right: 0;
+  padding: 0;
+  left: auto; }
+  /* line 257, /Users/Leo/workspace/invest-new/css/_header.scss */
+  .dropdown-menu > li {
+    border-bottom: 1px solid #ddd; }
+    /* line 259, /Users/Leo/workspace/invest-new/css/_header.scss */
+    .dropdown-menu > li > a {
+      text-align: right;
+      display: block;
+      width: 100%;
+      padding: 10px; }
+
+/*@import "perfil";  */
+/* line 4, /Users/Leo/workspace/invest-new/css/_content.scss */
+.c-bot {
+  color: #00AE76 !important; }
+
+/* line 7, /Users/Leo/workspace/invest-new/css/_content.scss */
+.c-error {
+  color: #FC6548 !important; }
+
+/* line 10, /Users/Leo/workspace/invest-new/css/_content.scss */
+h1 {
+  color: #0ABAB7;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0px auto 10px auto; }
+
+/* line 16, /Users/Leo/workspace/invest-new/css/_content.scss */
+.border-column {
+  padding: 0; }
+  /* line 18, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .border-column .row {
+    margin: 0; }
+  /* line 21, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .border-column .col-sm-3 {
+    border-right: 1px solid #ddd;
+    min-height: 160px;
+    /*padding-top: 20px;
+        padding-bottom: 20px;*/
+    padding: 20px 10px; }
+    /* line 27, /Users/Leo/workspace/invest-new/css/_content.scss */
+    .border-column .col-sm-3:last-child {
+      border: 0;
+      /*padding-right: 30px;*/ }
+    /* line 31, /Users/Leo/workspace/invest-new/css/_content.scss */
+    .border-column .col-sm-3:first-child {
+      /*padding-left: 30px;*/ }
+    @media screen and (max-width: 767px) {
+      /* line 21, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .border-column .col-sm-3 {
+        padding: 0;
+        min-height: auto; } }
+  /* line 40, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .border-column.ad .col-sm-3 {
+    min-height: auto;
+    padding: 8px; }
+    /* line 43, /Users/Leo/workspace/invest-new/css/_content.scss */
+    .border-column.ad .col-sm-3 a {
+      font-size: 12px; }
+
+/* line 49, /Users/Leo/workspace/invest-new/css/_content.scss */
+.dash-dat {
+  text-align: center; }
+  /* line 51, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-dat p {
+    /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;*/
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    padding: 20px 0px 0px 0px; }
+  /* line 58, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-dat label {
+    font-size: 11px; }
+  /* line 61, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-dat small {
+    font-weight: 400;
+    display: block;
+    font-size: 12px; }
+  /* line 67, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-dat.valor-cuenta p {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 500; }
+    @media screen and (max-width: 992px) {
+      /* line 67, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat.valor-cuenta p {
+        font-size: 18px; } }
+    @media screen and (max-width: 767px) {
+      /* line 67, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat.valor-cuenta p {
+        font-size: 24px; } }
+  /* line 78, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-dat.valor-cuenta label {
+    font-size: 16px; }
+  /* line 82, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-dat.rendimiento {
+    border-left: 1px solid #ddd; }
+    /* line 84, /Users/Leo/workspace/invest-new/css/_content.scss */
+    .dash-dat.rendimiento p {
+      padding-top: 10px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #00E00B; }
+    /* line 90, /Users/Leo/workspace/invest-new/css/_content.scss */
+    .dash-dat.rendimiento label {
+      font-size: 16px; }
+  @media screen and (max-width: 767px) {
+    /* line 49, /Users/Leo/workspace/invest-new/css/_content.scss */
+    .dash-dat {
+      padding: 5px 10px;
+      border-bottom: 1px solid #ddd; }
+      /* line 97, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat:after {
+        content: '';
+        display: block;
+        clear: both; }
+      /* line 102, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat.valor-cuenta {
+        text-align: center; }
+        /* line 104, /Users/Leo/workspace/invest-new/css/_content.scss */
+        .dash-dat.valor-cuenta p {
+          float: none;
+          padding: 0; }
+        /* line 109, /Users/Leo/workspace/invest-new/css/_content.scss */
+        .dash-dat.valor-cuenta label {
+          float: none;
+          font-size: 16px; }
+      /* line 114, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat.rendimiento {
+        text-align: center;
+        border: 0; }
+        /* line 117, /Users/Leo/workspace/invest-new/css/_content.scss */
+        .dash-dat.rendimiento p {
+          float: none;
+          padding: 0; }
+        /* line 121, /Users/Leo/workspace/invest-new/css/_content.scss */
+        .dash-dat.rendimiento label {
+          float: none;
+          font-size: 16px; }
+      /* line 126, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat label {
+        max-width: 60%;
+        float: left;
+        font-size: 16px;
+        margin-top: 5px;
+        text-align: left; }
+      /* line 133, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat p {
+        float: right;
+        padding: 0;
+        margin: 0;
+        font-size: 14px; }
+      /* line 139, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-dat small {
+        display: block;
+        margin: 0;
+        text-align: right;
+        margin-top: -5px; } }
+
+/* line 147, /Users/Leo/workspace/invest-new/css/_content.scss */
+.dash-fon {
+  text-align: center;
+  min-height: 160px; }
+  /* line 150, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-fon .btn {
+    color: #fff;
+    background: #FC6548; }
+  /* line 154, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-fon hr {
+    margin: 10px -20px; }
+  /* line 157, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-fon span {
+    font-weight: bold;
+    color: #FC6548;
+    font-size: 16px;
+    background: #eee;
+    padding: 6px 10px 6px 7px;
+    border-radius: 10px; }
+  /* line 165, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-fon .fon {
+    padding: 10px 0px; }
+  /* line 168, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .dash-fon .colocado {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 22px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 1200px) {
+      /* line 168, /Users/Leo/workspace/invest-new/css/_content.scss */
+      .dash-fon .colocado {
+        font-size: 12px; } }
+
+/* line 178, /Users/Leo/workspace/invest-new/css/_content.scss */
+.visible-xs .dash-fon {
+  min-height: auto; }
+
+/* line 186, /Users/Leo/workspace/invest-new/css/_content.scss */
+.card, .solicitud, .pre-carrito {
+  overflow: hidden; }
+
+/* line 189, /Users/Leo/workspace/invest-new/css/_content.scss */
+.i-agregar {
+  width: 40%;
+  float: left;
+  height: 200px;
+  margin: -20px 20px -20px -20px;
+  background: url("https://assets.testingytp.com/img/bg_ac.jpg");
+  /*background-position: 10px 10px;*/
+  background-size: cover; }
+
+/* line 198, /Users/Leo/workspace/invest-new/css/_content.scss */
+.clabe {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px; }
+
+/* line 204, /Users/Leo/workspace/invest-new/css/_content.scss */
+.cod {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+/* line 207, /Users/Leo/workspace/invest-new/css/_content.scss */
+.lst_add {
+  padding-left: 48px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  background: url(https://s3-us-west-2.amazonaws.com/assets-site-v2/panel/add2.png) left top no-repeat; }
+  /* line 212, /Users/Leo/workspace/invest-new/css/_content.scss */
+  .lst_add li {
+    list-style: none;
+    padding: 2px;
+    /*margin-bottom: 23px;*/
+    min-height: 78px; }
+
+/* line 4, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.owl-carousel {
+  position: absolute;
+  height: 100%; }
+  /* line 7, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .owl-carousel .owl-item, .owl-carousel .owl-stage-outer, .owl-carousel .owl-stage, .owl-carousel .owl-item, .owl-carousel .item {
+    position: relative;
+    height: 100%; }
+  /* line 11, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .owl-carousel .owl-nav {
+    padding-top: .4em;
+    font-family: sans-serif;
+    font-size: .8em; }
+    /* line 15, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .owl-carousel .owl-nav > div {
+      padding: 0.4em 1.4em;
+      border: 1px solid #333;
+      background: #000;
+      color: white;
+      border-radius: .4em;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+      box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, 0.5); }
+      /* line 23, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+      .owl-carousel .owl-nav > div:hover {
+        background-color: #333; }
+    /* line 27, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .owl-carousel .owl-nav .owl-prev {
+      float: left; }
+    /* line 30, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .owl-carousel .owl-nav .owl-next {
+      float: right; }
+
+/* line 36, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.on-board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  /*background:#e8ffdd;*/ }
+  /* line 44, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board.bg-1 {
+    background: #e8ffdd;
+    /*background:#ddffdf;*/
+    /*background:#E1F3F2;*/ }
+  /* line 49, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board.bg-2 {
+    /*background:#ddffdf;*/
+    background: #E1F3F2; }
+  /* line 53, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board .card, .on-board .solicitud, .on-board .pre-carrito {
+    position: relative;
+    max-width: 800px;
+    margin: 10px auto; }
+    /* line 57, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .card img, .on-board .solicitud img, .on-board .pre-carrito img {
+      max-height: 400px; }
+    /* line 60, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .card:after, .on-board .solicitud:after, .on-board .pre-carrito:after {
+      content: '';
+      display: block;
+      clear: both; }
+  /* line 66, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board h1 {
+    color: #0ABAB7;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px; }
+  /* line 72, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 0; }
+
+/* line 80, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  width: 100%; }
+
+/* line 86, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.cus {
+  float: right;
+  background: #0ABAB7;
+  color: #fff !important; }
+
+/* line 91, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.emp {
+  float: right;
+  margin-right: 10px; }
+
+/* line 95, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.btn-lg.cus {
+  float: none;
+  margin: auto;
+  display: block;
+  font-size: 18px;
+  background: #00E00B; }
+  /* line 100, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .btn-lg.cus:hover {
+    background: #00BC00; }
+
+@media screen and (max-width: 767px) {
+  /*.owl-carousel{
+        margin-bottom: 1px;
+    }*/
+  /* line 108, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .owl-theme .owl-dots {
+    bottom: 0px; }
+  /* line 112, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board .card, .on-board .solicitud, .on-board .pre-carrito {
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+    padding: 10px;
+    height: 100%; }
+  /* line 119, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board .btns {
+    position: absolute;
+    width: 100%;
+    padding: 30px 20px;
+    bottom: 0;
+    left: 0; }
+    /* line 125, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .btns .emp {
+      float: left;
+      color: #0ABAB7;
+      background: transparent;
+      border: 0; }
+    /* line 132, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .btns .btn-lg {
+      float: right; }
+  /* line 136, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board h1 {
+    font-size: 22px;
+    margin: 10px; } }
+  @media screen and (max-width: 767px) and (max-height: 400px) {
+    /* line 136, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board h1 {
+      font-size: 16px; } }
+  @media screen and (max-width: 767px) and (max-width: 370px) {
+    /* line 136, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board h1 {
+      font-size: 18px; } }
+
+@media screen and (max-width: 767px) {
+  /* line 146, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board h2 {
+    font-size: 16px;
+    margin: 20px;
+    line-height: 160%; } }
+  @media screen and (max-width: 767px) and (max-height: 400px) {
+    /* line 146, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board h2 {
+      font-size: 12px;
+      margin: 10px; } }
+  @media screen and (max-width: 767px) and (max-width: 370px) {
+    /* line 146, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board h2 {
+      font-size: 12px;
+      margin: 10px; } }
+
+@media screen and (max-width: 767px) {
+  /* line 159, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+  .on-board .clip {
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    height: 300px;
+    width: 300px; } }
+  @media screen and (max-width: 767px) and (max-height: 400px) {
+    /* line 159, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip {
+      height: auto;
+      border: 0;
+      border-radius: 0; } }
+  @media screen and (max-width: 767px) and (max-width: 370px) {
+    /* line 159, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip {
+      height: 210px;
+      width: 210px; } }
+
+@media screen and (max-width: 767px) {
+    /* line 174, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip img {
+      display: block;
+      background: #fff; }
+    /* line 179, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip.step-1 img {
+      clip-path: circle(140px at 50% 50%);
+      -webkit-clip-path: circle(140px at 50% 50%);
+      /*height:300px;*/
+      width: 400px;
+      margin-left: -50px; }
+    /* line 190, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip.step-2 img {
+      clip-path: circle(140px at 50% 50%);
+      -webkit-clip-path: circle(140px at 50% 50%);
+      /*height:300px;*/
+      width: 400px;
+      margin-left: -50px; }
+    /* line 199, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip.step-3 img {
+      clip-path: circle(140px at 65% 50%);
+      -webkit-clip-path: circle(140px at 65% 50%);
+      /*height:300px;*/
+      width: 400px;
+      margin-left: -111px; } }
+  @media screen and (max-width: 767px) and (max-height: 400px) {
+    /* line 208, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip.step-1 img, .on-board .clip.step-2 img, .on-board .clip.step-3 img {
+      clip-path: none;
+      -webkit-clip-path: none;
+      border-radius: 6px;
+      width: 200px;
+      margin: auto; } }
+  @media screen and (max-width: 767px) and (max-width: 370px) {
+    /* line 208, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+    .on-board .clip.step-1 img, .on-board .clip.step-2 img, .on-board .clip.step-3 img {
+      clip-path: circle(100px at center);
+      -webkit-clip-path: circle(100px at center);
+      border-radius: 6px;
+      height: 200px;
+      margin: auto;
+      margin-left: -96px;
+      margin-top: 4px; } }
+
+/* line 230, /Users/Leo/workspace/invest-new/css/_onboarding.scss */
+.hidde {
+  display: none; }
+
+/* line 4, /Users/Leo/workspace/invest-new/css/_aside.scss */
+.op {
+  display: none;
+  transition: none; }
+
+/* line 8, /Users/Leo/workspace/invest-new/css/_aside.scss */
+#wrapper {
+  padding-left: 0;
+  transition: none; }
+  /* line 11, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  #wrapper.toggled {
+    padding-left: 200px; }
+    /* line 13, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #wrapper.toggled .op {
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); }
+      /* line 22, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #wrapper.toggled .op svg {
+        max-height: 50px;
+        max-width: 50px;
+        background: #272A38;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        color: #fff;
+        top: 20px; }
+        /* line 31, /Users/Leo/workspace/invest-new/css/_aside.scss */
+        #wrapper.toggled .op svg .ta {
+          fill: #ddd;
+          stroke: #FFFFFF;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-miterlimit: 10; }
+      /* line 35, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #wrapper.toggled .op span {
+        background: #272A38;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        color: #fff;
+        top: 20px;
+        font-size: 2em; }
+    /* line 45, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #wrapper.toggled #sidebar-wrapper {
+      width: 200px; }
+      /* line 47, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #wrapper.toggled #sidebar-wrapper .profile {
+        position: relative; }
+    /* line 51, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #wrapper.toggled #page-content-wrapper {
+      /* position: absolute;
+            margin-right: -250px;*/
+      position: absolute;
+      margin-right: 0;
+      left: 0; }
+
+/* line 61, /Users/Leo/workspace/invest-new/css/_aside.scss */
+.down-menu {
+  background: #373a47;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0px;
+  padding: 0;
+  z-index: 6666666666; }
+  /* line 70, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  .down-menu li {
+    text-align: center;
+    float: left;
+    list-style: none;
+    width: 25%; }
+    /* line 76, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    .down-menu li a {
+      /*border-right: 1px solid gray;*/
+      display: block;
+      color: #aaa;
+      font-size: .8em;
+      padding: 0px;
+      padding-bottom: 5px; }
+      /* line 83, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .down-menu li a:hover {
+        text-decoration: none; }
+      /* line 86, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .down-menu li a span {
+        display: block;
+        font-size: 2.1em;
+        margin-bottom: 5px;
+        color: #999; }
+      /* line 92, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .down-menu li a img {
+        display: block;
+        margin: auto; }
+      /* line 96, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .down-menu li a svg {
+        max-width: 45px;
+        display: block;
+        margin: auto;
+        margin-bottom: -5px;
+        margin-top: -3px; }
+        /* line 102, /Users/Leo/workspace/invest-new/css/_aside.scss */
+        .down-menu li a svg .bm {
+          fill: #aaa; }
+      /* line 106, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .down-menu li a .cart {
+        position: relative; }
+      /* line 109, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .down-menu li a .num {
+        font-size: 16px;
+        font-family: 'Open Sans';
+        position: absolute;
+        color: #fff;
+        background: #FF6154;
+        padding: 4px 10px;
+        border-radius: 50%;
+        left: 60%;
+        top: -20px;
+        margin-left: 30px; }
+
+/* line 124, /Users/Leo/workspace/invest-new/css/_aside.scss */
+#sidebar-wrapper::-webkit-scrollbar {
+  display: none; }
+
+/* line 127, /Users/Leo/workspace/invest-new/css/_aside.scss */
+.tog {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+/* line 133, /Users/Leo/workspace/invest-new/css/_aside.scss */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: absolute;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #373a47;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  /* line 145, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  #sidebar-wrapper .profile {
+    background: #272A38;
+    width: 100%;
+    /*position: relative;*/
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    /* line 154, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #sidebar-wrapper .profile .prof {
+      color: gray;
+      display: block;
+      background: #1B1D29;
+      margin: -10px;
+      padding: 12px;
+      /*img{
+                margin-bottom: 10px;
+                float: left;
+                display: block;
+                margin-right: 10px;
+            }*/ }
+      /* line 160, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #sidebar-wrapper .profile .prof:hover {
+        text-decoration: none;
+        color: #fff;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        /* line 164, /Users/Leo/workspace/invest-new/css/_aside.scss */
+        #sidebar-wrapper .profile .prof:hover span.icon-user {
+          color: #fff;
+          margin-right: 10px;
+          font-size: 14px;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+      /* line 171, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #sidebar-wrapper .profile .prof small {
+        /* display: block;*/ }
+      /* line 174, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #sidebar-wrapper .profile .prof span.icon-user {
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-right: 6px;
+        font-size: 14px; }
+    /* line 186, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #sidebar-wrapper .profile li {
+      color: #B9B9B9;
+      list-style: none;
+      padding: 10px 10px;
+      border-top: 1px solid gray; }
+      /* line 191, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #sidebar-wrapper .profile li strong {
+        color: #fff; }
+
+@media (min-width: 768px) {
+  /* line 198, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  #wrapper {
+    padding-left: 200px; }
+  /* line 202, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  #wrapper.toggled {
+    padding-left: 0; }
+    /* line 204, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #wrapper.toggled .op {
+      display: none; }
+      /* line 205, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      #wrapper.toggled .op svg {
+        display: none; }
+    /* line 209, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #wrapper.toggled #sidebar-wrapper {
+      width: 0; }
+    /* line 212, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0; }
+  /* line 218, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  #sidebar-wrapper {
+    width: 200px;
+    position: fixed; }
+    /* line 221, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #sidebar-wrapper .profile {
+      position: relative;
+      position: absolute; }
+    /* line 226, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    #sidebar-wrapper li {
+      font-size: 16px; }
+  /* line 230, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  #page-content-wrapper {
+    /*padding: 20px;*/
+    /*width: 100%;*/
+    position: relative; } }
+
+/* line 237, /Users/Leo/workspace/invest-new/css/_aside.scss */
+#page-content-wrapper {
+  /*width: 100%;*/
+  position: relative;
+  /*padding: 15px;*/
+  padding-top: 0px; }
+
+/* line 244, /Users/Leo/workspace/invest-new/css/_aside.scss */
+.sidebar-nav {
+  position: relative;
+  top: 0;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 251, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  .sidebar-nav svg {
+    height: 20px;
+    margin-bottom: -4px; }
+  /* line 255, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #595B66; }
+    /* line 259, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    .sidebar-nav li a {
+      font-size: 14px;
+      display: block;
+      text-decoration: none;
+      color: #999999;
+      padding: 6px 0px;
+      vertical-align: top; }
+      /* line 266, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .sidebar-nav li a .st0 {
+        fill: #A9ACB1; }
+      /* line 267, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2); }
+        /* line 268, /Users/Leo/workspace/invest-new/css/_aside.scss */
+        .sidebar-nav li a:hover .st0 {
+          fill: #FFFFFF; }
+      /* line 273, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .sidebar-nav li a:active, .sidebar-nav li a:focus {
+        text-decoration: none; }
+    /* line 278, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    .sidebar-nav li.actv a {
+      background: #525560;
+      color: #fff; }
+      /* line 278, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .sidebar-nav li.actv a .st0 {
+        fill: #fff; }
+  /* line 281, /Users/Leo/workspace/invest-new/css/_aside.scss */
+  .sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px; }
+    /* line 285, /Users/Leo/workspace/invest-new/css/_aside.scss */
+    .sidebar-nav > .sidebar-brand a {
+      color: #999999; }
+      /* line 287, /Users/Leo/workspace/invest-new/css/_aside.scss */
+      .sidebar-nav > .sidebar-brand a:hover {
+        color: #fff;
+        background: none; }
+
+/* Sidebar Styles */
+/* landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 6, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  * {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none; }
+  /* line 12, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  #myAffix.affix {
+    position: static !important; }
+  /* line 15, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .hb-cd, .hb-ac, .hb-in, .hb-home {
+    background-attachment: scroll; }
+  /* line 20, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.bg_gris_medio .col-sm-6, .ipad.testimonios .col-sm-6 {
+    width: 100%; }
+  /* line 24, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.bg_gris_medio.hidden-xs .col-sm-6, .ipad.testimonios.hidden-xs .col-sm-6 {
+    width: 60%;
+    margin: auto;
+    float: none; }
+  /* line 30, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.bg_gris_medio .col-sm-3, .ipad.testimonios .col-sm-3 {
+    width: 50%; }
+  /* line 34, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.testimonios .col-sm-6 {
+    width: 100%; }
+  /* line 37, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.testimonios .tsm {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px; } }
+
+/* portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 50, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  * {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none; }
+  /* line 56, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .hb-cd, .hb-ac, .hb-in, .hb-home {
+    background-attachment: scroll; }
+  /* line 59, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  #myAffix.affix {
+    position: static !important;
+    margin-bottom: auto; }
+  /* line 63, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .hero-banner {
+    min-height: 60%; }
+  /* line 68, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.requisitos .col-sm-4 {
+    width: 60%;
+    margin: auto;
+    float: none; }
+    /* line 72, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+    .ipad.requisitos .col-sm-4 .card, .ipad.requisitos .col-sm-4 .solicitud, .ipad.requisitos .col-sm-4 .pre-carrito {
+      margin-bottom: 60px;
+      min-height: auto; }
+    /* line 76, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+    .ipad.requisitos .col-sm-4:before {
+      content: '';
+      clear: both;
+      display: block; }
+  /* line 83, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad .col-sm-6 {
+    width: 100%; }
+  /* line 86, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad .col-sm-3 {
+    width: 50%; }
+  /* line 90, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.hidden-xs .col-sm-6 {
+    width: 60%;
+    margin: auto;
+    float: none; }
+  /* line 97, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.testimonios .col-sm-6 {
+    width: 100%; }
+  /* line 100, /Users/Leo/workspace/invest-new/css/_ipad.scss */
+  .ipad.testimonios .tsm {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px; } }
+
+/* line 6, /Users/Leo/workspace/invest-new/css/_cal.scss */
+::-webkit-scrollbar {
+  width: 12px; }
+
+/* line 10, /Users/Leo/workspace/invest-new/css/_cal.scss */
+::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 10px; }
+
+/* line 15, /Users/Leo/workspace/invest-new/css/_cal.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #aaa; }
+
+/* line 19, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.custom-header h3 {
+  float: left;
+  font-weight: 400; }
+
+/* line 26, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.custom-header h2 a, .custom-header h2 span {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  letter-spacing: 3px;
+  white-space: nowrap; }
+
+/* line 35, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.fc-calendar .fc-row > div > div a, .fc-calendar .fc-row > div > div span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-bottom: 1px;
+  background: rgba(255, 255, 255, 0.1); }
+
+/* line 51, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.custom-calendar-full {
+  position: relative;
+  /*top: 24px;*/
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #FAFAFA;
+  /*padding:0px 10px;*/
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /*foter*/ }
+  /* line 63, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-calendar-full .footer {
+    background: #fff;
+    /*acot*/ }
+    /* line 65, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-calendar-full .footer .acot {
+      padding: 10px;
+      color: #6B6B6B;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+      /* line 71, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-calendar-full .footer .acot i {
+        width: 10px;
+        display: block;
+        float: left;
+        height: 10px;
+        margin-top: 3px;
+        margin-right: 4px;
+        margin-left: 10px;
+        border: 2px solid #ddd;
+        border-radius: 50%; }
+        /* line 81, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .custom-calendar-full .footer .acot i.i-pagadas {
+          border-color: #00AE76; }
+        /* line 84, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .custom-calendar-full .footer .acot i.i-proceso {
+          border-color: #02C3D6; }
+        /* line 87, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .custom-calendar-full .footer .acot i.i-atrasadas {
+          border-color: #FFBF2E; }
+      @media screen and (max-width: 767px) {
+        /* line 92, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .custom-calendar-full .footer .acot .col-xs-6 {
+          padding: 4px 0; } }
+    /* line 97, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-calendar-full .footer .total {
+      padding: 10px;
+      color: #6B6B6B;
+      text-align: center; }
+      /* line 100, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-calendar-full .footer .total b {
+        font-size: 18px;
+        font-weight: 500; }
+
+/* line 108, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.fc-calendar-container {
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  /*top: 50px;*/
+  position: relative; }
+
+/* line 116, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.custom-header {
+  /*padding: 20px 20px 10px 30px;*/
+  /*height: 50px;*/
+  position: relative;
+  padding-left: 10px; }
+  /* line 121, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-header h2 {
+    /*@extend %extend_1;*/
+    color: #fff;
+    width: 60%; }
+    /* line 125, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-header h2 a {
+      color: rgba(255, 255, 255, 0.5); }
+  /* line 134, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-header h3 {
+    width: 100%;
+    color: #0ABAB7;
+    font-size: 14px;
+    text-align: left;
+    padding-right: 20px;
+    margin: 15px 0px; }
+    /* line 142, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-header h3 .title {
+      color: #767676;
+      font-size: 16px; }
+  /* line 147, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-header nav {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    user-select: none; }
+    /* line 152, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-header nav span {
+      float: left;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      color: transparent;
+      cursor: pointer;
+      background: #E8E8E8;
+      margin: 0 3px;
+      font-size: 20px;
+      border-radius: 50%; }
+      /* line 166, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header nav span:hover {
+        background: #ddd; }
+      /* line 169, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header nav span:last-child {
+        margin-left: 20px;
+        border-radius: 3px; }
+      /* line 174, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header nav span.custom-prev:before {
+        content: '\25c2'; }
+      /* line 177, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header nav span.custom-next:before {
+        content: '\25b8'; }
+      /* line 180, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header nav span.custom-current {
+        display: none; }
+      /* line 183, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header nav span.custom-current:before {
+        content: '\27a6'; }
+      @media screen and (max-width: 767px) {
+        /* line 152, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .custom-header nav span {
+          margin: 0 2px; } }
+  /* line 191, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-header span:before {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    text-indent: 4px; }
+
+/* line 201, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.no-touch .custom-header h2 a:hover {
+  color: rgba(255, 255, 255, 0.9); }
+
+/* line 204, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.no-touch .fc-calendar .fc-row > div > div a:hover {
+  background: rgba(255, 255, 255, 0.3); }
+
+/* line 208, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.fc-calendar {
+  width: auto;
+  top: 10px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  height: auto;
+  border-radius: 4px;
+  /*position: absolute;*/ }
+  /* line 219, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .fc-calendar .fc-head {
+    background: #fff;
+    color: #A8A8A8;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 85;
+    padding-right: 13px;
+    /*padding: 0 20px;*/ }
+    /* line 233, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .fc-calendar .fc-head > div {
+      font-size: 10px; }
+  /* line 237, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .fc-calendar .fc-row {
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff;
+    /*height: 100px;*/ }
+    /* line 244, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .fc-calendar .fc-row > div {
+      background: #fff;
+      border: 1px solid #C8C9CC;
+      border-left: 0;
+      border-bottom: 0;
+      border-collapse: collapse;
+      padding: 4px;
+      min-height: 60px;
+      position: relative;
+      height: 100%;
+      top: 0;
+      left: 0; }
+      /* line 256, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .fc-calendar .fc-row > div:first-child {
+        box-shadow: n                                          one; }
+      /* line 262, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .fc-calendar .fc-row > div.fc-today {
+        background: #e3feed; }
+        /* line 264, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div.fc-today:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.2; }
+      /* line 275, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .fc-calendar .fc-row > div > div {
+        margin-top: 25px; }
+      /* line 284, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .fc-calendar .fc-row > div > span.fc-date {
+        color: #666;
+        font-size: 10px;
+        bottom: auto;
+        right: 5px;
+        top: 5px;
+        text-align: right; }
+    /* line 293, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .fc-calendar .fc-row:after {
+      content: '';
+      clear: both;
+      display: block; }
+    /* line 298, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .fc-calendar .fc-row:last-child {
+      box-shadow: none; }
+  /* line 303, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .fc-calendar .fc-body {
+    border: none;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-top: -1px; }
+
+@media screen and (max-width: 880px), screen and (max-height: 450px) {
+  /* line 311, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  html {
+    height: auto; }
+  /* line 314, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  body {
+    height: auto;
+    position: static; }
+  /* line 317, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .container {
+    height: auto; }
+  /* line 320, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .fc-body {
+    border: none;
+    max-height: none;
+    height: 300px;
+    overflow-y: scroll; }
+  /* line 328, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-header {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    height: auto;
+    width: auto; }
+    /* line 336, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-header nav {
+      position: relative;
+      /*top: auto;
+			left: auto;
+			bottom: auto;
+			right: auto;
+			height: auto;*/
+      float: right;
+      width: auto;
+      max-width: 30%;
+      top: -7px;
+      right: -10px; }
+    /* line 349, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-header h2 {
+      float: none;
+      width: auto;
+      text-align: left;
+      padding-right: 100px; }
+    /* line 355, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .custom-header h3 {
+      float: none;
+      width: auto;
+      text-align: left;
+      font-size: 12px; }
+      /* line 360, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .custom-header h3 .title {
+        font-size: 12px; }
+  /* line 365, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .custom-calendar-full {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    height: auto;
+    width: auto; }
+  /* line 374, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .fc-calendar-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: auto; }
+  /* line 383, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .fc-calendar {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    height: auto;
+    width: auto;
+    margin: 0; }
+    /* line 392, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .fc-calendar .fc-head {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      right: auto;
+      height: auto;
+      width: auto;
+      display: none; }
+    /* line 402, /Users/Leo/workspace/invest-new/css/_cal.scss */
+    .fc-calendar .fc-row {
+      height: auto;
+      width: 100%;
+      border: none;
+      box-shadow: none; }
+      /* line 408, /Users/Leo/workspace/invest-new/css/_cal.scss */
+      .fc-calendar .fc-row > div {
+        height: auto;
+        width: 100%;
+        border: none;
+        float: none;
+        min-height: 50px;
+        border-radius: 0 !important;
+        border-bottom: 1px solid #bbb;
+        padding: 8px 0px 0px 35px;
+        max-width: 100%; }
+        /* line 419, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div .din {
+          float: left;
+          margin-right: 6px;
+          font-size: 14px !important;
+          font-weight: bold; }
+        /* line 427, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div > span.fc-date {
+          position: absolute;
+          top: 0px;
+          left: 5px;
+          bottom: auto;
+          right: auto;
+          height: auto;
+          width: auto;
+          width: 20px;
+          text-align: center;
+          font-size: 20px;
+          color: #aaa;
+          display: inline-block;
+          /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;*/ }
+        /* line 443, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div > span.fc-weekday {
+          position: absolute;
+          display: inline-block;
+          width: 30px;
+          color: #fff;
+          color: #ccc;
+          top: 30px;
+          left: 5px;
+          font-size: 10px;
+          text-transform: uppercase; }
+        /* line 455, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div:empty {
+          min-height: 0;
+          height: 0;
+          background: #ddd;
+          padding: 0; }
+        /* line 461, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div > div {
+          margin-top: 0;
+          padding-left: 10px;
+          max-width: 70%;
+          display: inline-block;
+          max-width: 100%; }
+        /* line 468, /Users/Leo/workspace/invest-new/css/_cal.scss */
+        .fc-calendar .fc-row > div.fc-today {
+          background: #e3feed; }
+          /* line 470, /Users/Leo/workspace/invest-new/css/_cal.scss */
+          .fc-calendar .fc-row > div.fc-today:after {
+            display: none; }
+  /* line 477, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .ie9 .fc-calendar .fc-row > div {
+    height: auto;
+    width: 100%;
+    border: none; } }
+
+/* line 483, /Users/Leo/workspace/invest-new/css/_cal.scss */
+.din {
+  overflow: hidden;
+  /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;*/
+  font-size: 11px !important;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #888;
+  color: #888;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-bottom: 4px; }
+  /* line 495, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .din.activo {
+    color: #00AE76;
+    border-color: #00AE76; }
+  /* line 499, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .din.proceso {
+    color: #02C3D6;
+    border-color: #02C3D6; }
+  /* line 503, /Users/Leo/workspace/invest-new/css/_cal.scss */
+  .din.atrasado {
+    color: #FFBF2E;
+    border-color: #FFBF2E; }
+
+/* line 2, /Users/Leo/workspace/invest-new/css/_footer.scss */
+.bottom {
+  margin-top: 30px;
+  padding: 12px;
+  /*background:$negro;*/
+  color: #6B6B6B; }
+
+/* line 8, /Users/Leo/workspace/invest-new/css/_footer.scss */
+footer {
+  padding: 40px 0px 0px 0px;
+  background: #242424; }
+  /* line 11, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer li {
+    padding: 4px 0px; }
+  /* line 14, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer a {
+    color: #6B6B6B; }
+    /* line 16, /Users/Leo/workspace/invest-new/css/_footer.scss */
+    footer a:hover {
+      color: #fff; }
+  /* line 21, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer h4 a {
+    color: #D1D1D1; }
+  /* line 25, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer .bottom {
+    margin-top: 30px;
+    padding: 12px;
+    background: #1A1A1A;
+    color: #6B6B6B; }
+  /* line 31, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer .logo {
+    margin-bottom: 30px; }
+  /* line 35, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer .social img {
+    margin: 6px;
+    opacity: .4; }
+  /* line 40, /Users/Leo/workspace/invest-new/css/_footer.scss */
+  footer .social a:hover img {
+    opacity: 1; }
+  @media screen and (max-width: 767px) {
+    /* line 46, /Users/Leo/workspace/invest-new/css/_footer.scss */
+    footer * {
+      text-align: center; }
+    /* line 49, /Users/Leo/workspace/invest-new/css/_footer.scss */
+    footer .logo {
+      display: block;
+      margin: auto;
+      margin-bottom: 30px; } }
+
+/* line 1, /Users/Leo/workspace/invest-new/css/_sols.scss */
+.titulos {
+  padding: 0px;
+  margin: 0;
+  max-width: 780px; }
+  @media screen and (max-width: 1200px) {
+    /* line 1, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos {
+      margin: auto; } }
+  /* line 8, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .titulos li {
+    margin: 0;
+    padding: 14px;
+    float: left;
+    font-size: .8em;
+    text-align: center;
+    color: #767676; }
+    /* line 15, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.id {
+      width: 62px; }
+    /* line 16, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.user {
+      width: 100px; }
+    /* line 17, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.tasa {
+      width: 69px; }
+    /* line 18, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.calif {
+      width: 58px; }
+    /* line 19, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.destino {
+      width: 106px; }
+    /* line 20, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.restan {
+      width: 69px; }
+    /* line 21, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.plazo {
+      max-width: 46px;
+      padding: 14px 8px; }
+    /* line 22, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.monto, .titulos li.faltan {
+      width: 76px; }
+    /* line 23, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos li.prestar {
+      width: 120px; }
+  /* line 25, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .titulos:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+/* line 33, /Users/Leo/workspace/invest-new/css/_sols.scss */
+.sols .col-md-9 {
+  max-width: 780px; }
+  @media screen and (max-width: 1200px) {
+    /* line 33, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .sols .col-md-9 {
+      max-width: 100%;
+      width: 100%; } }
+
+/* line 42, /Users/Leo/workspace/invest-new/css/_sols.scss */
+.sol {
+  display: block; }
+
+/* line 45, /Users/Leo/workspace/invest-new/css/_sols.scss */
+.solicitud {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 780px;
+  padding: 0px;
+  margin: 0;
+  margin-bottom: 10px; }
+  @media screen and (max-width: 1200px) {
+    /* line 45, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud {
+      margin: auto; } }
+  /* line 55, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .solicitud > li {
+    float: left; }
+    /* line 57, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud > li a {
+      display: block;
+      color: #767676;
+      border-right: 1px solid #fff; }
+      /* line 62, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li a > ul > li {
+        margin: 0;
+        padding: 10px 14px;
+        float: left;
+        font-size: .9em; }
+        /* line 67, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.id {
+          padding-left: 8px;
+          padding-right: 8px; }
+          /* line 70, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li.id span {
+            background: #f1f1f1;
+            padding: 5px;
+            border-radius: 4px; }
+        /* line 76, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.user {
+          font-size: .8em;
+          line-height: 1.7em;
+          white-space: nowrap;
+          width: 8em;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        /* line 84, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.plazo {
+          font-size: 16px;
+          padding: 8px 14px; }
+        /* line 88, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.calif {
+          padding: 7px 14px; }
+          /* line 90, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li.calif span {
+            display: block;
+            padding: 5px 6px;
+            border: 1px solid #0ABAB7;
+            color: #0ABAB7;
+            border-radius: 100%; }
+        @media screen and (max-width: 1250px) and (min-width: 1200px) {
+          /* line 98, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li.faltan {
+            display: none; } }
+      /* line 104, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li a > ul:after {
+        content: '';
+        display: block;
+        clear: both; }
+      /* line 111, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li a:hover {
+        /*background: #e8efef;*/
+        background: #f4fff8;
+        border-right: 1px solid #dae0e0; }
+    /* line 117, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud > li.prestar {
+      max-width: 200px;
+      padding: 6px 10px;
+      position: relative; }
+      /* line 121, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li.prestar .form-control {
+        padding: 4px 33px 4px 4px;
+        margin: 0;
+        height: 28px;
+        max-height: 40px;
+        max-width: 85px; }
+        /* line 127, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li.prestar .form-control:focus {
+          border-color: #0ABAB7;
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
+      /* line 134, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li.prestar .btn {
+        display: none;
+        position: absolute;
+        top: 7px;
+        right: 11px;
+        height: 26px;
+        width: 32px;
+        background: #0ABAB7 url(../img/carrito.svg) no-repeat;
+        background-size: 24px;
+        background-position: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-animation-duration: .5s;
+        -moz-animation-duration: .5s;
+        animation-duration: .5s;
+        border-left: 1px solid #00AE76; }
+        /* line 150, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li.prestar .btn:hover {
+          background-color: #00E00B; }
+    /* line 155, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud > li.porcentaje {
+      width: 100%;
+      background: #dedede;
+      height: 4px; }
+      /* line 159, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li.porcentaje .barra {
+        width: 40%;
+        background: #00E00B;
+        height: 4px; }
+  /* line 166, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .solicitud:after {
+    content: '';
+    display: block;
+    clear: both; }
+  /* line 171, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .solicitud:hover {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); }
+
+/* line 175, /Users/Leo/workspace/invest-new/css/_sols.scss */
+.pre-carrito {
+  font-size: .9em;
+  text-align: center;
+  max-width: 340px; }
+  /* line 180, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .pre-carrito h2 {
+    font-size: 1.2em;
+    margin: -20px -20px 10px -20px;
+    padding: 10px;
+    background: #fafafa;
+    font-weight: normal;
+    border-bottom: 1px solid #eee; }
+  /* line 191, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .pre-carrito .table tr:first-child td {
+    border: 0; }
+
+/*# sourceMappingURL=invest-new.css.map */

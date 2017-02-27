@@ -1,0 +1,55 @@
+
+.bottom{
+        margin-top: 30px;
+        padding: 12px;
+        /*background:$negro;*/
+        color:$gris-parrafo;
+    } 
+footer{
+    padding: 40px 0px 0px 0px;
+   background: $negro-footer;
+    li{
+        padding: 4px 0px;
+    }
+    a{
+        color: $gris-parrafo;
+        &:hover{
+            color: #fff;
+        }//hover
+    }//a
+    h4{
+        a{
+            color: $gris-medio;
+        }
+    }
+    .bottom{
+        margin-top: 30px;
+        padding: 12px;
+        background:$negro;
+        color:$gris-parrafo;
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+    .social {
+        img{
+            margin: 6px;
+            opacity: .4;
+        }
+        a:hover{
+            img{
+                opacity: 1;
+            }
+        }
+    }//social
+    @include bp-small{
+        *{
+            text-align: center;
+        }
+        .logo{
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+        }    
+    }//small
+}//footer

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yotepresto.com</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/invest-new.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+          <div class="on-board">
+              <div class="card">
+                 <h1 class="animated bounceIn">¡Bienvenido!</h1>
+<h2 class="animated fadeInUp">Presta desde <b>$200</b> y ayuda a nuestros acreditados a cumplir sus metas</h2>
+                  <div class="clip step-1">
+                      <img src="img/on-b-1.svg" class="animated bounceIn" alt="">
+                  </div>
+                  <div class="btns">
+                      <button class="btn  cus customNextBtn animated tada">
+                          Siguiente
+                      </button>
+                      <button class="btn btn-default emp ">Empezar</button>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+          </div><!--onboard-->
+      </div><!--item-->
+      <div class="item">
+        <div class="on-board bg-2">
+              <div class="card hidde">
+                 <h1 class="animated bounceIn">Fondea tu cuenta</h1>
+<h2 class="animated fadeInUp">Agrega fondos a tu cuenta haciendo una transferencia <b>SPEI</b> desde tu banca electrónica</h2>
+                  <div class="clip step-2">
+                      <img src="img/on-b-2.svg" class="animated bounceIn" alt="">
+                  </div>
+                  <div class="btns">
+                      <button class="btn cus customNextBtn animated tada">
+                          Siguiente
+                      </button>
+                      <button class="btn btn-default  emp">Empezar</button>
+                  </div><!--btn-->
+              </div>
+              <div class="clearfix"></div>
+          </div><!--onboard-->
+        </div><!--item-->
+      <div class="item">
+        <div class="on-board bg-1">
+              <div class="card hidde">
+                 <h1 class="animated bounceIn c-bot">¡Empieza a prestar!
+</h1>
+<h2 class="animated fadeInUp">Captura el monto que quieres prestar, agrégalo al carrito y <b>autorízalo</b></h2>
+                  <div class="clip step-3 ">
+                      <img src="img/on-b-3.svg" class="animated bounceIn" alt="">
+                  </div>
+                  <div class="btns">
+                      <button class="btn btn-lg cus  animated wobble">Empezar</button>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+          </div><!--onboard-->
+        </div><!--item-->
+    </div>
+    <table>
+        <tr>
+            <td  width="40"></td>
+        </tr>
+    </table>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+    $(document).ready(function(){
+            $('html, body').animate({scrollTop: 1}, 500);
+        owl.owlCarousel({
+            /*animateOut: 'slideOutUp',
+            animateIn: 'slideInUp',*/
+            item:1,
+            center: true,
+            loop:false,
+            mouseDrag:true,
+            margin:5,
+            responsiveClass:true,
+            singleItem:true,
+            nav: false,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:1,
+                    nav:false
+                }/*,
+                1000:{
+                    items:1,
+                    nav:false,
+                    loop:false
+                }*/
+            },//responsive
+            afterMove : function(){}//aftermove
+        })//owl
+        owl.on('change.owl.carousel', function(event) {
+        /* $('.card').hide(function(){
+         })
+         */
+            $('.card').hide()
+        });//change
+        owl.on('changed.owl.carousel', function(event) {
+         
+         $('.card').hide(function(){
+             setInterval(function(){
+                         
+             $('.card').show()
+                         },10)
+         })
+        });//changed
+    });//ready
+        $('.owl-carousel').trigger('next.owl.carousel', [300]);
+        $('.customNextBtn').click(function() {
+            owl.trigger('next.owl.carousel');
+        })//next
+        jQuery(document.documentElement).keyup(function (event) {    
+
+    var owl = jQuery(".owl-carousel");
+
+    // handle cursor keys
+    if (event.keyCode == 37) {
+       // go left
+      owl.trigger('prev.owl.carousel');
+    } else if (event.keyCode == 39) {
+       // go right
+       owl.trigger('next.owl.carousel');
+    }
+    
+
+});
+    </script>
+</body>
+</html>

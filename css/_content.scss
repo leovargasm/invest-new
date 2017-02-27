@@ -1,0 +1,218 @@
+@import "variables";
+@import "mixins";
+
+.c-bot {
+    color: $botella-logo !important;
+}
+.c-error{
+    color: $error !important;
+}
+h1{
+    color: $aqua;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px auto 10px auto;
+}
+.border-column{
+    padding: 0;
+    .row{
+        margin: 0;
+    }
+    .col-sm-3{
+        border-right:1px solid #ddd;
+        min-height: 160px;
+        /*padding-top: 20px;
+        padding-bottom: 20px;*/
+        padding: 20px 10px;
+        &:last-child{
+            border: 0;
+            /*padding-right: 30px;*/
+        }
+        &:first-child{
+            /*padding-left: 30px;*/
+        }
+        @include bp-small{
+            padding: 0;
+            min-height: auto;
+            }
+    }//3
+    &.ad{
+        .col-sm-3{
+            min-height: auto;
+            padding: 8px;
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.dash-dat{
+    text-align: center;
+    p{
+        /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;*/
+        font-size: 18px;
+        text-align: center;
+        font-weight: 400;
+        padding: 20px 0px 0px 0px;
+    }
+    label{
+        font-size: 11px;
+    }
+    small{
+        font-weight: 400;
+        display: block;
+        font-size: 12px;
+    }
+    &.valor-cuenta {
+        p{
+            padding-top: 10px;
+            font-size: 22px;
+            font-weight: 500;
+            @include bp-med{
+            font-size: 18px;
+            }@include bp-small{
+            font-size: 24px;
+            }
+        }
+        
+        label{
+            font-size: 16px;
+        }
+    }
+    &.rendimiento{
+        border-left: 1px solid #ddd;
+         p{
+            padding-top: 10px;
+            font-size: 22px;
+            font-weight: 500;
+             color: $lima-logo;
+        }
+        label{
+            font-size: 16px;
+        }
+    }
+    @include bp-small{
+        padding: 5px 10px;
+        border-bottom: 1px solid #ddd;
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        &.valor-cuenta {
+            text-align: center;
+            p{
+                float: none;
+                padding: 0;
+            }
+
+            label{
+                float: none;
+                font-size: 16px;
+            }
+        }
+        &.rendimiento{
+            text-align: center;
+            border:0;
+             p{
+                float: none;
+                 padding: 0;
+            }
+            label{
+                float: none;
+                font-size: 16px;
+            }
+        }
+            label{
+                max-width: 60%;
+                float: left;
+                font-size: 16px;
+                margin-top: 5px;
+                text-align: left;
+            }
+        p{
+            float: right;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+        small{
+            display: block;
+            margin: 0;
+            text-align: right;
+            margin-top: -5px;
+        }
+    }
+}//dashs
+.dash-fon{
+    text-align: center;
+    min-height: 160px;
+    .btn{
+        color: #fff;
+        background: $error;
+    }
+    hr{
+        margin: 10px -20px;
+    }
+    span{
+        font-weight: bold;
+        color: $error;
+        font-size: 16px;
+        background: #eee;
+        padding:6px 10px 6px 7px;
+        border-radius: 10px;
+    }
+    .fon{
+        padding:10px 0px; 
+    }
+    .colocado {
+        text-align: center;
+	    font-size: 14px;
+        margin-top:22px;
+        margin-bottom: 0;
+        @include bp-big{
+            font-size: 12px;
+        }
+    }
+}
+.visible-xs .dash-fon{
+    min-height: auto;
+}
+
+
+
+
+//add fondos
+.card{
+    overflow: hidden;
+}
+.i-agregar {
+	width: 40%;
+    float: left;
+    height: 200px;
+    margin: -20px 20px -20px -20px;
+    background: url('https://assets.testingytp.com/img/bg_ac.jpg');
+    /*background-position: 10px 10px;*/
+    background-size: cover
+}
+.clabe{
+    display: inline-block;
+    background: $gris-claro;
+    padding: 10px;
+    border-radius: 4px;
+}
+.cod{
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.lst_add{
+    padding-left: 48px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    background: url(https://s3-us-west-2.amazonaws.com/assets-site-v2/panel/add2.png) left top no-repeat ;
+    li{
+        list-style: none;
+        padding:2px;
+        /*margin-bottom: 23px;*/
+        min-height: 78px;
+    }
+}

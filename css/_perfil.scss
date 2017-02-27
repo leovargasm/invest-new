@@ -1,0 +1,321 @@
+@import "variables";
+@import "mixins";
+.bg_grisclaro {
+	background: $gris-claro;
+}
+.bg_gris_medio{
+	background: $gris-medio; 
+}
+//colores texto
+.c_blanco{color: white}
+.c_lima {color: $lima-logo}
+.c_bot{color: $botella-logo}
+.c_rojo {
+	color: $error;
+}
+.c_aqua {
+	color: $aqua;
+}
+.c_gris{color: $gris-parrafo}
+
+.btn{
+    &:focus,&:active{
+        outline: 0;
+        box-shadow:0;
+    }
+}
+.cont-perfil {
+    max-width: 600px;
+    margin: auto;
+    h3{
+        margin: -5px -20px 20px -20px;
+        border-bottom: 1px solid $gris-medio;
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 12px;
+        color: $gris-medio;
+
+    }
+    @include bp-small{
+        margin: 0px 15px;
+    }
+}
+.card{ 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	background: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    &.cardtab{
+        margin-bottom: 20px;
+        /*padding-bottom: 0px;*/
+    }
+}
+.hero-banner{
+	background: url(../img/bg_profile.jpg) center;
+    padding: 160px 0px;
+    margin-bottom: -100px;
+    p{
+        color:#fff;
+        font-size: 18px;
+    }
+}
+.padbtn{
+    padding: 30px 0px 20px 0px;
+}
+label{
+    small{
+        display: block;
+        margin-top: -5px;
+        color: $gris-medio;
+    }
+}
+input,select{
+        &.form-control{
+            display: block;
+        width: 100%;
+        height: 38px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: $gris-parrafo;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        
+        outline: none !important;
+        outline-offset: 0px !important;
+        outline-color: $botella-logo !important;
+        -webkit-appearance: none;
+          outline: none !important;
+          outline-offset: 0px !important;
+          outline-color: $botella-logo  !important;
+          -webkit-box-shadow: none;
+    	    outline: -webkit-focus-ring-color auto 0px;
+        }
+         &:focus{
+            border-color: $aqua;
+             /*background: #fff;*/
+        }
+    &.error{
+        border-color: $error;
+    }
+    }
+    select{
+        &.form-control{
+            background:url("https://assets.testingytp.com/img/select.svg") no-repeat;
+            background-size: 9px;
+            background-position: right 10px center;
+            &:focus{
+                background-color: #fafafa;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+    /*.checkbox{margin-top: 36px;}*/
+    .checkbox label:before {
+        content: '';
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        width: 36px;
+        height: 36px;
+        display: block;
+        float: left;
+        margin-right: 20px;
+    }
+    input[type=checkbox]:checked + label:before {
+        content: "\2713";
+        font-size: 22px;
+        color:$lima-logo;
+        text-align: center;
+        line-height: 30px;
+    }
+
+/*.plazo,.check-bol{
+    &.error {
+        input[type=checkbox] + label.check, input[type=radio] + label.check {
+            border-color: $error;
+        }
+        .check-group input[type=radio]+label.check.lastch{
+            border-color: $error;
+        }
+        
+    }
+    input[type=checkbox], input[type=radio] {
+    display: none;
+    }
+    .check-group{
+        &:first-child{
+            input[type=radio] + label.check{
+                border-radius:5px 0px 0px 5px;
+            }
+        }
+        &:last-child{
+            border-right: 1px solid #ccc;
+            border-radius: 0px 5px 5px 0px;
+            label{
+              border-radius: 0px 5px 5px 0px;  
+            }
+            input[type=radio]:checked +label.check{
+                background: $botella-logo;
+            }
+        }
+    }
+    input[type=radio] + label.check{
+        text-align: center;
+        display: block;
+        max-width:100%;
+        border-right: 0;
+        height: 36px;
+        padding: 10px 15px;
+        cursor: pointer;
+        line-height: 2px;
+        
+        @include bp-small{
+            font-size: 12px;
+            padding:15px 12px;
+        }
+}
+
+    label:before{
+        display: none;
+        background: none;
+    }
+
+}*/
+input.complete{
+    background:url("../img/ok-01.svg") no-repeat;
+    background-size: 19px;
+    background-position: right 7px center;
+    border-color: $lima-logo;
+    padding-right: 28px;
+}
+.check-bol{ 
+    input[type=checkbox], input[type=radio] {
+    display: none;
+    }
+    &.takenerror{
+        input[type=radio] + label.check{
+                border-color:$error;  
+        }
+    }
+     
+   .check-group{
+        width: auto;
+        float: left;
+        margin-right:20px; 
+    } 
+    input[type=radio] + label.check{
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        padding: 10px;
+        height: auto;
+        min-width: 90px;
+        text-align: center;
+        &:hover{
+            cursor:pointer;
+            background: $gris-claro;
+        }
+        @include bp-small{
+            font-size: 12px;
+            padding: 20px 6px;
+            line-height: auto;
+            padding: 5px;
+            min-width: 60px;
+        }
+        
+    }
+    .sn{
+        input[type=radio] + label.check{
+           padding: 5px;
+            min-width: 60px;
+        }
+    }
+    input[type=radio]:checked + label.check{
+        background: #e9f7e3;
+        border:1px solid $lima-logo;
+        /*color: $aqua;*/
+    }
+    
+}
+.btn_cnt,.btn_ats, .btn_nrm{
+    /*display: block;*/
+    background: $lima-logo;
+    color: #fff;
+    font-weight: bold;
+    /*text-shadow: 1px 1px rgba(0,0,0,.2);*/
+    border-radius: 4px;
+    padding: 10px 18px;
+     @include transition(all 0.5s ease);
+    a,a:hover,a:focus,a:visited,&:hover,&:focus,&:visited{
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover{
+        background: $lima-hover;
+        color:#fff; 
+         @include transition(all 0.5s ease);
+    }
+}
+.btn_ats{
+    font-weight: normal;
+    background:$gris-claro;
+    margin-right: 10px;
+    color: $gris-parrafo;
+    border:1px solid $gris-medio;
+    &:hover{
+        color: $gris-parrafo;
+        background-color: $gris-medio;
+    }
+    a,a:hover,a:focus,a:visited,&:hover,&:focus,&:visited{
+        color: $gris-parrafo;
+        text-decoration: none;
+    }
+}
+.btn_nrm{
+    font-weight: normal;
+    margin-right: 10px;
+    color: $aqua;
+    border:1px solid $aqua;
+    background: #fff;
+    a{
+        background: #fff;
+    }
+    &:hover{
+        color: $gris-parrafo;
+        background-color: $gris-medio;
+        
+    }
+    a,a:hover,a:focus,a:visited,&:hover,&:focus,&:visited{
+        color: $gris-parrafo;
+        text-decoration: none;
+        border-color:transparent;
+    }
+}
+.cupon{
+    #cupon_2{
+        display: none;
+    }
+    .btn_cnt{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        width: 30%;
+        float: left;
+        background: $aqua;
+    }
+    .btn_nrm {
+        color:$gris-parrafo;
+        border-color: $gris-medio;
+}
+    .form-control{
+        width: 70%;float: left;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        height: 41px;
+    }
+    a{
+        color: $aqua;
+    }
+}
