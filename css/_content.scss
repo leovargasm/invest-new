@@ -289,14 +289,25 @@ label{
 .i-resumen-sinfondeo{
     @extend .i-agregar;
     background-image: url(../img/on-b-2.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-top: -20px;
     width: 40%;
     height: 240px; 
+}
+.i-resumen-sinprestar{
+    @extend .i-resumen-sinfondeo;
+    background-image: url(../img/on-b-1.svg);
+    background-size: contain;
 }
 .resumen-statico {
 	margin: auto;
     width: 60%;
     float: left;
+    @include bp-small{
+        width: 100%;
+        }
 }
 .reinvertir {
 	background:#eee;

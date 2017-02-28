@@ -145,12 +145,14 @@
     .profile{
        background: #272A38;
        width: 100%;
-       /*position: relative;*/
        position: absolute;
         margin: 0px;
         padding:0px;
         bottom: 0px;
-        @include transition(all 0.5s ease);
+        span{
+            font-size: .9em;
+            color: #7b7e8a;
+        }
         .prof{
             color: gray;
             display: block;
@@ -168,28 +170,16 @@
                     @include transition(all 0.5s ease);
                 }
             }
-            small{
-               /* display: block;*/
-            }
-            span.icon-user{
-                @include transition(all 0.5s ease);
-                margin-right: 6px;
-                font-size: 14px;
-            }
-            /*img{
-                margin-bottom: 10px;
-                float: left;
-                display: block;
-                margin-right: 10px;
-            }*/
         }
         li{
             color: #B9B9B9;
             list-style: none;
             padding: 10px 10px;
-            border-top: 1px solid gray;
+            border-top: 1px solid #373a47;
             strong{
                 color: #fff;
+                font-weight: 500;
+                font-size: 18px;
             }
         }
     }//

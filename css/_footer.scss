@@ -19,7 +19,7 @@ footer{
     background: $negro-footer;
     margin-left: -200px;
     color: $color-footer;
-    font-weight: 300;
+    font-weight:400;
     font-size: .9em;
     line-height: 1.6em;
     &.ftr-btm{
@@ -60,6 +60,12 @@ footer{
         }
     }//social
     @include bp-small{
+        position: static;
+        width: 100%; 
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 55px;
+        line-height: 2em;
         *{
             text-align: center;
         }

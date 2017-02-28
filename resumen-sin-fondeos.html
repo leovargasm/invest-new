@@ -19,6 +19,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/calendar.css" />
     <link href="css/invest-new.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -202,8 +203,8 @@
                 </li>
             </ul><!--lista 1-->
             <ul class="profile">
-                <li>Disponible: <br>MX <strong>$900.00</strong></li>
-                 <li>Disponible: <br>MX <strong>$900.00</strong></li>
+                <li><span>Disponible:</span> <br>MX <strong>$900.00</strong></li>
+                 <li><span>Valor de tu cuenta:</span> <br>MX <strong>$900.00</strong></li>
             </ul>
         </div><!-- /#sidebar-wrapper -->
 
@@ -216,7 +217,7 @@
                <nav class="hidden-xs">
                  
                    <a class="carrito" href="">
-                      <div class="num"><div class="border hel">2</div></div>
+                      <div class="num animated swing"><div class="border hel">2</div></div>
                        Carrito de préstamos
                    </a>
                    <a href="" class="btn btn-default">
@@ -245,52 +246,38 @@
                     <div class=" col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 cont-static">
                        <div class="card">
                           <!--<h2>Retirar fondos</h2>-->
-                           <div class="i-resumen-sinfondeo hidden-xs"></div>
+                           <div class="i-resumen-sinfondeo hidden-xs animated fadeInRight"></div>
                            <!--<h1>Retirar fondos a tu cuenta</h1>-->
                            <div class="resumen-statico text-center">
                               <h3>Aun no has fondeado tu cuenta :(</h3>
                                <p>Para poder empezar a prestar y hacer crecer tu dinero necesitas agregar fondos a tu cuenta</p>
-                               <button class="btn btn-primary btn-lg">Agregar fondos</button>
+                               <button class="btn btn-primary btn-lg animated tada">Agregar fondos</button>
                            </div>
                            
                        </div>
                         <!--card-->
-                        <div class="card collapse" id="collapseExample">
-                           <h2>Agregar cuenta</h2>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-3">
-                                    <div class="form-group">
-                                        <label for="">Nombre de cuenta</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
+                        <div class="card border-column ad">
+                            <div class="row ">
                                 <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label for="">Banco</label>
-                                        <select type="text" class="form-control" name="" id="">
-                                           <option value="#">--</option>
-                                           <option value="#">a</option>
-                                           <option value="#">a</option>
-                                                                           </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-5">
-                                    <div class="form-group">
-                                        <label for="">CLABE de 18 dígitos</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-xs-12 text-right">
-                                    <button class="btn btn-default">
-                                        Cancelar
-                                    </button>
-                                       <button class="btn btn-primary">
-                                        Agregar cuenta
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="dash-dat valor-cuenta">
+                                       <a href="">Guía</a>
+                                    </div><!--valor-cuenta-->
+                                </div><!--3-->
+                                <div class="col-sm-4">
+                                    <div class="dash-dat">
+                                        <a href="">¿Por qué invertir <br> en yotepresto.com?</a>
+                                        
+                                    </div><!--valor-cuenta-->
+                                </div><!--3-->
+                                <div class="col-sm-4">
+                                    <div class="dash-dat">
+                                        <a href="">Preguntas 
+                                            frecuentes</a>
+                                        
+                                    </div><!--valor-cuenta-->
+                                </div><!--3-->
+                            </div><!--row-->
+                        </div> <!--card-->
                     </div>
                 </div>
             </div><!--fluid-->

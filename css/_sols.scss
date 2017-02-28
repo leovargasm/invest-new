@@ -13,14 +13,19 @@
         text-align: center;
         color: #767676;
         &.id{width: 62px;}
-        &.user{width: 100px;}
+        &.user{width: 90px;}
         &.tasa{width: 69px;}
-        &.calif{ width: 58px;}
-        &.destino{ width: 106px;}
+        &.calif{ width: 57px;}
+        &.destino{ width: 110px;}
         &.restan{ width: 69px;}
         &.plazo{max-width:46px; padding:14px 8px; }
-        &.monto,&.faltan{ width: 76px;}
-        &.prestar{width: 120px;}
+        &.monto,&.faltan{ width: 73px;}
+        &.faltan{
+            @include min-max(1250px,1200px){
+                display: none; 
+            }
+        }
+        &.prestar{width: 115px;}
     }
     &:after{
         content: '';
@@ -49,7 +54,8 @@
     padding: 0px;
     margin: 0;
     @include max(1200px){
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     margin-bottom: 10px;
     > li{
