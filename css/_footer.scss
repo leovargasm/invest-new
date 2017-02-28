@@ -1,4 +1,11 @@
-
+#wrapper{
+    min-height: 100%;
+}
+#page-content-wrapper{
+    /*padding-bottom: 125px;*/
+    position: static;
+    min-height: 100%;
+}
 .bottom{
         margin-top: 30px;
         padding: 12px;
@@ -6,15 +13,25 @@
         color:$gris-parrafo;
     } 
 footer{
-    padding: 40px 0px 0px 0px;
-   background: $negro-footer;
+    width: 100%; 
+    position: absolute;
+    padding: 10px 0px 0px 200px;
+    background: $negro-footer;
+    margin-left: -200px;
+    color: $color-footer;
+    font-weight: 300;
+    font-size: .9em;
+    line-height: 1.6em;
+    &.ftr-btm{
+        bottom: 0;
+    }
     li{
         padding: 4px 0px;
     }
     a{
         color: $gris-parrafo;
         &:hover{
-            color: #fff;
+            color: $aqua;
         }//hover
     }//a
     h4{

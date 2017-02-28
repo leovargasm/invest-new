@@ -7,9 +7,15 @@
 .c-error{
     color: $error !important;
 }
+.session {
+	color: #999;
+    b{
+        font-weight: 500;
+    }
+}
 h1{
-    color: $aqua;
-    font-weight: 400;
+    color: $gris-medio;;
+    font-weight: 300;
     font-size: 20px;
     margin: 0px auto 10px auto;
 }
@@ -18,7 +24,7 @@ h1{
     .row{
         margin: 0;
     }
-    .col-sm-3{
+    .col-sm-3, .col-sm-4{
         border-right:1px solid #ddd;
         min-height: 160px;
         /*padding-top: 20px;
@@ -37,12 +43,38 @@ h1{
             }
     }//3
     &.ad{
-        .col-sm-3{
+        .col-sm-3, .col-sm-4{
+            
             min-height: auto;
-            padding: 8px;
-            a{
-                font-size: 12px;
+            padding: 0px;
+            &:first-child,&:last-child{
+                a{
+                    line-height: 34px;
+                }
             }
+            a{
+                padding: 10px 0px;
+                display: block;
+                color: $gris-parrafo;
+                font-size: 12px;
+                &:hover{
+                    background: $gris-claro;
+                }
+            }
+        }
+    }
+}
+.lc-tr {
+	margin-right: -10px;
+//    margin-bottom: -15px;
+}
+.table-lc-tr{
+    margin: -20px -10px 10px -10px;
+    tbody >tr{
+        border-right: 1px solid #ddd;
+        >td{
+            padding: 15px;
+            color: $gris-parrafo;
         }
     }
 }
@@ -80,7 +112,7 @@ h1{
         }
     }
     &.rendimiento{
-        border-left: 1px solid #ddd;
+//        border-left: 1px solid #ddd;
          p{
             padding-top: 10px;
             font-size: 22px;

@@ -244,7 +244,7 @@
             <div class="container-fluid">
                 <div class="row ">
                    <div class="col-xs-12">
-                   <p class="text-right">
+                   <p class="text-right session">
                        Bienvenido <b>LeoSonoradinamita666</b> <span class="hidden-xs">|</span> <br class="visible-xs-block"> ultimo inicio de sesión: <b>01/01/2017</b>
                    </p>
                     </div>
@@ -313,8 +313,8 @@
                                         <p>$3,100.00</p>
                                     </div><!--valor-cuenta-->
                               </div>
-                               <div class="col-sm-7">
-                                   <table class="table table-striped table-lc-tr">
+                               <div class="col-sm-7 lc-tr">
+                                   <table class="table table-lc-tr">
                                     <tr>
                                         <td>Has fondeado</td>
                                         <td>$5,000.00</td>
@@ -341,24 +341,18 @@
                         </div><!--card-->
                         <div class="card border-column ad">
                             <div class="row ">
-                                <div class="col-sm-3">
+                                <div class="col-sm-4">
                                     <div class="dash-dat valor-cuenta">
                                        <a href="">Guía</a>
                                     </div><!--valor-cuenta-->
                                 </div><!--3-->
-                                <div class="col-sm-3">
+                                <div class="col-sm-4">
                                     <div class="dash-dat">
-                                        <a href="">¿Por qué invertir en yotepresto.com?</a>
+                                        <a href="">¿Por qué invertir <br> en yotepresto.com?</a>
                                         
                                     </div><!--valor-cuenta-->
                                 </div><!--3-->
-                                <div class="col-sm-3">
-                                    <div class="dash-dat">
-                                        <a href="">Tips para inversionistas</a>
-                                        
-                                    </div><!--valor-cuenta-->
-                                </div><!--3-->
-                                <div class="col-sm-3">
+                                <div class="col-sm-4">
                                     <div class="dash-dat">
                                         <a href="">Preguntas 
                                             frecuentes</a>
@@ -598,7 +592,6 @@
     chart: {
         type: 'areaspline',
         height: 250,
-        
         /*ignoreHiddenSeries: true,*/
         marginBottom: 30
     },
@@ -625,12 +618,12 @@
             '24 meses',
             '30 meses',
             '36 meses'
-        ],
-        plotBands: [{ // visualize the weekend
+        ]/*,
+        plotBands: [{ 
             from: 4.5,
             to: 6.5,
             color: 'rgba(68, 170, 213, .2)'
-        }]
+        }]*/
     },
     yAxis: {
          /*minorTickInterval: 'auto',
@@ -671,6 +664,7 @@
         },
         series: {
             /*pointStart:40000,*/
+            fillColor: 'rgba(10, 186, 183, .1)',
             dataLabels: {
                 align: 'top',
                 
@@ -680,6 +674,8 @@
         enableMouseTracking: false
     },
     series: [{
+        /*color: '#0ABAB7',*/
+        color:'rgba(10, 186, 183, .5)',
         className: 'series',
         getExtremesFromAll:false,
         /*name: 'John',*/
@@ -744,6 +740,20 @@
                      });
             }//if
 			});
+        $(document).ready(function(){
+           if($(window).height()>$('#page-content-wrapper').height()+125){
+               $('footer').addClass('ftr-btm')
+            }else{
+                $('footer').romeveClass('ftr-btm')
+            }
+        });
+        $(window).resize(function() {
+          if($(window).height()>$('#page-content-wrapper').height()+125){
+               $('footer').addClass('ftr-btm')
+            }else{
+                $('footer').romeveClass('ftr-btm')
+            }
+        });
     </script>
 </body>
 
