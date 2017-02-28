@@ -810,20 +810,21 @@ label {
 
 /* line 276, C:/xampp/htdocs/invest-new/css/_content.scss */
 .form-retirar {
+  /*prueba*/
   margin: auto;
   width: 50%;
   float: left;
   margin-bottom: -20px; }
-  /* line 281, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 282, C:/xampp/htdocs/invest-new/css/_content.scss */
   .form-retirar .form-group {
     max-width: 200px;
     margin: auto;
     margin-bottom: 10px; }
     @media screen and (max-width: 767px) {
-      /* line 281, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 282, C:/xampp/htdocs/invest-new/css/_content.scss */
       .form-retirar .form-group {
         max-width: 100%; } }
-  /* line 289, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 290, C:/xampp/htdocs/invest-new/css/_content.scss */
   .form-retirar .form-control {
     display: inline-block;
     /*max-width: 180px;*/ }
