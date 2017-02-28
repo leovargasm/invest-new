@@ -19,8 +19,10 @@ body{
     height: 100%;
     position: relative;
     background: #EFEFEF;
-    font-family: 'Open Sans';
     /*overflow: hidden;*/
+}
+.bg-gris-medio {
+	background: #ddd;
 }
 .hel{
    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
@@ -41,6 +43,12 @@ h2{
             margin-bottom: 30px;
     }
 }
+h3{
+    font-size: 20px;
+    color: $gris-parrafo;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 ul{
     padding: 0px;
     li{
@@ -52,8 +60,13 @@ p{
     line-height: 180%;
 }
 a{
+    color: $aqua;
     &:focus,&:hover,&:active,&:visited{
         text-decoration: none;
+        
+    }
+    &:hover{
+        color:$botella-hover;
     }
 }
 label{
@@ -81,6 +94,44 @@ button:focus {outline:0;}
     </div><!--container-->
 </section>
 */
+.form-control{
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.045);
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.045); 
+    &:focus {
+        border-color: $lima-logo;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 1px 1px 3px rgba(0,0,0,.3);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0px 0px 6px rgba(0,174,118,.2);
+    }
+}
+.btn-primary {
+    background: $botella-logo;
+    border-color: $botella-hover;
+    &:hover,&:focus,&:active{
+        background: $botella-hover;
+    }
+}
+.btn-danger{
+    background: #ff6154;
+    &:hover,&:focus,&:active{
+        background: #d84a3e;
+    }
+}
+.btn-lg {
+	padding: 9px 16px;
+    font-size: 16px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.btn-line{
+    color: $aqua;
+    background: transparent;
+    border: 1px solid $aqua;
+    &:hover,&:focus,&:active{
+        background: #f3f3f3;
+        color: $botella-logo;
+    }
+}
 .card{ 
     /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -116,6 +167,9 @@ button:focus {outline:0;}
     float: left;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
 @media (min-width: 768px) {
     .col-sm-5ths {
         width: 20%;

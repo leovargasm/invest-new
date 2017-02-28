@@ -13,13 +13,12 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,400italic,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/calendar.css" />
     <link href="css/invest-new.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,7 +34,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand hidden-xs">
                     <a href="#">
-                       <img src="img/logo.png" alt="">
+                       <img src="img/logo-blanco.svg" alt="">
                     </a>
                     
                 </li>
@@ -213,11 +212,11 @@
         <div id="page-content-wrapper">
            <header>
               <img src="img/logo.svg" class=" visible-xs-block logo" alt="">
-               <h1>Inicio</h1>
+               <!--<h1>Retirar fondos</h1>-->
                <nav class="hidden-xs">
                  
                    <a class="carrito" href="">
-                      <div class="num animated swing"><div class="border ">2</div></div>
+                      <div class="num"><div class="border hel">2</div></div>
                        Carrito de préstamos
                    </a>
                    <a href="" class="btn btn-default">
@@ -241,130 +240,58 @@
                <a href="#menu-toggle" class="visible-xs-block menu-toggle" ><span class="icon-ham"></span> <!--Menú--></a>
                <div class="clearfix"></div>
            </header>
-            <div class="sols">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class=" col-md-9">
-                        <ul class="titulos">
-                            <li class="id"><span>ID</span></li>
-                            <li class="user">Solicitante</li>
-                            <li class="calif">Calif.</li>
-                            <li class="tasa">Tasa</li>
-                            <li class="monto">Monto</li>
-                            <li class="destino">Destino</li>
-                            <li class="plazo">Plazo</li>
-                            <li class="faltan">Faltan</li>
-                            <li class="resta">Resta</li>
-                            <li class="prestar">
-                                Prestar
-                            </li>
-                        </ul><!--card-->
-                            </div><!---->
-                            <div class="clearfix"></div>
-                            <div class=" col-md-9">
-                           <ul class="solicitud">
-                               <li>
-                                   <a href="#">
-                                        <ul class=".sol"> 
-                                           <li class="id"><span>12105</span></li>
-                                            <li class="user">nombreDeUsuario</li>
-                                            <li class="calif"><span>B1</span></li>
-                                            <li class="tasa">12.90%</li>
-                                            <li class="monto">$300,00</li>
-                                            <li class="destino">Pagar Deudas</li>
-                                            <li class="plazo">36</li>
-                                            <li class="faltan">$300,00</li>
-                                            <li class="resta">25 días</li>
-                                        </ul>
-                                    </a>
-                                </li>
-                                
-                                <li class="prestar">
-                                    <input class="form-control" type="text">
-                                    <button class="btn animated  wobble">
-                                        
+                    <div class=" col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 cont-static">
+                       <div class="card">
+                          <!--<h2>Retirar fondos</h2>-->
+                           <div class="i-resumen-sinfondeo hidden-xs"></div>
+                           <!--<h1>Retirar fondos a tu cuenta</h1>-->
+                           <div class="resumen-statico text-center">
+                              <h3>Aun no has fondeado tu cuenta :(</h3>
+                               <p>Para poder empezar a prestar y hacer crecer tu dinero necesitas agregar fondos a tu cuenta</p>
+                               <button class="btn btn-primary btn-lg">Agregar fondos</button>
+                           </div>
+                           
+                       </div>
+                        <!--card-->
+                        <div class="card collapse" id="collapseExample">
+                           <h2>Agregar cuenta</h2>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-3">
+                                    <div class="form-group">
+                                        <label for="">Nombre de cuenta</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="">Banco</label>
+                                        <select type="text" class="form-control" name="" id="">
+                                           <option value="#">--</option>
+                                           <option value="#">a</option>
+                                           <option value="#">a</option>
+                                                                           </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-5">
+                                    <div class="form-group">
+                                        <label for="">CLABE de 18 dígitos</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-xs-12 text-right">
+                                    <button class="btn btn-default">
+                                        Cancelar
                                     </button>
-                                </li>
-                                <li class="porcentaje">
-                                    <div class="barra"></div>
-                                </li>
-                            </ul><!--card-->
-                            <ul class="solicitud">
-                               <li>
-                                   <a href="#">
-                                        <ul class=".sol"> 
-                                           <li class="id"><span>12105</span></li>
-                                            <li class="user">nombreDeUsuario</li>
-                                            <li class="calif"><span>B1</span></li>
-                                            <li class="tasa">12.90%</li>
-                                            <li class="monto">$300,00</li>
-                                            <li class="destino">Pagar Deudas</li>
-                                            <li class="plazo">36</li>
-                                            <li class="faltan">$300,00</li>
-                                            <li class="resta">25 días</li>
-                                        </ul>
-                                    </a>
-                                </li>
-                                
-                                <li class="prestar">
-                                    <input class="form-control" type="text">
-                                    <button class="btn animated  wobble">
-                                        
+                                       <button class="btn btn-primary">
+                                        Agregar cuenta
                                     </button>
-                                </li>
-                                <li class="porcentaje">
-                                    <div class="barra"></div>
-                                </li>
-                            </ul><!--card-->
-                        </a>
-                    </div>
-                            <div class="col-md-3 visible-lg-block ">
-                        <div class="pre-carrito">
-                            <h2>Préstamos por autorizar</h2>
-                            <table class="table">
-                                <tr >
-                                    <td>ID</td>
-                                    <td>Calif.</td>
-                                    <td>Monto</td>
-                                    <td class="btn_tacha"></td>
-                                </tr>
-                                <tr>
-                                    <td>204591</td>
-                                    <td><strong>B7</strong></td>
-                                    <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
-                                </tr>
-                                <tr>
-                                    <td>204591</td>
-                                    <td><strong>B7</strong></td>
-                                    <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
-                                </tr>
-                                <tr>
-                                    <td>204591</td>
-                                    <td><strong>B7</strong></td>
-                                    <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
-                                </tr>
-                                <tr>
-                                    <td>204591</td>
-                                    <td><strong>B7</strong></td>
-                                    <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
-                                </tr>
-                                <tr class="tot">
-                                   
-                                    <td colspan="2" class="text-right">Total: </td>
-                                    <td colspan="2"><b>$200.00</b></td>
-                                    
-                                </tr>
-                            </table>
-                            <div class="text-right">
-                                <button class="btn btn-bordered">Ver en carrito</button>
-                                <button class="btn animated bounce btn-primary">Autorizar</button>
+                                </div>
                             </div>
-                        </div><!--precarrito-->
-                        
-                    </div><!--3-->
+                        </div>
+                    </div>
                 </div>
             </div><!--fluid-->
             <footer>
@@ -526,36 +453,178 @@
 
     </div>
     <!-- /#wrapper -->
-     <script src="js/jquery.js"></script>
+ <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!--<script src="https://code.highcharts.com"></script>-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="js/jquery.calendario.js"></script>
 
 
     <!-- Menu Toggle Script -->
     <script>
+        
+        $('.hov').hover(function(){
+            console.log($(this).parent().parent().find('.over'));
+            $(this).parent().parent().find('.over').fadeIn('fast');
+        });
+        $('.over').hover(function(){},function(){
+            $(this).fadeOut('fast');
+        }).mouseout(function(){
+            $(this).fadeOut('fast');
+        })
+        $('.card .tit').click(function(e){
+            e.preventDefault();
+            console.log('oalal')
+            $(this).parent().find('.c_desp').slideToggle();
+        })
     $(".menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
         $('body, html').toggleClass('tog');
         
     });
-    $(".op").click(function(e) {
+        $(".op").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
         $('body, html').toggleClass('tog');
     });
-    $('.prestar').on('focusin', function(e){
-        console.log('lalal')
-        $(this).find('.btn').show();
-    }).on('focusout', function(){
-        if($(this).find('input').val() == ''){ 
-            $(this).find('.btn').hide();
+       Highcharts.chart('container', {
+    chart: {
+        type: 'areaspline',
+        height: 250,
+        
+        /*ignoreHiddenSeries: true,*/
+        marginBottom: 30
+    },
+    title: {
+        text: ''
+    },
+           getExtremesFromAll:true,
+    /*legend: {
+        layout: 'vertical',
+        align: 'left',
+        borderColor: "#999999",
+        verticalAlign: 'top',
+        x: 150,
+        y: 100,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+    },*/
+    xAxis: {
+        categories: [
+            '6 meses',
+            '12 meses',
+            '18 meses',
+            '24 meses',
+            '30 meses',
+            '36 meses'
+        ],
+        plotBands: [{ // visualize the weekend
+            from: 4.5,
+            to: 6.5,
+            color: 'rgba(68, 170, 213, .2)'
+        }]
+    },
+    yAxis: {
+         /*minorTickInterval: 'auto',
+        minorTickLength: 5,
+        minorTickWidth: 2,*/
+        startOnTick: false,
+        /*min: 25000,*/
+        title: {
+            text: '',
+            enabled: 'null'
+        },
+        labels: {
+            align: 'left',
+            x: 0,
+            y: -2
         }
-    })
-    $('.prestar .btn').on('click', function(e){
-        console.log('mgn')
-        $(this).parent().find('input').val('') ;
-        $(this).hide();
-    })
+    },
+    tooltip: {
+        valueDecimals: 2,
+        enabled: true,
+        shared: false,
+        pointFormat: '<b>{point.y}</b><br/>',
+        valuePrefix: ' $',
+        valueSuffix: ' MX'
+    },
+    credits: {
+        enabled: false
+    },
+           legend: {
+        enabled: false
+    },
+    exporting:{
+        enabled: false
+    },
+    plotOptions: {
+        areaspline: {
+            fillOpacity: 0.5
+        },
+        series: {
+            /*pointStart:40000,*/
+            dataLabels: {
+                align: 'top',
+                enabled: false
+            }
+        },
+        enableMouseTracking: false
+    },
+    series: [{
+        className: 'series',
+        getExtremesFromAll:false,
+        /*name: 'John',*/
+        data: [42794.24, 46720.15, 51006.22, 55685.49, 60794.03, 66371.23]
+    }]
+});
+        $(function() {
+			
+				var cal = $( '#calendar' ).calendario( {
+						onDayClick : function( $el, $contentEl, dateProperties ) {
+
+							for( var key in dateProperties ) {
+								console.log( key + ' = ' + dateProperties[ key ] );
+							}
+
+						}/*,
+						caldata : codropsEvents*/
+					} ),
+					$month = $( '#custom-month' ).html( cal.getMonthName() ),
+					$year = $( '#custom-year' ).html( cal.getYear() );
+
+				$( '#custom-next' ).on( 'click', function() {
+					cal.gotoNextMonth( updateMonthYear );
+				} );
+				$( '#custom-prev' ).on( 'click', function() {
+					cal.gotoPreviousMonth( updateMonthYear );
+				} );
+				$( '#custom-current' ).on( 'click', function() {
+					cal.gotoNow( updateMonthYear );
+				} );
+
+				function updateMonthYear() {				
+					$month.html( cal.getMonthName() );
+					$year.html( cal.getYear() );
+				}
+				
+					
+					cal.setData( {
+						'02-01-2017' : '<div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div>',
+                        '02-11-2017' : '<div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div>',
+                        '02-10-2017' : '<div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div>',
+						'02-02-2017' : '<div class="din proceso"  title="En proceso de pago">$1324.78</div>',
+						'02-05-2017' : '<div class="din activo" title="Pagado">$1324.78</div>',
+						'02-08-2017' : '<div class="din activo" title="Pagado">$1324.78</div>',
+						'02-09-2017' : '<div class="din" title="Por cobrar">$1324.78</div>'
+					});
+				
+			
+			});
     </script>
 </body>
 

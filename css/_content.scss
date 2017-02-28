@@ -179,12 +179,39 @@ h1{
     min-height: auto;
 }
 
+label{
+    color: $gris-parrafo;
+}
 
-
-
+.cont-static {
+    @include min(1200px){
+        max-width: 800px;
+        margin: auto; float: none;
+    }
+}
+.contrato{
+    height: 300px;
+    background:#fafafa;
+    padding: 10px;
+    border-radius: 4px;
+    border:1px solid #eee;
+    overflow: auto;
+    color: $gris-parrafo;
+    font-size: .9em;
+    margin: 20px auto;
+}
 //add fondos
 .card{
     overflow: hidden;
+    h2{
+        font-size: 1.2em;
+        margin: -20px -20px 10px -20px;
+        padding: 10px;
+        background: #fafafa;
+        font-weight: normal;
+        color: $gris-parrafo;
+        border-bottom: 1px solid #eee;
+    }
 }
 .i-agregar {
 	width: 40%;
@@ -214,5 +241,56 @@ h1{
         padding:2px;
         /*margin-bottom: 23px;*/
         min-height: 78px;
+    }
+}
+//retirar fondos
+.collapse{
+   /* transition: none;*/
+}
+.i-retirar{
+    @extend .i-agregar;
+    background-image: url(../img/bg-retirar.jpg);
+    margin-top: -20px;
+    width: 50%;
+    height: 240px; 
+}
+.i-resumen-sinfondeo{
+    @extend .i-agregar;
+    background-image: url(../img/on-b-2.svg);
+    margin-top: -20px;
+    width: 40%;
+    height: 240px; 
+}
+.resumen-statico {
+	margin: auto;
+    width: 60%;
+    float: left;
+}
+.reinvertir {
+	background:#eee;
+    margin: -20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.form-retirar {
+    margin: auto;
+    width: 50%;
+    float: left;
+    margin-bottom: -20px;
+    .form-group {
+	 max-width: 200px;
+        margin: auto;
+        margin-bottom: 10px;
+        @include bp-small{
+        max-width: 100%;
+        }
+    }
+	.form-control {
+        display: inline-block;
+	 /*max-width: 180px;*/
+    }
+    @include bp-small{
+        width: 100%;
     }
 }
