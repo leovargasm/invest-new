@@ -1,9 +1,21 @@
+.solicitud .sxs-hide{
+    @include sols-xs{
+        display: none;
+    }
+}
+.sxs{
+    display: none;
+   @include sols-xs{display: block;} 
+}
 .titulos{
     padding: 0px;
     margin: 0;
     max-width: 780px;
     @include max(1200px){
         margin: auto;
+    }
+    @include sols-xs{
+        display: none;
     }
     li{
         margin: 0;
@@ -53,6 +65,10 @@
          width: 100%;   
         }
     }//9
+    /*@include max(1200px){
+        margin: auto;
+        max-width: 900px;
+    }*/
 }
 
 .sol{
@@ -71,6 +87,39 @@
     margin-bottom: 10px;
     > li{
         float: left;
+        @include sols-xs{
+            float: none;
+        }
+        &.sxs-top{
+            @include sols-xs{
+                background: #fafafa;
+                border-bottom: 1px solid #eee;
+            }
+        }
+        &.sxs-mid{
+            display: none;
+                @include sols-xs{
+                    display: block;
+                }
+            >ul{
+                >li{
+                    padding: 8px 0;
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    font-size: 1.4em;
+                    small{
+                        display: block;
+                        font-size: .6em;
+                    }
+                }
+                &:after{
+                    display: block;
+                    content: '';
+                    clear: both;
+                }
+            }
+        }//mid
         a{
             display: block;
             color: #767676;
@@ -108,12 +157,20 @@
                     &.plazo{
                         font-size: 16px;
                         padding: 8px 14px;
+                        @extend .sxs-hide;
+                    }
+                    &.tasa{
+                        @extend .sxs-hide;
+                    }
+                    &.monto{
+                        @extend .sxs-hide;
                     }
                     &.calif{
                         padding: 7px 11px;
                         @include max(850px){
                             padding: 7px 12px;
                         }
+                        @extend .sxs-hide;
                         span{
                             display: block;
                             padding:5px 6px;
@@ -129,19 +186,16 @@
                         @include bp-med {
                             display: none; 
                         }
-                        
+                        @extend .sxs-hide;
                     }//faltan
                     &.resta{
                         @include max(920px){
                             display: none; 
                         }
+                        @extend .sxs-hide;
                     }
                 }//>li
-                &:after{
-                    content: '';
-                    display: block; 
-                    clear: both;
-                }
+                @extend .clearx;
                 
             }//ul
             &:hover{
@@ -154,6 +208,7 @@
             max-width: 200px;
             padding: 6px 10px;
             position: relative;
+            @extend .clearx;
             .form-control{
                 padding: 4px 33px 4px 4px;
                 margin: 0;
@@ -165,6 +220,13 @@
                     outline: 0;
                     -webkit-box-shadow: inset 0 1px 1px rgba(0,224,11,.075), 0 0 5px rgba(102,175,233,.6);
                     box-shadow: inset 0 1px 1px rgba(0,224,11,.075), 0 0 5px rgba(102,175,233,.6);
+                }
+                @include sols-xs{
+                    width: 100px;
+                    max-width:none;
+                    float: left;
+                    margin: 10px;
+                    height: 38px;
                 }
             }
             .btn{
@@ -186,7 +248,33 @@
                 &:hover{
                   background-color: $lima-logo;  
                 }//hover
+                .txt_car {
+                    display: none;
+                    @include sols-xs{
+                        display: block;
+                    }
+                }
             }//btn
+            @include sols-xs{
+                max-width: none;
+                padding: 0;
+            }
+            .sxs-bar {
+                @extend .sxs;
+	            width: 100%;
+                padding: 12px 20px;
+                background: #eee;
+            }
+            .sxs-det{
+                @extend .sxs;
+                width: 80px;
+                text-align: center;
+                padding: 10px;
+                background: $gris-claro;
+                border-radius: 4px;
+                margin: 10px;
+                float: left;
+            }
         }
         &.porcentaje{
             width: 100%;
@@ -208,6 +296,18 @@
         box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
     }
 }//solicitudes
+.message {
+	@extend .card;
+    background: #dedede;
+    color: #999;
+    font-weight: 300;
+    letter-spacing: .03em;
+    max-width: 780px;
+    @include max(1200px){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .pre-carrito{
     @extend .card;
     padding: 0;
@@ -225,6 +325,7 @@
     }
     .table{ 
         margin: auto;
+        margin-bottom: 10px;
         tr{
             border-color: #eee;
             &:first-child{
@@ -238,13 +339,18 @@
                 &:last-child{
                   padding:8px 0;  
                 }
+                &:first-child{
+                    font-size: .9em;
+                }
+                b, strong{font-weight: 500;}
             }
             &.tot{
                 td{
                    padding: 8px 8px; 
-                    font-size: 14px;
+                    font-size: 16px;
                     b{
-                        color: $botella-logo;
+                        color: $aqua;
+                        
                     }
                     /*background: #f4fff8;*/
                 }
@@ -274,5 +380,43 @@
     }
 }//precarrito
 
-
+.filtros{
+    @extend .clearx;
+    padding: 0 0 20px 0px;
+    border-bottom:1px solid #ddd;
+    max-width: 780px;
+        margin: auto;
+    .fltrs {
+        @extend .clearx;
+    }
+    .btn-gris{
+        float: left;
+        font-weight: 300;
+        margin-right: 10px;
+    }
+    .form-control{
+        background-color: #f4f4f4;
+        padding: 9px 16px;
+        height: 42px;
+        max-width: 160px;
+        float: left;
+        margin-right: 10px;
+        font-weight: 300;
+    }
+    @include sols-xs{
+        padding:0; 
+        .btn-gris , .form-control{
+	        float: none;
+            margin-bottom: 20px;
+        }
+        .form-control{
+            max-width: 100%;
+	        float: none;
+            margin-bottom: 20px;
+        }
+        .fltrs .btn-gris{
+            float: right;
+        }
+    } 
+}
 //<1250= quitar cuanto faltan y arreglar botones de mini carro

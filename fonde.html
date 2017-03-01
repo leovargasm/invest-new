@@ -243,7 +243,28 @@
            </header>
             <div class="sols">
                 <div class="row">
+                   <div class="col-md-9">
+                       <div class="filtros">
+                           <button class="btn btn-gris btn-lg" type="button" data-toggle="collapse" data-target="#collapseFiltros" aria-expanded="false" aria-controls="collapseFiltros">
+                               Filtrar
+                           </button>
+                           
+                           <div class="collapse fltrs" id="collapseFiltros">
+                               <select name="" class="form-control" id="">
+                                   <option value="">Perfil de riesgo</option>
+                               </select>
+                               <select name="" class="form-control" id="">
+                                   <option value="">Plazo en meses</option>
+                               </select>
+                               <button class="btn btn-gris btn-lg">
+                                  Borrar
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="clearfix"></div>
                     <div class=" col-md-9">
+                       
                         <ul class="titulos">
                             <li class="id"><span>ID</span></li>
                             <li class="user">Solicitante</li>
@@ -261,7 +282,7 @@
                             </div><!---->
                             <div class="clearfix"></div>
                             <div class=" col-md-9">
-                           <ul class="solicitud">
+                            <ul class="solicitud">
                                <li class="sxs-top">
                                    <a href="#" >
                                         <ul class="sol"> 
@@ -300,7 +321,7 @@
                                     <a href="" class="sxs-det">Detalles</a>
                                     <input class="form-control" type="text">
                                     <button class="btn animated  wobble">
-                                        Añadir a carrito
+                                        <span class="txt_car">Añadir a carrito</span>
                                     </button>
                                 </li>
                                 <li class="porcentaje sxs-hide">
@@ -308,6 +329,103 @@
                                 </li>
                                 
                             </ul><!--card-->
+                            <ul class="solicitud">
+                               <li class="sxs-top">
+                                   <a href="#" >
+                                        <ul class="sol"> 
+                                           <li class="id"><span>12105</span></li>
+                                            <li class="user">nombreDeUsuario</li>
+                                            <li class="calif"><span>B1</span></li>
+                                            <li class="tasa">12.90%</li>
+                                            <li class="monto">$300,00</li>
+                                            <li class="destino">Pagar Deudas</li>
+                                            <li class="plazo">36</li>
+                                            <li class="faltan">$300,00</li>
+                                            <li class="resta">25 días</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="sxs-mid">
+                                  <!--<ul class="">
+                                      <li class="id"><span>12105</span></li>
+                                      <li class="user">nombreDeUsuario</li>
+                                      <li class="destino">Pagar Deudas</li>http://stackoverflow.com/questions/7031729/publish-to-s3-using-git
+                                  </ul>-->
+                                  <ul class="">
+                                        <li class="calif">B1 <small>Calif.</small></li>
+                                        <li class="tasa">12.90% <small>Tasa</small></li>
+                                        <li class="plazo">36 <small>Plazo</small></li>
+                                        <li class="monto">$300,00 <small>Monto</small></li>
+                                    </ul>
+                                </li><!--sxs-->
+                                <li class="prestar">
+                                   <div class="sxs-bar">
+                                        <span>4%</span>
+                                        <span>$148,998 por fondear</span>
+                                        <span> Faltan 23 días</span>
+                                        <div class="bg"></div>
+                                    </div>
+                                    <a href="" class="sxs-det">Detalles</a>
+                                    <input class="form-control" type="text">
+                                    <button class="btn animated  wobble">
+                                        <span class="txt_car">Añadir a carrito</span>
+                                    </button>
+                                </li>
+                                <li class="porcentaje sxs-hide">
+                                    <div class="barra"></div>
+                                </li>
+                                
+                            </ul><!--card-->
+                            <ul class="solicitud">
+                               <li class="sxs-top">
+                                   <a href="#" >
+                                        <ul class="sol"> 
+                                           <li class="id"><span>12105</span></li>
+                                            <li class="user">nombreDeUsuario</li>
+                                            <li class="calif"><span>B1</span></li>
+                                            <li class="tasa">12.90%</li>
+                                            <li class="monto">$300,00</li>
+                                            <li class="destino">Pagar Deudas</li>
+                                            <li class="plazo">36</li>
+                                            <li class="faltan">$300,00</li>
+                                            <li class="resta">25 días</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="sxs-mid">
+                                  <!--<ul class="">
+                                      <li class="id"><span>12105</span></li>
+                                      <li class="user">nombreDeUsuario</li>
+                                      <li class="destino">Pagar Deudas</li>http://stackoverflow.com/questions/7031729/publish-to-s3-using-git
+                                  </ul>-->
+                                  <ul class="">
+                                        <li class="calif">B1 <small>Calif.</small></li>
+                                        <li class="tasa">12.90% <small>Tasa</small></li>
+                                        <li class="plazo">36 <small>Plazo</small></li>
+                                        <li class="monto">$300,00 <small>Monto</small></li>
+                                    </ul>
+                                </li><!--sxs-->
+                                <li class="prestar">
+                                   <div class="sxs-bar">
+                                        <span>4%</span>
+                                        <span>$148,998 por fondear</span>
+                                        <span> Faltan 23 días</span>
+                                        <div class="bg"></div>
+                                    </div>
+                                    <a href="" class="sxs-det">Detalles</a>
+                                    <input class="form-control" type="text">
+                                    <button class="btn animated  wobble">
+                                        <span class="txt_car">Añadir a carrito</span>
+                                    </button>
+                                </li>
+                                <li class="porcentaje sxs-hide">
+                                    <div class="barra"></div>
+                                </li>
+                                
+                            </ul><!--card-->
+                            <div class="message">
+                                Estamos trabajando para traer mas solicitudes a fondeo :)
+                            </div>
                         </a>
                     </div>
                             <div class="col-md-3 visible-lg-block ">
@@ -525,6 +643,9 @@
 
     <!-- Menu Toggle Script -->
     <script>
+        $('#collapseFiltros').collapse({
+  toggle: false
+})
     $(".menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
