@@ -19,6 +19,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/calendar.css" />
     <link href="css/invest-new.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -243,13 +244,16 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class=" col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 cont-static">
+                      <p class="text-right session">
+                       Bienvenido <b>LeoSonoradinamita666</b> <span class="hidden-xs">|</span> <br class="visible-xs-block"> ultimo inicio de sesión: <b>01/01/2017</b>
+                   </p>
                        <div class="card">
                           <!--<h2>Retirar fondos</h2>-->
                            <div class="i-retirar hidden-xs"></div>
                            <!--<h1>Retirar fondos a tu cuenta</h1>-->
                            <div class="form-retirar text-center">
                                <p>Para realizar un retiro de tu cuenta tienes que agregar una cuenta <b>CLABE de 18 dígitos.</b></p>
-                               <button class="btn btn-line btn-lg" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Agregar cuenta</button>
+                               <button class="btn btn-line btn-lg animated tada" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Agregar cuenta</button>
                                <div class="reinvertir text-center">
                                    <p>¿No prefieres reinvertir?</p>
                                    <a href="">Ir a prestar</a>
@@ -494,140 +498,26 @@
         $("#wrapper").toggleClass("toggled");
         $('body, html').toggleClass('tog');
     });
-       Highcharts.chart('container', {
-    chart: {
-        type: 'areaspline',
-        height: 250,
-        
-        /*ignoreHiddenSeries: true,*/
-        marginBottom: 30
-    },
-    title: {
-        text: ''
-    },
-           getExtremesFromAll:true,
-    /*legend: {
-        layout: 'vertical',
-        align: 'left',
-        borderColor: "#999999",
-        verticalAlign: 'top',
-        x: 150,
-        y: 100,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
-    },*/
-    xAxis: {
-        categories: [
-            '6 meses',
-            '12 meses',
-            '18 meses',
-            '24 meses',
-            '30 meses',
-            '36 meses'
-        ],
-        plotBands: [{ // visualize the weekend
-            from: 4.5,
-            to: 6.5,
-            color: 'rgba(68, 170, 213, .2)'
-        }]
-    },
-    yAxis: {
-         /*minorTickInterval: 'auto',
-        minorTickLength: 5,
-        minorTickWidth: 2,*/
-        startOnTick: false,
-        /*min: 25000,*/
-        title: {
-            text: '',
-            enabled: 'null'
-        },
-        labels: {
-            align: 'left',
-            x: 0,
-            y: -2
-        }
-    },
-    tooltip: {
-        valueDecimals: 2,
-        enabled: true,
-        shared: false,
-        pointFormat: '<b>{point.y}</b><br/>',
-        valuePrefix: ' $',
-        valueSuffix: ' MX'
-    },
-    credits: {
-        enabled: false
-    },
-           legend: {
-        enabled: false
-    },
-    exporting:{
-        enabled: false
-    },
-    plotOptions: {
-        areaspline: {
-            fillOpacity: 0.5
-        },
-        series: {
-            /*pointStart:40000,*/
-            dataLabels: {
-                align: 'top',
-                enabled: false
+       function bottomPosition(){
+            if($(window).height()>$('#page-content-wrapper').height()+125){
+               $('footer').addClass('ftr-btm')
             }
-        },
-        enableMouseTracking: false
-    },
-    series: [{
-        className: 'series',
-        getExtremesFromAll:false,
-        /*name: 'John',*/
-        data: [42794.24, 46720.15, 51006.22, 55685.49, 60794.03, 66371.23]
-    }]
-});
-        $(function() {
-			
-				var cal = $( '#calendar' ).calendario( {
-						onDayClick : function( $el, $contentEl, dateProperties ) {
-
-							for( var key in dateProperties ) {
-								console.log( key + ' = ' + dateProperties[ key ] );
-							}
-
-						}/*,
-						caldata : codropsEvents*/
-					} ),
-					$month = $( '#custom-month' ).html( cal.getMonthName() ),
-					$year = $( '#custom-year' ).html( cal.getYear() );
-
-				$( '#custom-next' ).on( 'click', function() {
-					cal.gotoNextMonth( updateMonthYear );
-				} );
-				$( '#custom-prev' ).on( 'click', function() {
-					cal.gotoPreviousMonth( updateMonthYear );
-				} );
-				$( '#custom-current' ).on( 'click', function() {
-					cal.gotoNow( updateMonthYear );
-				} );
-
-				function updateMonthYear() {				
-					$month.html( cal.getMonthName() );
-					$year.html( cal.getYear() );
-				}
-				
-					
-					cal.setData( {
-						'02-01-2017' : '<div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div>',
-                        '02-11-2017' : '<div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div>',
-                        '02-10-2017' : '<div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din atrasado" title="Atrasado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div><div class="din activo" title="Pagado">$1324.78</div>',
-						'02-02-2017' : '<div class="din proceso"  title="En proceso de pago">$1324.78</div>',
-						'02-05-2017' : '<div class="din activo" title="Pagado">$1324.78</div>',
-						'02-08-2017' : '<div class="din activo" title="Pagado">$1324.78</div>',
-						'02-09-2017' : '<div class="din" title="Por cobrar">$1324.78</div>'
-					});
-				
-			
-			});
+            else{
+                $('footer').removeClass('ftr-btm')
+            }
+        }
+        $(document).ready(function(){
+           bottomPosition();
+        });
+        $('#collapseExample').on('shown.bs.collapse', function () {
+            bottomPosition();
+        }).on('hidden.bs.collapse', function(){
+            bottomPosition();
+        });
+        $(window).resize(function() {
+          bottomPosition();
+        });
+       
     </script>
 </body>
 

@@ -12,6 +12,9 @@
     b{
         font-weight: 500;
     }
+    @include bp-small{
+        font-size: .9em;
+    }
 }
 h1{
     color: $gris-medio;;
@@ -284,7 +287,7 @@ label{
     background-image: url(../img/bg-retirar.jpg);
     margin-top: -20px;
     width: 50%;
-    height: 240px; 
+    height: 245px; 
 }
 .i-resumen-sinfondeo{
     @extend .i-agregar;
@@ -314,6 +317,9 @@ label{
     margin: -20px;
     margin-top: 30px;
     padding: 20px;
+    @include bp-small{
+        margin-bottom: auto;
+        }
 }
 
 .form-retirar { 

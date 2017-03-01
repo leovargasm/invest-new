@@ -11,6 +11,9 @@ header{
         /*color: $titulos;*/
         font-size: 32px;
         padding: 8px;
+        @include bp-small{
+            display: none;
+        }
     }
     .menu-toggle{
         display: block;

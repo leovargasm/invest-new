@@ -331,36 +331,36 @@
                                     <td>204591</td>
                                     <td><strong>B7</strong></td>
                                     <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
+                                    <td class="btn_tacha"><button class="eliminar"></button></td>
                                 </tr>
                                 <tr>
                                     <td>204591</td>
                                     <td><strong>B7</strong></td>
                                     <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
+                                    <td class="btn_tacha"><button class="eliminar"></button></td>
                                 </tr>
                                 <tr>
                                     <td>204591</td>
                                     <td><strong>B7</strong></td>
                                     <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
+                                    <td class="btn_tacha"><button class="eliminar"></button></td>
                                 </tr>
                                 <tr>
                                     <td>204591</td>
                                     <td><strong>B7</strong></td>
                                     <td>$200.00</td>
-                                    <td class="btn_tacha"><button><span class="icon-tacha"></span></button></td>
+                                    <td class="btn_tacha"><button class="eliminar"></button></td>
                                 </tr>
                                 <tr class="tot">
                                    
                                     <td colspan="2" class="text-right">Total: </td>
-                                    <td colspan="2"><b>$200.00</b></td>
-                                    
+                                    <td colspan="1" ><b>$200.00</b></td>
+                                    <td></td>
                                 </tr>
                             </table>
-                            <div class="text-right">
-                                <button class="btn btn-bordered">Ver en carrito</button>
-                                <button class="btn animated bounce btn-primary">Autorizar</button>
+                            <div class="text-right btns">
+                                <button class="btn btn-line">Ver en carrito</button>
+                                <button class="btn animated bounce btn-aqua">Autorizar</button>
                             </div>
                         </div><!--precarrito-->
                         
@@ -555,7 +555,21 @@
         console.log('mgn')
         $(this).parent().find('input').val('') ;
         $(this).hide();
-    })
+    });
+        function bottomPosition(){
+            if($(window).height()>$('#page-content-wrapper').height()+125){
+               $('footer').addClass('ftr-btm')
+            }
+            else{
+                $('footer').removeClass('ftr-btm')
+            }
+        }
+        $(document).ready(function(){
+           bottomPosition();
+        });
+        $(window).resize(function() {
+          bottomPosition();
+        });
     </script>
 </body>
 

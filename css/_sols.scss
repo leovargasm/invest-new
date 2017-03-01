@@ -12,20 +12,31 @@
         font-size: .8em;
         text-align: center;
         color: #767676;
-        &.id{width: 62px;}
-        &.user{width: 90px;}
-        &.tasa{width: 69px;}
-        &.calif{ width: 57px;}
-        &.destino{ width: 110px;}
-        &.restan{ width: 69px;}
-        &.plazo{max-width:46px; padding:14px 8px; }
-        &.monto,&.faltan{ width: 73px;}
+        @include max(850px){
+                font-size: .7em;
+            }
+        &.id{width: 62px;@include max(850px){width: 57px;}}
+        &.user{width: 90px;@include max(850px){width: 67px;}}
+        &.tasa{width: 69px;@include max(850px){width: 54px;}}
+        &.calif{ width: 51px;}
+        &.destino{ width: 110px;@include max(850px){width:88px;}}
+        &.resta{ 
+            width: 69px;
+            @include max(920px){
+                display: none; 
+            }
+        }
+        &.plazo{max-width:46px; padding:14px 8px;@include max(850px){width: 57px;} }
+        &.monto,&.faltan{ width: 73px;@include max(850px){width: 58px;}}
         &.faltan{
             @include min-max(1250px,1200px){
                 display: none; 
             }
+            @include bp-med {
+                display: none; 
+            }
         }
-        &.prestar{width: 115px;}
+        &.prestar{width: 95px;}
     }
     &:after{
         content: '';
@@ -70,6 +81,10 @@
                     padding:10px 14px;
                     float: left;
                     font-size: .9em; 
+                     @include max(850px){
+                        font-size: .8em;
+                         padding:10px 9px;
+                    }
                     &.id{
                         padding-left: 8px;
                         padding-right: 8px;
@@ -86,13 +101,19 @@
                         width:8em; 
                         overflow: hidden;
                         text-overflow: ellipsis; 
+                        @include max(850px){
+                            width: 6em;
+                        }
                     }
                     &.plazo{
                         font-size: 16px;
                         padding: 8px 14px;
                     }
                     &.calif{
-                        padding: 7px 14px;
+                        padding: 7px 11px;
+                        @include max(850px){
+                            padding: 7px 12px;
+                        }
                         span{
                             display: block;
                             padding:5px 6px;
@@ -105,8 +126,17 @@
                         @include min-max(1250px,1200px){
                             display: none; 
                         }
+                        @include bp-med {
+                            display: none; 
+                        }
+                        
                     }//faltan
-                }
+                    &.resta{
+                        @include max(920px){
+                            display: none; 
+                        }
+                    }
+                }//>li
                 &:after{
                     content: '';
                     display: block; 
@@ -180,25 +210,67 @@
 }//solicitudes
 .pre-carrito{
     @extend .card;
+    padding: 0;
     font-size: .9em;
     text-align: center;
         max-width: 340px;
     h2{ 
-        font-size: 1.2em;
-        margin: -20px -20px 10px -20px;
-        padding: 10px;
+        font-size: 1.2em;   
+        /*margin: -20px -20px 10px -20px;*/
+        margin: auto;
+        padding: 10px; 
         background: #fafafa;
         font-weight: normal;
         border-bottom: 1px solid #eee;
     }
-    .table{
+    .table{ 
+        margin: auto;
         tr{
+            border-color: #eee;
             &:first-child{
                 td{
+                    color: #aaa;
                     border: 0;
                 }
             }
+            td{
+                color: #777;
+                &:last-child{
+                  padding:8px 0;  
+                }
+            }
+            &.tot{
+                td{
+                   padding: 8px 8px; 
+                    font-size: 14px;
+                    b{
+                        color: $botella-logo;
+                    }
+                    /*background: #f4fff8;*/
+                }
+            }
+            &:hover{
+                .eliminar{
+                    opacity: 1;
+                }
+            }
         }//tr
+    }
+    .eliminar{
+        border: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/tacha.svg);
+        opacity: .3;
+        
+    }
+    .btns{
+        padding: 0 10px 10px 10px;
+        .btn-aqua {
+	     padding-left:17px;
+            padding-right: 17px;
+        }
     }
 }//precarrito
 

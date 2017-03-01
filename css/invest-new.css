@@ -129,38 +129,52 @@ button:focus {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0px 0px 6px rgba(0, 174, 118, 0.2); }
 
 /* line 107, C:/xampp/htdocs/invest-new/css/_general.scss */
+.btn {
+  border: 0; }
+
+/* line 110, C:/xampp/htdocs/invest-new/css/_general.scss */
 .btn-primary {
   background: #00AE76;
   border-color: #009D6F; }
-  /* line 110, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 113, C:/xampp/htdocs/invest-new/css/_general.scss */
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #009D6F; }
 
-/* line 114, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 117, C:/xampp/htdocs/invest-new/css/_general.scss */
+.btn-aqua {
+  color: #fff;
+  background: #0ABAB7;
+  border-color: #009D6F; }
+  /* line 121, C:/xampp/htdocs/invest-new/css/_general.scss */
+  .btn-aqua:hover, .btn-aqua:focus, .btn-aqua:active {
+    background: #089b99;
+    color: #fff; }
+
+/* line 126, C:/xampp/htdocs/invest-new/css/_general.scss */
 .btn-danger {
   background: #ff6154; }
-  /* line 116, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 128, C:/xampp/htdocs/invest-new/css/_general.scss */
   .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
     background: #d84a3e; }
 
-/* line 120, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 132, C:/xampp/htdocs/invest-new/css/_general.scss */
 .btn-lg {
   padding: 9px 16px;
   font-size: 16px;
   line-height: 1.3333333;
   border-radius: 6px; }
 
-/* line 126, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 138, C:/xampp/htdocs/invest-new/css/_general.scss */
 .btn-line {
   color: #0ABAB7;
   background: transparent;
   border: 1px solid #0ABAB7; }
-  /* line 130, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 142, C:/xampp/htdocs/invest-new/css/_general.scss */
   .btn-line:hover, .btn-line:focus, .btn-line:active {
     background: #f3f3f3;
     color: #00AE76; }
 
-/* line 135, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 147, C:/xampp/htdocs/invest-new/css/_general.scss */
 .card, .solicitud, .pre-carrito {
   /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -168,16 +182,16 @@ button:focus {
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
   margin-bottom: 20px; }
-  /* line 142, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 154, C:/xampp/htdocs/invest-new/css/_general.scss */
   .card.cardtab, .cardtab.solicitud, .cardtab.pre-carrito {
     margin-bottom: 20px;
     /*padding-bottom: 0px;*/ }
 
-/* line 150, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 162, C:/xampp/htdocs/invest-new/css/_general.scss */
 .table-lc-tr tr td:last-child {
   text-align: right; }
 
-/* line 155, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 167, C:/xampp/htdocs/invest-new/css/_general.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -187,42 +201,42 @@ button:focus {
   padding-right: 10px;
   padding-left: 10px; }
 
-/* line 165, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 177, C:/xampp/htdocs/invest-new/css/_general.scss */
 .col-xs-5ths {
   width: 20%;
   float: left; }
 
-/* line 170, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 182, C:/xampp/htdocs/invest-new/css/_general.scss */
 .mt-30 {
   margin-top: 30px; }
 
 @media (min-width: 768px) {
-  /* line 174, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 186, C:/xampp/htdocs/invest-new/css/_general.scss */
   .col-sm-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 992px) {
-  /* line 181, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 193, C:/xampp/htdocs/invest-new/css/_general.scss */
   .col-md-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 1200px) {
-  /* line 188, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 200, C:/xampp/htdocs/invest-new/css/_general.scss */
   .col-lg-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 768px) {
-  /* line 200, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 212, C:/xampp/htdocs/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 5px;
     padding-right: 5px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 206, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 218, C:/xampp/htdocs/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
@@ -230,12 +244,12 @@ button:focus {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /*default so you don't need this*/
-  /* line 213, C:/xampp/htdocs/invest-new/css/_general.scss */
+  /* line 225, C:/xampp/htdocs/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
 
-/* line 215, C:/xampp/htdocs/invest-new/css/_general.scss */
+/* line 227, C:/xampp/htdocs/invest-new/css/_general.scss */
 .container-fluid, .sols {
   padding: 20px;
   max-width: 1300px; }
@@ -254,28 +268,32 @@ header {
     /*color: $titulos;*/
     font-size: 32px;
     padding: 8px; }
-  /* line 15, C:/xampp/htdocs/invest-new/css/_header.scss */
+    @media screen and (max-width: 767px) {
+      /* line 6, C:/xampp/htdocs/invest-new/css/_header.scss */
+      header h1 {
+        display: none; } }
+  /* line 18, C:/xampp/htdocs/invest-new/css/_header.scss */
   header .menu-toggle {
     display: block;
     float: right;
     border-radius: 0; }
-    /* line 19, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 22, C:/xampp/htdocs/invest-new/css/_header.scss */
     header .menu-toggle span {
       padding: 4px; }
-  /* line 23, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 26, C:/xampp/htdocs/invest-new/css/_header.scss */
   header > nav {
     padding: 7px 0px;
     /*width:460px;*/
     display: block;
     float: right; }
-    /* line 28, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 31, C:/xampp/htdocs/invest-new/css/_header.scss */
     header > nav > a {
       font-size: .9em;
       /*display: block;*/
       /*float: left;*/
       color: gray;
       padding: 9px; }
-    /* line 35, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 38, C:/xampp/htdocs/invest-new/css/_header.scss */
     header > nav .faq {
       font-size: 16px;
       font-weight: bold;
@@ -283,12 +301,12 @@ header {
       display: block;
       border: 1px solid #ccc;
       margin-left: 10px; }
-      /* line 42, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 45, C:/xampp/htdocs/invest-new/css/_header.scss */
       header > nav .faq:hover {
         text-decoration: none;
         background: #aaa;
         color: #fff; }
-    /* line 48, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 51, C:/xampp/htdocs/invest-new/css/_header.scss */
     header > nav .sal-disp {
       padding: 9px 12px;
       text-align: center;
@@ -296,7 +314,7 @@ header {
       margin-right: 10px;
       font-size: 14px;
       color: #999; }
-    /* line 56, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 59, C:/xampp/htdocs/invest-new/css/_header.scss */
     header > nav .carrito {
       float: left;
       padding: 6px 20px 6px 20px;
@@ -308,17 +326,17 @@ header {
       vertical-align: middle;
       border-radius: 6px;
       margin-right: 25px; }
-      /* line 67, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 70, C:/xampp/htdocs/invest-new/css/_header.scss */
       header > nav .carrito:hover {
         text-decoration: none;
         color: #009D6F;
         border-color: #bbb;
         background: #f3f3f3; }
-        /* line 72, C:/xampp/htdocs/invest-new/css/_header.scss */
+        /* line 75, C:/xampp/htdocs/invest-new/css/_header.scss */
         header > nav .carrito:hover .num .border {
           background: #FC6548;
           color: #fff; }
-      /* line 77, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 80, C:/xampp/htdocs/invest-new/css/_header.scss */
       header > nav .carrito .num {
         position: absolute;
         border-radius: 50%;
@@ -326,7 +344,7 @@ header {
         right: -25px;
         top: -15px;
         font-weight: 600; }
-        /* line 84, C:/xampp/htdocs/invest-new/css/_header.scss */
+        /* line 87, C:/xampp/htdocs/invest-new/css/_header.scss */
         header > nav .carrito .num .border {
           position: relative;
           color: #FC6548;
@@ -334,53 +352,53 @@ header {
           padding: 3px 9px;
           border-radius: 50%;
           border: 2px solid #FC6548; }
-      /* line 94, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 97, C:/xampp/htdocs/invest-new/css/_header.scss */
       header > nav .carrito span {
         display: block;
         float: left; }
-      /* line 98, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 101, C:/xampp/htdocs/invest-new/css/_header.scss */
       header > nav .carrito span.icon-cart {
         font-size: 22px;
         margin: 5px; }
-      /* line 102, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 105, C:/xampp/htdocs/invest-new/css/_header.scss */
       header > nav .carrito .descr {
         padding: 6px 0px; }
-  /* line 107, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 110, C:/xampp/htdocs/invest-new/css/_header.scss */
   header .dropdown {
     display: inline-block;
     margin-left: 10px; }
-  /* line 111, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 114, C:/xampp/htdocs/invest-new/css/_header.scss */
   header .btn {
     color: #aaa; }
-  /* line 114, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 117, C:/xampp/htdocs/invest-new/css/_header.scss */
   header .logo {
     margin-top: 2px;
     margin-left: 10px; }
 
-/* line 119, C:/xampp/htdocs/invest-new/css/_header.scss */
+/* line 122, C:/xampp/htdocs/invest-new/css/_header.scss */
 .logo {
   float: left;
   max-width: 160px; }
 
-/* line 123, C:/xampp/htdocs/invest-new/css/_header.scss */
+/* line 126, C:/xampp/htdocs/invest-new/css/_header.scss */
 header.affix, header.s-affix {
   position: relative;
   margin-bottom: 30px;
   background: #fff;
   border-bottom: 1px solid #ddd;
   z-index: 99999; }
-  /* line 129, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 132, C:/xampp/htdocs/invest-new/css/_header.scss */
   header.affix nav > ul, header.s-affix nav > ul {
     margin-bottom: 0px;
     float: right; }
-    /* line 132, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 135, C:/xampp/htdocs/invest-new/css/_header.scss */
     header.affix nav > ul > li, header.s-affix nav > ul > li {
       float: left;
       list-style: none;
       position: relative;
       padding: 7px; }
 
-/* line 140, C:/xampp/htdocs/invest-new/css/_header.scss */
+/* line 143, C:/xampp/htdocs/invest-new/css/_header.scss */
 .icon-ham {
   background: url(../img/ham.svg) no-repeat;
   display: block;
@@ -388,11 +406,11 @@ header.affix, header.s-affix {
   width: 60px; }
 
 @media screen and (max-width: 767px) {
-  /* line 147, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 150, C:/xampp/htdocs/invest-new/css/_header.scss */
   .menu-wrap a {
     color: #b8b7ad; }
   /* Menu Button */
-  /* line 151, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 154, C:/xampp/htdocs/invest-new/css/_header.scss */
   .menu-button {
     position: fixed;
     z-index: 1000;
@@ -405,7 +423,7 @@ header.affix, header.s-affix {
     font-size: 1.5em;
     color: transparent;
     background: transparent; }
-  /* line 164, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 167, C:/xampp/htdocs/invest-new/css/_header.scss */
   .menu-button::before {
     position: absolute;
     top: 0.5em;
@@ -414,11 +432,11 @@ header.affix, header.s-affix {
     left: 0.5em;
     background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
     content: ''; }
-  /* line 173, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 176, C:/xampp/htdocs/invest-new/css/_header.scss */
   .menu-button:hover {
     opacity: 0.6; }
   /* Close Button */
-  /* line 177, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 180, C:/xampp/htdocs/invest-new/css/_header.scss */
   .close-button {
     width: 1em;
     height: 1em;
@@ -431,7 +449,7 @@ header.affix, header.s-affix {
     border: none;
     background: transparent;
     color: transparent; }
-  /* line 190, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 193, C:/xampp/htdocs/invest-new/css/_header.scss */
   .close-button::before,
   .close-button::after {
     content: '';
@@ -441,16 +459,16 @@ header.affix, header.s-affix {
     top: 0;
     left: 50%;
     background: #bdc3c7; }
-  /* line 200, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 203, C:/xampp/htdocs/invest-new/css/_header.scss */
   .close-button::before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
-  /* line 204, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 207, C:/xampp/htdocs/invest-new/css/_header.scss */
   .close-button::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   /* Menu */
-  /* line 209, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 212, C:/xampp/htdocs/invest-new/css/_header.scss */
   .menu-wrap {
     margin-left: -10px;
     position: fixed;
@@ -467,19 +485,19 @@ header.affix, header.s-affix {
     transition: transform 0.4s;
     -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
-    /* line 225, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 228, C:/xampp/htdocs/invest-new/css/_header.scss */
     .menu-wrap ul {
       width: 100%; }
-      /* line 227, C:/xampp/htdocs/invest-new/css/_header.scss */
+      /* line 230, C:/xampp/htdocs/invest-new/css/_header.scss */
       .menu-wrap ul li {
         border-bottom: 1px solid #494d5c;
         width: 100%;
         float: none; }
-        /* line 231, C:/xampp/htdocs/invest-new/css/_header.scss */
+        /* line 234, C:/xampp/htdocs/invest-new/css/_header.scss */
         .menu-wrap ul li a {
           padding: 15px 20px; }
   /* Shown menu */
-  /* line 240, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 243, C:/xampp/htdocs/invest-new/css/_header.scss */
   .show-menu .menu-wrap {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -487,7 +505,7 @@ header.affix, header.s-affix {
     transition: transform 0.4s;
     -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
-  /* line 248, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 251, C:/xampp/htdocs/invest-new/css/_header.scss */
   .show-menu .content::before {
     opacity: 1;
     -webkit-transition: opacity 0.4s;
@@ -511,15 +529,15 @@ header.affix, header.s-affix {
         margin-left: 40px;
     }
 }*/
-/* line 273, C:/xampp/htdocs/invest-new/css/_header.scss */
+/* line 276, C:/xampp/htdocs/invest-new/css/_header.scss */
 .dropdown-menu {
   right: 0;
   padding: 0;
   left: auto; }
-  /* line 277, C:/xampp/htdocs/invest-new/css/_header.scss */
+  /* line 280, C:/xampp/htdocs/invest-new/css/_header.scss */
   .dropdown-menu > li {
     border-bottom: 1px solid #ddd; }
-    /* line 279, C:/xampp/htdocs/invest-new/css/_header.scss */
+    /* line 282, C:/xampp/htdocs/invest-new/css/_header.scss */
     .dropdown-menu > li > a {
       text-align: right;
       display: block;
@@ -888,179 +906,183 @@ input.complete {
   /* line 12, C:/xampp/htdocs/invest-new/css/_content.scss */
   .session b {
     font-weight: 500; }
+  @media screen and (max-width: 767px) {
+    /* line 10, C:/xampp/htdocs/invest-new/css/_content.scss */
+    .session {
+      font-size: .9em; } }
 
-/* line 16, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 19, C:/xampp/htdocs/invest-new/css/_content.scss */
 h1 {
   color: #D1D1D1;
   font-weight: 300;
   font-size: 20px;
   margin: 0px auto 10px auto; }
 
-/* line 22, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 25, C:/xampp/htdocs/invest-new/css/_content.scss */
 .border-column {
   padding: 0; }
-  /* line 24, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 27, C:/xampp/htdocs/invest-new/css/_content.scss */
   .border-column .row {
     margin: 0; }
-  /* line 27, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 30, C:/xampp/htdocs/invest-new/css/_content.scss */
   .border-column .col-sm-3, .border-column .col-sm-4 {
     border-right: 1px solid #ddd;
     min-height: 160px;
     /*padding-top: 20px;
         padding-bottom: 20px;*/
     padding: 20px 10px; }
-    /* line 33, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 36, C:/xampp/htdocs/invest-new/css/_content.scss */
     .border-column .col-sm-3:last-child, .border-column .col-sm-4:last-child {
       border: 0;
       /*padding-right: 30px;*/ }
-    /* line 37, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 40, C:/xampp/htdocs/invest-new/css/_content.scss */
     .border-column .col-sm-3:first-child, .border-column .col-sm-4:first-child {
       /*padding-left: 30px;*/ }
     @media screen and (max-width: 767px) {
-      /* line 27, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 30, C:/xampp/htdocs/invest-new/css/_content.scss */
       .border-column .col-sm-3, .border-column .col-sm-4 {
         padding: 0;
         min-height: auto; } }
-  /* line 46, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 49, C:/xampp/htdocs/invest-new/css/_content.scss */
   .border-column.ad .col-sm-3, .border-column.ad .col-sm-4 {
     min-height: auto;
     padding: 0px; }
-    /* line 51, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 54, C:/xampp/htdocs/invest-new/css/_content.scss */
     .border-column.ad .col-sm-3:first-child a, .border-column.ad .col-sm-3:last-child a, .border-column.ad .col-sm-4:first-child a, .border-column.ad .col-sm-4:last-child a {
       line-height: 34px; }
-    /* line 55, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 58, C:/xampp/htdocs/invest-new/css/_content.scss */
     .border-column.ad .col-sm-3 a, .border-column.ad .col-sm-4 a {
       padding: 10px 0px;
       display: block;
       color: #6B6B6B;
       font-size: 12px; }
-      /* line 60, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 63, C:/xampp/htdocs/invest-new/css/_content.scss */
       .border-column.ad .col-sm-3 a:hover, .border-column.ad .col-sm-4 a:hover {
         background: #f1f1f1; }
 
-/* line 67, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 70, C:/xampp/htdocs/invest-new/css/_content.scss */
 .lc-tr {
   margin-right: -10px; }
 
-/* line 71, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 74, C:/xampp/htdocs/invest-new/css/_content.scss */
 .table-lc-tr {
   margin: -20px -10px 10px -10px; }
-  /* line 73, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 76, C:/xampp/htdocs/invest-new/css/_content.scss */
   .table-lc-tr tbody > tr {
     border-right: 1px solid #ddd; }
-    /* line 75, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 78, C:/xampp/htdocs/invest-new/css/_content.scss */
     .table-lc-tr tbody > tr > td {
       padding: 15px;
       color: #6B6B6B; }
 
-/* line 81, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 84, C:/xampp/htdocs/invest-new/css/_content.scss */
 .dash-dat {
   text-align: center; }
-  /* line 83, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 86, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat p {
     /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;*/
     font-size: 18px;
     text-align: center;
     font-weight: 400;
     padding: 20px 0px 0px 0px; }
-  /* line 90, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 93, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat label {
     font-size: 11px; }
-  /* line 93, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 96, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat small {
     font-weight: 400;
     display: block;
     font-size: 12px; }
-  /* line 99, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 102, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat.valor-cuenta p {
     padding-top: 10px;
     font-size: 22px;
     font-weight: 500; }
     @media screen and (max-width: 992px) {
-      /* line 99, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 102, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat.valor-cuenta p {
         font-size: 18px; } }
     @media screen and (max-width: 767px) {
-      /* line 99, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 102, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat.valor-cuenta p {
         font-size: 24px; } }
-  /* line 110, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 113, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat.valor-cuenta label {
     font-size: 16px; }
-  /* line 116, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 119, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat.rendimiento p {
     padding-top: 10px;
     font-size: 22px;
     font-weight: 500;
     color: #00E00B; }
-  /* line 122, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 125, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-dat.rendimiento label {
     font-size: 16px; }
   @media screen and (max-width: 767px) {
-    /* line 81, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 84, C:/xampp/htdocs/invest-new/css/_content.scss */
     .dash-dat {
       padding: 5px 10px;
       border-bottom: 1px solid #ddd; }
-      /* line 129, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 132, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat:after {
         content: '';
         display: block;
         clear: both; }
-      /* line 134, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 137, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat.valor-cuenta {
         text-align: center; }
-        /* line 136, C:/xampp/htdocs/invest-new/css/_content.scss */
+        /* line 139, C:/xampp/htdocs/invest-new/css/_content.scss */
         .dash-dat.valor-cuenta p {
           float: none;
           padding: 0; }
-        /* line 141, C:/xampp/htdocs/invest-new/css/_content.scss */
+        /* line 144, C:/xampp/htdocs/invest-new/css/_content.scss */
         .dash-dat.valor-cuenta label {
           float: none;
           font-size: 16px; }
-      /* line 146, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 149, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat.rendimiento {
         text-align: center;
         border: 0; }
-        /* line 149, C:/xampp/htdocs/invest-new/css/_content.scss */
+        /* line 152, C:/xampp/htdocs/invest-new/css/_content.scss */
         .dash-dat.rendimiento p {
           float: none;
           padding: 0; }
-        /* line 153, C:/xampp/htdocs/invest-new/css/_content.scss */
+        /* line 156, C:/xampp/htdocs/invest-new/css/_content.scss */
         .dash-dat.rendimiento label {
           float: none;
           font-size: 16px; }
-      /* line 158, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 161, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat label {
         max-width: 60%;
         float: left;
         font-size: 16px;
         margin-top: 5px;
         text-align: left; }
-      /* line 165, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 168, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat p {
         float: right;
         padding: 0;
         margin: 0;
         font-size: 14px; }
-      /* line 171, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 174, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-dat small {
         display: block;
         margin: 0;
         text-align: right;
         margin-top: -5px; } }
 
-/* line 179, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 182, C:/xampp/htdocs/invest-new/css/_content.scss */
 .dash-fon {
   text-align: center;
   min-height: 160px; }
-  /* line 182, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 185, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-fon .btn {
     color: #fff;
     background: #FC6548; }
-  /* line 186, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 189, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-fon hr {
     margin: 10px -20px; }
-  /* line 189, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 192, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-fon span {
     font-weight: bold;
     color: #FC6548;
@@ -1068,36 +1090,36 @@ h1 {
     background: #eee;
     padding: 6px 10px 6px 7px;
     border-radius: 10px; }
-  /* line 197, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 200, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-fon .fon {
     padding: 10px 0px; }
-  /* line 200, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 203, C:/xampp/htdocs/invest-new/css/_content.scss */
   .dash-fon .colocado {
     text-align: center;
     font-size: 14px;
     margin-top: 22px;
     margin-bottom: 0; }
     @media screen and (max-width: 1200px) {
-      /* line 200, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 203, C:/xampp/htdocs/invest-new/css/_content.scss */
       .dash-fon .colocado {
         font-size: 12px; } }
 
-/* line 210, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 213, C:/xampp/htdocs/invest-new/css/_content.scss */
 .visible-xs .dash-fon {
   min-height: auto; }
 
-/* line 214, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 217, C:/xampp/htdocs/invest-new/css/_content.scss */
 label {
   color: #6B6B6B; }
 
 @media screen and (min-width: 1200px) {
-  /* line 218, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 221, C:/xampp/htdocs/invest-new/css/_content.scss */
   .cont-static {
     max-width: 800px;
     margin: auto;
     float: none; } }
 
-/* line 224, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 227, C:/xampp/htdocs/invest-new/css/_content.scss */
 .contrato {
   height: 300px;
   background: #fafafa;
@@ -1109,10 +1131,10 @@ label {
   font-size: .9em;
   margin: 20px auto; }
 
-/* line 236, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 239, C:/xampp/htdocs/invest-new/css/_content.scss */
 .card, .solicitud, .pre-carrito {
   overflow: hidden; }
-  /* line 238, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 241, C:/xampp/htdocs/invest-new/css/_content.scss */
   .card h2, .solicitud h2, .pre-carrito h2 {
     font-size: 1.2em;
     margin: -20px -20px 10px -20px;
@@ -1122,7 +1144,7 @@ label {
     color: #6B6B6B;
     border-bottom: 1px solid #eee; }
 
-/* line 248, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 251, C:/xampp/htdocs/invest-new/css/_content.scss */
 .i-agregar, .i-retirar, .i-resumen-sinfondeo, .i-resumen-sinprestar {
   width: 40%;
   float: left;
@@ -1132,42 +1154,42 @@ label {
   /*background-position: 10px 10px;*/
   background-size: cover; }
 
-/* line 257, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 260, C:/xampp/htdocs/invest-new/css/_content.scss */
 .clabe {
   display: inline-block;
   background: #f1f1f1;
   padding: 10px;
   border-radius: 4px; }
 
-/* line 263, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 266, C:/xampp/htdocs/invest-new/css/_content.scss */
 .cod {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
-/* line 266, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 269, C:/xampp/htdocs/invest-new/css/_content.scss */
 .lst_add {
   padding-left: 48px;
   padding-top: 12px;
   padding-bottom: 20px;
   background: url(https://s3-us-west-2.amazonaws.com/assets-site-v2/panel/add2.png) left top no-repeat; }
-  /* line 271, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 274, C:/xampp/htdocs/invest-new/css/_content.scss */
   .lst_add li {
     list-style: none;
     padding: 2px;
     /*margin-bottom: 23px;*/
     min-height: 78px; }
 
-/* line 279, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 282, C:/xampp/htdocs/invest-new/css/_content.scss */
 .collapse {
   /* transition: none;*/ }
 
-/* line 282, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 285, C:/xampp/htdocs/invest-new/css/_content.scss */
 .i-retirar {
   background-image: url(../img/bg-retirar.jpg);
   margin-top: -20px;
   width: 50%;
-  height: 240px; }
+  height: 245px; }
 
-/* line 289, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 292, C:/xampp/htdocs/invest-new/css/_content.scss */
 .i-resumen-sinfondeo, .i-resumen-sinprestar {
   background-image: url(../img/on-b-2.svg);
   background-size: cover;
@@ -1177,50 +1199,54 @@ label {
   width: 40%;
   height: 240px; }
 
-/* line 299, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 302, C:/xampp/htdocs/invest-new/css/_content.scss */
 .i-resumen-sinprestar {
   background-image: url(../img/on-b-1.svg);
   background-size: contain; }
 
-/* line 304, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 307, C:/xampp/htdocs/invest-new/css/_content.scss */
 .resumen-statico {
   margin: auto;
   width: 60%;
   float: left; }
   @media screen and (max-width: 767px) {
-    /* line 304, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 307, C:/xampp/htdocs/invest-new/css/_content.scss */
     .resumen-statico {
       width: 100%; } }
 
-/* line 312, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 315, C:/xampp/htdocs/invest-new/css/_content.scss */
 .reinvertir {
   background: #eee;
   margin: -20px;
   margin-top: 30px;
   padding: 20px; }
+  @media screen and (max-width: 767px) {
+    /* line 315, C:/xampp/htdocs/invest-new/css/_content.scss */
+    .reinvertir {
+      margin-bottom: auto; } }
 
-/* line 319, C:/xampp/htdocs/invest-new/css/_content.scss */
+/* line 325, C:/xampp/htdocs/invest-new/css/_content.scss */
 .form-retirar {
   /*prueba*/
   margin: auto;
   width: 50%;
   float: left;
   margin-bottom: -20px; }
-  /* line 325, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 331, C:/xampp/htdocs/invest-new/css/_content.scss */
   .form-retirar .form-group {
     max-width: 200px;
     margin: auto;
     margin-bottom: 10px; }
     @media screen and (max-width: 767px) {
-      /* line 325, C:/xampp/htdocs/invest-new/css/_content.scss */
+      /* line 331, C:/xampp/htdocs/invest-new/css/_content.scss */
       .form-retirar .form-group {
         max-width: 100%; } }
-  /* line 333, C:/xampp/htdocs/invest-new/css/_content.scss */
+  /* line 339, C:/xampp/htdocs/invest-new/css/_content.scss */
   .form-retirar .form-control {
     display: inline-block;
     /*max-width: 180px;*/ }
   @media screen and (max-width: 767px) {
-    /* line 319, C:/xampp/htdocs/invest-new/css/_content.scss */
+    /* line 325, C:/xampp/htdocs/invest-new/css/_content.scss */
     .form-retirar {
       width: 100%; } }
 
@@ -1762,6 +1788,10 @@ label {
       .sidebar-nav > .sidebar-brand a:hover {
         color: #fff;
         background: none; }
+      /* line 281, C:/xampp/htdocs/invest-new/css/_aside.scss */
+      .sidebar-nav > .sidebar-brand a img {
+        max-width: 150px;
+        margin-top: -10px; }
 
 /* Sidebar Styles */
 /* landscape */
@@ -2415,58 +2445,94 @@ footer {
     font-size: .8em;
     text-align: center;
     color: #767676; }
-    /* line 15, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    @media screen and (max-width: 850px) {
+      /* line 8, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .titulos li {
+        font-size: .7em; } }
+    /* line 18, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.id {
       width: 62px; }
-    /* line 16, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      @media screen and (max-width: 850px) {
+        /* line 18, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.id {
+          width: 57px; } }
+    /* line 19, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.user {
       width: 90px; }
-    /* line 17, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      @media screen and (max-width: 850px) {
+        /* line 19, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.user {
+          width: 67px; } }
+    /* line 20, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.tasa {
       width: 69px; }
-    /* line 18, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      @media screen and (max-width: 850px) {
+        /* line 20, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.tasa {
+          width: 54px; } }
+    /* line 21, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.calif {
-      width: 57px; }
-    /* line 19, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      width: 51px; }
+    /* line 22, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.destino {
       width: 110px; }
-    /* line 20, C:/xampp/htdocs/invest-new/css/_sols.scss */
-    .titulos li.restan {
+      @media screen and (max-width: 850px) {
+        /* line 22, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.destino {
+          width: 88px; } }
+    /* line 23, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    .titulos li.resta {
       width: 69px; }
-    /* line 21, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      @media screen and (max-width: 920px) {
+        /* line 23, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.resta {
+          display: none; } }
+    /* line 29, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.plazo {
       max-width: 46px;
       padding: 14px 8px; }
-    /* line 22, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      @media screen and (max-width: 850px) {
+        /* line 29, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.plazo {
+          width: 57px; } }
+    /* line 30, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.monto, .titulos li.faltan {
       width: 73px; }
+      @media screen and (max-width: 850px) {
+        /* line 30, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .titulos li.monto, .titulos li.faltan {
+          width: 58px; } }
     @media screen and (max-width: 1250px) and (min-width: 1200px) {
-      /* line 23, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 31, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .titulos li.faltan {
         display: none; } }
-    /* line 28, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    @media screen and (max-width: 992px) {
+      /* line 31, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .titulos li.faltan {
+        display: none; } }
+    /* line 39, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .titulos li.prestar {
-      width: 115px; }
-  /* line 30, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      width: 95px; }
+  /* line 41, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .titulos:after {
     content: '';
     display: block;
     clear: both; }
 
-/* line 38, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 49, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .sols .col-md-9 {
   max-width: 780px; }
   @media screen and (max-width: 1200px) {
-    /* line 38, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 49, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .sols .col-md-9 {
       max-width: 100%;
       width: 100%; } }
 
-/* line 47, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 58, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .sol {
   display: block; }
 
-/* line 50, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 61, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .solicitud {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   max-width: 780px;
@@ -2474,34 +2540,39 @@ footer {
   margin: 0;
   margin-bottom: 10px; }
   @media screen and (max-width: 1200px) {
-    /* line 50, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 61, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud {
       margin-left: auto;
       margin-right: auto; } }
-  /* line 61, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 72, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud > li {
     float: left; }
-    /* line 63, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 74, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li a {
       display: block;
       color: #767676;
       border-right: 1px solid #fff; }
-      /* line 68, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 79, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li a > ul > li {
         margin: 0;
         padding: 10px 14px;
         float: left;
         font-size: .9em; }
-        /* line 73, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        @media screen and (max-width: 850px) {
+          /* line 79, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li {
+            font-size: .8em;
+            padding: 10px 9px; } }
+        /* line 88, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.id {
           padding-left: 8px;
           padding-right: 8px; }
-          /* line 76, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 91, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.id span {
             background: #f1f1f1;
             padding: 5px;
             border-radius: 4px; }
-        /* line 82, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 97, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.user {
           font-size: .8em;
           line-height: 1.7em;
@@ -2509,14 +2580,22 @@ footer {
           width: 8em;
           overflow: hidden;
           text-overflow: ellipsis; }
-        /* line 90, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          @media screen and (max-width: 850px) {
+            /* line 97, C:/xampp/htdocs/invest-new/css/_sols.scss */
+            .solicitud > li a > ul > li.user {
+              width: 6em; } }
+        /* line 108, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.plazo {
           font-size: 16px;
           padding: 8px 14px; }
-        /* line 94, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 112, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif {
-          padding: 7px 14px; }
-          /* line 96, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          padding: 7px 11px; }
+          @media screen and (max-width: 850px) {
+            /* line 112, C:/xampp/htdocs/invest-new/css/_sols.scss */
+            .solicitud > li a > ul > li.calif {
+              padding: 7px 12px; } }
+          /* line 117, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.calif span {
             display: block;
             padding: 5px 6px;
@@ -2524,38 +2603,46 @@ footer {
             color: #0ABAB7;
             border-radius: 100%; }
         @media screen and (max-width: 1250px) and (min-width: 1200px) {
-          /* line 104, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 125, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
-      /* line 110, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        @media screen and (max-width: 992px) {
+          /* line 125, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li.faltan {
+            display: none; } }
+        @media screen and (max-width: 920px) {
+          /* line 134, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li.resta {
+            display: none; } }
+      /* line 140, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li a > ul:after {
         content: '';
         display: block;
         clear: both; }
-      /* line 117, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 147, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li a:hover {
         /*background: #e8efef;*/
         background: #f4fff8;
         border-right: 1px solid #dae0e0; }
-    /* line 123, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 153, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.prestar {
       max-width: 200px;
       padding: 6px 10px;
       position: relative; }
-      /* line 127, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 157, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .form-control {
         padding: 4px 33px 4px 4px;
         margin: 0;
         height: 28px;
         max-height: 40px;
         max-width: 85px; }
-        /* line 133, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 163, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.prestar .form-control:focus {
           border-color: #0ABAB7;
           outline: 0;
           -webkit-box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6);
           box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
-      /* line 140, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 170, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .btn {
         display: none;
         position: absolute;
@@ -2572,43 +2659,84 @@ footer {
         -moz-animation-duration: .5s;
         animation-duration: .5s;
         border-left: 1px solid #00AE76; }
-        /* line 156, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 186, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn:hover {
           background-color: #00E00B; }
-    /* line 161, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 191, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.porcentaje {
       width: 100%;
       background: #dedede;
       height: 4px; }
-      /* line 165, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 195, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.porcentaje .barra {
         width: 40%;
         background: #00E00B;
         height: 4px; }
-  /* line 172, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 202, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud:after {
     content: '';
     display: block;
     clear: both; }
-  /* line 177, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 207, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud:hover {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); }
 
-/* line 181, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 211, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .pre-carrito {
+  padding: 0;
   font-size: .9em;
   text-align: center;
   max-width: 340px; }
-  /* line 186, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 217, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .pre-carrito h2 {
     font-size: 1.2em;
-    margin: -20px -20px 10px -20px;
+    /*margin: -20px -20px 10px -20px;*/
+    margin: auto;
     padding: 10px;
     background: #fafafa;
     font-weight: normal;
     border-bottom: 1px solid #eee; }
-  /* line 197, C:/xampp/htdocs/invest-new/css/_sols.scss */
-  .pre-carrito .table tr:first-child td {
-    border: 0; }
+  /* line 226, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  .pre-carrito .table {
+    margin: auto; }
+    /* line 228, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    .pre-carrito .table tr {
+      border-color: #eee; }
+      /* line 231, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .pre-carrito .table tr:first-child td {
+        color: #aaa;
+        border: 0; }
+      /* line 236, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .pre-carrito .table tr td {
+        color: #777; }
+        /* line 238, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .pre-carrito .table tr td:last-child {
+          padding: 8px 0; }
+      /* line 243, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .pre-carrito .table tr.tot td {
+        padding: 8px 8px;
+        font-size: 14px;
+        /*background: #f4fff8;*/ }
+        /* line 246, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .pre-carrito .table tr.tot td b {
+          color: #00AE76; }
+      /* line 253, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .pre-carrito .table tr:hover .eliminar {
+        opacity: 1; }
+  /* line 259, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  .pre-carrito .eliminar {
+    border: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/tacha.svg);
+    opacity: .3; }
+  /* line 268, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  .pre-carrito .btns {
+    padding: 0 10px 10px 10px; }
+    /* line 270, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    .pre-carrito .btns .btn-aqua {
+      padding-left: 17px;
+      padding-right: 17px; }
 
 /*# sourceMappingURL=invest-new.css.map */

@@ -35,7 +35,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand hidden-xs">
                     <a href="#">
-                       <img src="img/logo.png" alt="">
+                       <img src="img/logo-blanco.svg" alt="">
                     </a>
                     
                 </li>
@@ -741,19 +741,19 @@
                      });
             }//if
 			});
-        $(document).ready(function(){
-           if($(window).height()>$('#page-content-wrapper').height()+125){
+        function bottomPosition(){
+            if($(window).height()>$('#page-content-wrapper').height()+125){
                $('footer').addClass('ftr-btm')
-            }else{
-                $('footer').romeveClass('ftr-btm')
             }
+            else{
+                $('footer').removeClass('ftr-btm')
+            }
+        }
+        $(document).ready(function(){
+           bottomPosition();
         });
         $(window).resize(function() {
-          if($(window).height()>$('#page-content-wrapper').height()+125){
-               $('footer').addClass('ftr-btm')
-            }else{
-                $('footer').romeveClass('ftr-btm')
-            }
+          bottomPosition();
         });
     </script>
 </body>
