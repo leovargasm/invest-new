@@ -177,7 +177,7 @@ button:focus {
   padding: 9px 16px;
   font-size: 16px;
   line-height: 1.3333333;
-  border-radius: 6px; }
+  border-radius: 4px; }
 
 /* line 153, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-line {
@@ -187,9 +187,10 @@ button:focus {
   /* line 157, /Users/Leo/workspace/invest-new/css/_general.scss */
   .btn-line:hover, .btn-line:focus, .btn-line:active {
     background: #f3f3f3;
-    color: #00AE76; }
+    color: #089b99;
+    border-color: #089b99; }
 
-/* line 162, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 163, /Users/Leo/workspace/invest-new/css/_general.scss */
 .card, .solicitud, .message, .pre-carrito {
   /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -197,16 +198,16 @@ button:focus {
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
   margin-bottom: 20px; }
-  /* line 169, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 170, /Users/Leo/workspace/invest-new/css/_general.scss */
   .card.cardtab, .cardtab.solicitud, .cardtab.message, .cardtab.pre-carrito {
     margin-bottom: 20px;
     /*padding-bottom: 0px;*/ }
 
-/* line 177, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 178, /Users/Leo/workspace/invest-new/css/_general.scss */
 .table-lc-tr tr td:last-child {
   text-align: right; }
 
-/* line 182, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 183, /Users/Leo/workspace/invest-new/css/_general.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -216,42 +217,42 @@ button:focus {
   padding-right: 10px;
   padding-left: 10px; }
 
-/* line 192, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 193, /Users/Leo/workspace/invest-new/css/_general.scss */
 .col-xs-5ths {
   width: 20%;
   float: left; }
 
-/* line 197, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 198, /Users/Leo/workspace/invest-new/css/_general.scss */
 .mt-30 {
   margin-top: 30px; }
 
 @media (min-width: 768px) {
-  /* line 201, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 202, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-sm-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 992px) {
-  /* line 208, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 209, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-md-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 1200px) {
-  /* line 215, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 216, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-lg-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 768px) {
-  /* line 227, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 228, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 5px;
     padding-right: 5px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 233, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 234, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
@@ -259,12 +260,12 @@ button:focus {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /*default so you don't need this*/
-  /* line 240, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 241, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
 
-/* line 242, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 243, /Users/Leo/workspace/invest-new/css/_general.scss */
 .container-fluid, .sols {
   padding: 20px;
   max-width: 1300px;
@@ -2466,11 +2467,15 @@ footer {
     /* line 10, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos {
       margin: auto; } }
+  @media screen and (max-width: 767px) {
+    /* line 10, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .titulos {
+      max-width: 530px; } }
   @media screen and (max-width: 570px) {
     /* line 10, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos {
       display: none; } }
-  /* line 20, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 23, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .titulos li {
     margin: 0;
     padding: 14px;
@@ -2479,171 +2484,191 @@ footer {
     text-align: center;
     color: #767676; }
     @media screen and (max-width: 850px) {
-      /* line 20, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 23, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .titulos li {
         font-size: .7em; } }
-    /* line 30, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 33, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.id {
       width: 62px; }
       @media screen and (max-width: 850px) {
-        /* line 30, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 33, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.id {
           width: 57px; } }
-    /* line 31, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 34, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.user {
       width: 90px; }
       @media screen and (max-width: 850px) {
-        /* line 31, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 34, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.user {
           width: 67px; } }
-    /* line 32, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 35, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.tasa {
       width: 69px; }
       @media screen and (max-width: 850px) {
-        /* line 32, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 35, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.tasa {
           width: 54px; } }
-    /* line 33, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 36, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.calif {
       width: 51px; }
-    /* line 34, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 37, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.destino {
       width: 110px; }
       @media screen and (max-width: 850px) {
-        /* line 34, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 37, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.destino {
           width: 88px; } }
-    /* line 35, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 38, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.resta {
       width: 69px; }
       @media screen and (max-width: 920px) {
-        /* line 35, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 38, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.resta {
           display: none; } }
-    /* line 41, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 44, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.plazo {
       max-width: 46px;
       padding: 14px 8px; }
       @media screen and (max-width: 850px) {
-        /* line 41, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 44, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.plazo {
           width: 57px; } }
-    /* line 42, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 45, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.monto, .titulos li.faltan {
       width: 73px; }
       @media screen and (max-width: 850px) {
-        /* line 42, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 45, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .titulos li.monto, .titulos li.faltan {
           width: 58px; } }
     @media screen and (max-width: 1250px) and (min-width: 1200px) {
-      /* line 43, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 46, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .titulos li.faltan {
         display: none; } }
     @media screen and (max-width: 992px) {
-      /* line 43, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 46, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .titulos li.faltan {
         display: none; } }
-    /* line 51, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 54, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .titulos li.prestar {
       width: 95px; }
-  /* line 53, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 56, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .titulos:after {
     content: '';
     display: block;
     clear: both; }
 
-/* line 59, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 62, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .sols {
   /*@include max(1200px){
         margin: auto;
         max-width: 900px;
     }*/ }
-  /* line 61, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 64, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .sols .col-md-9 {
     max-width: 780px; }
     @media screen and (max-width: 1200px) {
-      /* line 61, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 64, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .sols .col-md-9 {
         max-width: 100%;
         width: 100%; } }
 
-/* line 74, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 77, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .sol {
   display: block; }
 
-/* line 77, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 80, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .solicitud {
+  position: relative;
+  overflow: visible;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   max-width: 780px;
   padding: 0px;
   margin: 0;
   margin-bottom: 10px; }
+  /* line 88, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .solicitud.yalep {
+    background: #e9e9e9; }
+    /* line 90, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud.yalep > li a {
+      border-right: 1px solid #ddd; }
   @media screen and (max-width: 1200px) {
-    /* line 77, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 80, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud {
       margin-left: auto;
       margin-right: auto; } }
-  /* line 88, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  @media screen and (max-width: 767px) {
+    /* line 80, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud {
+      max-width: 530px; } }
+  /* line 102, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud > li {
     float: left; }
     @media screen and (max-width: 570px) {
-      /* line 88, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 102, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li {
         float: none; } }
-    @media screen and (max-width: 570px) {
-      /* line 93, /Users/Leo/workspace/invest-new/css/_sols.scss */
-      .solicitud > li.sxs-top {
-        background: #fafafa;
-        border-bottom: 1px solid #eee; } }
-    /* line 99, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 107, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud > li.sxs-top {
+      background: #fff; }
+      @media screen and (max-width: 570px) {
+        /* line 107, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        .solicitud > li.sxs-top {
+          background: #fafafa;
+          border-bottom: 1px solid #eee; } }
+    /* line 114, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.sxs-mid {
       display: none; }
       @media screen and (max-width: 570px) {
-        /* line 99, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 114, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.sxs-mid {
           display: block; } }
-      /* line 105, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 120, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.sxs-mid > ul > li {
         padding: 8px 0;
         float: left;
         width: 25%;
         text-align: center;
         font-size: 1.4em; }
-        /* line 111, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 126, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.sxs-mid > ul > li small {
           display: block;
           font-size: .6em; }
-      /* line 116, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 131, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.sxs-mid > ul:after {
         display: block;
         content: '';
         clear: both; }
-    /* line 123, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 138, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li a {
       display: block;
       color: #767676;
       border-right: 1px solid #fff; }
-      /* line 128, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 143, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li a > ul > li {
         margin: 0;
         padding: 10px 14px;
         float: left;
-        font-size: .9em; }
+        font-size: .9em;
+        line-height: 1.7em; }
         @media screen and (max-width: 850px) {
-          /* line 128, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 143, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li {
             font-size: .8em;
             padding: 10px 9px; } }
-        /* line 137, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        @media screen and (max-width: 767px) {
+          /* line 143, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li {
+            font-size: .9em; } }
+        /* line 156, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.id {
           padding-left: 8px;
           padding-right: 8px; }
-          /* line 140, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 159, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.id span {
             background: #f1f1f1;
             padding: 5px;
             border-radius: 4px; }
-        /* line 146, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 165, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.user {
           font-size: .8em;
           line-height: 1.7em;
@@ -2652,74 +2677,83 @@ footer {
           overflow: hidden;
           text-overflow: ellipsis; }
           @media screen and (max-width: 850px) {
-            /* line 146, /Users/Leo/workspace/invest-new/css/_sols.scss */
+            /* line 165, /Users/Leo/workspace/invest-new/css/_sols.scss */
             .solicitud > li a > ul > li.user {
               width: 6em; } }
-        /* line 157, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 176, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.plazo {
           font-size: 16px;
           padding: 8px 14px; }
-        /* line 168, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 187, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif {
+          line-height: normal;
           padding: 7px 11px; }
           @media screen and (max-width: 850px) {
-            /* line 168, /Users/Leo/workspace/invest-new/css/_sols.scss */
+            /* line 187, /Users/Leo/workspace/invest-new/css/_sols.scss */
             .solicitud > li a > ul > li.calif {
               padding: 7px 12px; } }
-          /* line 174, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 194, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.calif span {
             display: block;
-            padding: 5px 6px;
+            padding: 6px 6px;
             border: 1px solid #0ABAB7;
             color: #0ABAB7;
             border-radius: 100%; }
+        @media screen and (max-width: 767px) {
+          /* line 202, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          .solicitud > li a > ul > li.destino {
+            font-size: .8em;
+            padding: 10px 2px; } }
         @media screen and (max-width: 1250px) and (min-width: 1200px) {
-          /* line 182, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 208, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
         @media screen and (max-width: 992px) {
-          /* line 182, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 208, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
         @media screen and (max-width: 920px) {
-          /* line 191, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 218, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.resta {
             display: none; } }
-      /* line 201, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 229, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li a:hover {
         /*background: #e8efef;*/
         background: #f4fff8;
         border-right: 1px solid #dae0e0; }
-    /* line 207, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 235, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.prestar {
       max-width: 200px;
       padding: 6px 10px;
       position: relative; }
-      /* line 212, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 240, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .form-control {
         padding: 4px 33px 4px 4px;
         margin: 0;
         height: 28px;
         max-height: 40px;
-        max-width: 85px; }
-        /* line 218, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        max-width: 85px;
+        position: relative;
+        z-index: 66; }
+        /* line 248, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .form-control:focus {
           border-color: #0ABAB7;
           outline: 0;
           -webkit-box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6);
           box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
         @media screen and (max-width: 570px) {
-          /* line 212, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 240, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li.prestar .form-control {
             width: 100px;
             max-width: none;
             float: left;
             margin: 10px;
             height: 38px; } }
-      /* line 232, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 262, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .btn {
         display: none;
         position: absolute;
+        z-index: 100;
         top: 7px;
         right: 11px;
         height: 26px;
@@ -2733,27 +2767,36 @@ footer {
         -moz-animation-duration: .5s;
         animation-duration: .5s;
         border-left: 1px solid #00AE76; }
-        /* line 248, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        @media screen and (max-width: 570px) {
+          /* line 262, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          .solicitud > li.prestar .btn {
+            position: relative;
+            background-image: none;
+            width: 110px;
+            padding: 10px;
+            height: auto;
+            display: block; } }
+        /* line 287, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn:hover {
           background-color: #00E00B; }
-        /* line 251, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 290, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn .txt_car {
           display: none; }
           @media screen and (max-width: 570px) {
-            /* line 251, /Users/Leo/workspace/invest-new/css/_sols.scss */
+            /* line 290, /Users/Leo/workspace/invest-new/css/_sols.scss */
             .solicitud > li.prestar .btn .txt_car {
               display: block; } }
       @media screen and (max-width: 570px) {
-        /* line 207, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 235, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar {
           max-width: none;
           padding: 0; } }
-      /* line 262, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 302, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-bar {
         width: 100%;
         padding: 12px 20px;
         background: #eee; }
-      /* line 268, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 308, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-det {
         width: 80px;
         text-align: center;
@@ -2762,26 +2805,61 @@ footer {
         border-radius: 4px;
         margin: 10px;
         float: left; }
-    /* line 279, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 317, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li.prestar .yap {
+        display: none;
+        font-size: 9px;
+        padding: 3px 6px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        /*margin-top: -20px;
+                color: #bbb;*/
+        background: #fff;
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        margin-left: -25px;
+        color: #999;
+        z-index: 1234;
+        white-space: nowrap; }
+      /* line 335, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li.prestar .popover {
+        font-size: 12px; }
+    /* line 339, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .solicitud > li.yap-pleca {
+      width: 0px;
+      height: 0px;
+      /*background: #bbb;*/
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      border-left: 25px solid transparent;
+      border-top: 20px solid #d6d6d6;
+      border-top-left-radius: 4px; }
+    /* line 350, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.porcentaje {
       width: 100%;
       background: #dedede;
       height: 4px; }
-      /* line 283, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 354, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.porcentaje .barra {
         width: 40%;
         background: #00E00B;
         height: 4px; }
-  /* line 290, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 361, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud:after {
     content: '';
     display: block;
     clear: both; }
-  /* line 295, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 366, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud:hover {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); }
+  /* line 371, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  .solicitud.yalep:hover .prestar .yap {
+    display: block; }
 
-/* line 299, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 374, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .message {
   background: #dedede;
   color: #999;
@@ -2789,18 +2867,22 @@ footer {
   letter-spacing: .03em;
   max-width: 780px; }
   @media screen and (max-width: 1200px) {
-    /* line 299, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 374, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .message {
       margin-left: auto;
       margin-right: auto; } }
+  @media screen and (max-width: 767px) {
+    /* line 374, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .message {
+      max-width: 530px; } }
 
-/* line 311, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 389, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .pre-carrito {
   padding: 0;
   font-size: .9em;
   text-align: center;
   max-width: 340px; }
-  /* line 317, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 395, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito h2 {
     font-size: 1.2em;
     /*margin: -20px -20px 10px -20px;*/
@@ -2809,41 +2891,41 @@ footer {
     background: #fafafa;
     font-weight: normal;
     border-bottom: 1px solid #eee; }
-  /* line 326, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 404, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito .table {
     margin: auto;
     margin-bottom: 10px; }
-    /* line 329, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 407, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .pre-carrito .table tr {
       border-color: #eee; }
-      /* line 332, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 410, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr:first-child td {
         color: #aaa;
         border: 0; }
-      /* line 337, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 415, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr td {
         color: #777; }
-        /* line 339, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 417, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr td:last-child {
           padding: 8px 0; }
-        /* line 342, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 420, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr td:first-child {
           font-size: .9em; }
-        /* line 345, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 423, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr td b, .pre-carrito .table tr td strong {
           font-weight: 500; }
-      /* line 348, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 426, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr.tot td {
         padding: 8px 8px;
         font-size: 16px;
         /*background: #f4fff8;*/ }
-        /* line 351, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 429, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr.tot td b {
           color: #0ABAB7; }
-      /* line 359, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 437, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr:hover .eliminar {
         opacity: 1; }
-  /* line 365, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 443, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito .eliminar {
     border: 0;
     display: block;
@@ -2851,26 +2933,30 @@ footer {
     height: 20px;
     background: url(../img/tacha.svg);
     opacity: .3; }
-  /* line 374, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 452, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito .btns {
     padding: 0 10px 10px 10px; }
-    /* line 376, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 454, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .pre-carrito .btns .btn-aqua {
       padding-left: 17px;
       padding-right: 17px; }
 
-/* line 383, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 461, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .filtros {
   padding: 0 0 20px 0px;
   border-bottom: 1px solid #ddd;
   max-width: 780px;
   margin: auto; }
-  /* line 392, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  @media screen and (max-width: 767px) {
+    /* line 461, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    .filtros {
+      max-width: 530px; } }
+  /* line 473, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .filtros .btn-gris {
     float: left;
     font-weight: 300;
     margin-right: 10px; }
-  /* line 397, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 478, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .filtros .form-control {
     background-color: #f4f4f4;
     padding: 9px 16px;
@@ -2880,19 +2966,19 @@ footer {
     margin-right: 10px;
     font-weight: 300; }
   @media screen and (max-width: 570px) {
-    /* line 383, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 461, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .filtros {
       padding: 0; }
-      /* line 408, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 489, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .filtros .btn-gris, .filtros .form-control {
         float: none;
         margin-bottom: 20px; }
-      /* line 412, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 493, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .filtros .form-control {
         max-width: 100%;
         float: none;
         margin-bottom: 20px; }
-      /* line 417, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 498, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .filtros .fltrs .btn-gris {
         float: right; } }
 
