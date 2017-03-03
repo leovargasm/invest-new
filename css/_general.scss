@@ -171,8 +171,19 @@ button:focus {outline:0;}
         margin-bottom: 20px;
         /*padding-bottom: 0px;*/
     }
+    h2{
+        font-size: 1.2em;
+        margin: -20px -20px 10px -20px;
+        padding: 10px;
+        background: #fafafa;
+        font-weight: normal;
+        color: $gris-parrafo;
+        border-bottom: 1px solid #eee;
+    }
 }
-
+/*.aside-card {
+	@extend .card; 
+}*/
 .table-lc-tr{
     tr{
         td:last-child{
