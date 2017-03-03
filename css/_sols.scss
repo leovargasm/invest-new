@@ -90,6 +90,9 @@
         >li a{
             border-right: 1px solid #ddd;
         }
+        @include sols-xs{
+            background: #fff;
+        }
     }
     @include max(1200px){
         margin-left: auto;
@@ -97,6 +100,9 @@
     }
     @include bp-small {
         max-width: 530px;
+    }
+    @include sols-xs{
+        overflow: hidden;
     }
     margin-bottom: 10px;
     > li{
@@ -109,6 +115,14 @@
             @include sols-xs{
                 background: #fafafa;
                 border-bottom: 1px solid #eee;
+                .user{
+                    width: 120px;
+                }
+                .destino{
+                    float: right;
+                    margin-right: 10px;
+                    width: auto;
+                }
             }
         }
         &.sxs-mid{
@@ -123,9 +137,16 @@
                     width: 25%;
                     text-align: center;
                     font-size: 1.4em;
+                    &.calif{border-left:5px solid transparent;}
+                    &.calif-a{border-color:$calif-a;}
+                    &.calif-b{border-color:$calif-b;}
+                    &.calif-c{border-color:$calif-c;}
                     small{
                         display: block;
                         font-size: .6em;
+                    }
+                    @include bp-xsmall{
+                        font-size: 1.2em;
                     }
                 }
                 &:after{
@@ -134,6 +155,7 @@
                     clear: both;
                 }
             }
+            .yap{display: none;}
         }//mid
         a{
             display: block;
@@ -199,6 +221,24 @@
                             border-radius: 100%;
                         }
                     }
+                    &.calif-a{
+                        span{
+                            border-color:$calif-a;
+                            color:$calif-a;
+                        }
+                    }
+                    &.calif-b{
+                        span{
+                        border-color:$calif-b;
+                        color:$calif-b;
+                        }
+                    }
+                    &.calif-c{
+                        span{
+                        border-color:$calif-c;
+                        color:$calif-c;
+                        }
+                    }
                     &.destino{
                         @include bp-small {
                             font-size: .8em;
@@ -236,6 +276,7 @@
             max-width: 200px;
             padding: 6px 10px;
             position: relative;
+            @include transition(none)
             @extend .clearx;
             .form-control{
                 padding: 4px 33px 4px 4px;
@@ -255,9 +296,12 @@
                     width: 100px;
                     max-width:none;
                     float: left;
-                    margin: 10px;
+                    margin: 10px 4px;
                     height: 38px;
                 }
+            }
+            .sxs-cta{
+                float: right;
             }
             .btn{
                 display: none;
@@ -277,13 +321,22 @@
                 animation-duration: .5s;
                 border-left: 1px solid $botella-logo;
                 @include sols-xs{
-                        position: relative;
-                    background-image: none;
-                    width: 110px;
+                    position: relative;
+                    /*background-image: none;*/
+                    width: 40px;
+                    margin: 3px;
                     padding: 10px;
-                    height: auto;
-                        display: block;
-                    }
+                    height: 38px;
+                    display: block !important;
+                    color: #fff;
+                }
+                @include bp-xsmall{
+                    white-space: normal;
+                    line-height: 13px;
+                    /*width: 80px;*/
+                    font-size: 12px;
+                    padding: 7px 4px 10px 4px;
+                }
                 &:hover{
                   background-color: $lima-logo;  
                 }//hover
@@ -296,14 +349,38 @@
                 }
             }//btn
             @include sols-xs{
+                display: none;
                 max-width: none;
                 padding: 0;
             }
             .sxs-bar {
                 @extend .sxs;
+                color: $gris-parrafo;
 	            width: 100%;
-                padding: 12px 20px;
+                padding: 12px 10px;
                 background: #eee;
+                font-size: 12px;
+                position: relative;
+                .por{ 
+                    font-weight: 700;
+                    margin-right: 10px;
+                    
+                }
+                b{
+                   font-weight: 500; 
+                }
+                .bg{
+                    background:rgba(0,224,11,.3);
+                    position: absolute;
+                    width: 30%;
+                    height: 40px;
+                    top: 0;
+                    left: 0;
+                }
+                span{
+                    position: relative;
+                    z-index: 8;
+                }
             }
             .sxs-det{
                 @extend .sxs;
@@ -314,6 +391,11 @@
                 border-radius: 4px;
                 margin: 10px;
                 float: left;
+                @include sols-xs{
+                 padding: 7px;
+                    width: auto;
+                    font-size: 13px;
+                }
             }.yap{ 
                 display: none;
                 font-size: 9px;
@@ -357,6 +439,17 @@
                 height: 4px;
             }
         }
+        &.sxs-trigger {
+	        display: none;
+            @include sols-xs{
+                display: block;
+            }
+                background: #fafafa;
+                border-top: 1px solid #eee;
+                padding: 10px;
+                text-align: center;
+                color: #aaa;
+        }
     }//>li
     &:after{
         content: '';
@@ -367,8 +460,28 @@
         box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
         
     }
+    &.yalep{
+        .sxs-mid{
+            .yap{
+                display: block;
+                @include sols-xs{
+                    display: block;
+                    margin: auto;
+                    border-radius: 0;
+                    box-shadow: none;
+                    font-size: 1em;
+                    background: #e3feed;
+                    text-align: center;
+                    padding: 6px;
+                    color: $botella-logo;
+                }
+            }
+        }
+    }
     &.yalep:hover{
-        .prestar .yap{display: block;}
+        .prestar .yap{display: block;
+        @include sols-xs{display: none;}
+        }
     }
 }//solicitudes
 .message {

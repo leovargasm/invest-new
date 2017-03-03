@@ -2591,6 +2591,10 @@ footer {
     /* line 90, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud.yalep > li a {
       border-right: 1px solid #ddd; }
+    @media screen and (max-width: 570px) {
+      /* line 88, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .solicitud.yalep {
+        background: #fff; } }
   @media screen and (max-width: 1200px) {
     /* line 80, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud {
@@ -2600,50 +2604,81 @@ footer {
     /* line 80, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud {
       max-width: 530px; } }
-  /* line 102, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  @media screen and (max-width: 570px) {
+    /* line 80, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    .solicitud {
+      overflow: hidden; } }
+  /* line 108, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud > li {
     float: left; }
     @media screen and (max-width: 570px) {
-      /* line 102, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 108, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li {
         float: none; } }
-    /* line 107, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 113, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.sxs-top {
       background: #fff; }
       @media screen and (max-width: 570px) {
-        /* line 107, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 113, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.sxs-top {
           background: #fafafa;
-          border-bottom: 1px solid #eee; } }
-    /* line 114, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          border-bottom: 1px solid #eee; }
+          /* line 118, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li.sxs-top .user {
+            width: 120px; }
+          /* line 121, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li.sxs-top .destino {
+            float: right;
+            margin-right: 10px;
+            width: auto; } }
+    /* line 128, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.sxs-mid {
       display: none; }
       @media screen and (max-width: 570px) {
-        /* line 114, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 128, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.sxs-mid {
           display: block; } }
-      /* line 120, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 134, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.sxs-mid > ul > li {
         padding: 8px 0;
         float: left;
         width: 25%;
         text-align: center;
         font-size: 1.4em; }
-        /* line 126, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 140, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.sxs-mid > ul > li.calif {
+          border-left: 5px solid transparent; }
+        /* line 141, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.sxs-mid > ul > li.calif-a {
+          border-color: #6bdce7; }
+        /* line 142, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.sxs-mid > ul > li.calif-b {
+          border-color: #02c39e; }
+        /* line 143, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.sxs-mid > ul > li.calif-c {
+          border-color: #067e79; }
+        /* line 144, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.sxs-mid > ul > li small {
           display: block;
           font-size: .6em; }
-      /* line 131, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        @media screen and (max-width: 370px) {
+          /* line 134, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li.sxs-mid > ul > li {
+            font-size: 1.2em; } }
+      /* line 152, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.sxs-mid > ul:after {
         display: block;
         content: '';
         clear: both; }
-    /* line 138, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 158, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .solicitud > li.sxs-mid .yap {
+        display: none; }
+    /* line 160, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li a {
       display: block;
       color: #767676;
       border-right: 1px solid #fff; }
-      /* line 143, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 165, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li a > ul > li {
         margin: 0;
         padding: 10px 14px;
@@ -2651,24 +2686,24 @@ footer {
         font-size: .9em;
         line-height: 1.7em; }
         @media screen and (max-width: 850px) {
-          /* line 143, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 165, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li {
             font-size: .8em;
             padding: 10px 9px; } }
         @media screen and (max-width: 767px) {
-          /* line 143, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 165, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li {
             font-size: .9em; } }
-        /* line 156, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 178, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.id {
           padding-left: 8px;
           padding-right: 8px; }
-          /* line 159, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 181, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.id span {
             background: #f1f1f1;
             padding: 5px;
             border-radius: 4px; }
-        /* line 165, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 187, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.user {
           font-size: .8em;
           line-height: 1.7em;
@@ -2677,56 +2712,72 @@ footer {
           overflow: hidden;
           text-overflow: ellipsis; }
           @media screen and (max-width: 850px) {
-            /* line 165, C:/xampp/htdocs/invest-new/css/_sols.scss */
+            /* line 187, C:/xampp/htdocs/invest-new/css/_sols.scss */
             .solicitud > li a > ul > li.user {
               width: 6em; } }
-        /* line 176, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 198, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.plazo {
           font-size: 16px;
           padding: 8px 14px; }
-        /* line 187, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 209, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif {
           line-height: normal;
           padding: 7px 11px; }
           @media screen and (max-width: 850px) {
-            /* line 187, C:/xampp/htdocs/invest-new/css/_sols.scss */
+            /* line 209, C:/xampp/htdocs/invest-new/css/_sols.scss */
             .solicitud > li a > ul > li.calif {
               padding: 7px 12px; } }
-          /* line 194, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 216, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.calif span {
             display: block;
             padding: 6px 6px;
             border: 1px solid #0ABAB7;
             color: #0ABAB7;
             border-radius: 100%; }
+        /* line 225, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.calif-a span {
+          border-color: #6bdce7;
+          color: #6bdce7; }
+        /* line 231, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.calif-b span {
+          border-color: #02c39e;
+          color: #02c39e; }
+        /* line 237, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li a > ul > li.calif-c span {
+          border-color: #067e79;
+          color: #067e79; }
         @media screen and (max-width: 767px) {
-          /* line 202, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 242, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.destino {
             font-size: .8em;
             padding: 10px 2px; } }
         @media screen and (max-width: 1250px) and (min-width: 1200px) {
-          /* line 208, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 248, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
         @media screen and (max-width: 992px) {
-          /* line 208, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 248, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
         @media screen and (max-width: 920px) {
-          /* line 218, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 258, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.resta {
             display: none; } }
-      /* line 229, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 269, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li a:hover {
         /*background: #e8efef;*/
         background: #f4fff8;
         border-right: 1px solid #dae0e0; }
-    /* line 235, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 275, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.prestar {
       max-width: 200px;
       padding: 6px 10px;
-      position: relative; }
-      /* line 240, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      position: relative;
+      -moz-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none; }
+      /* line 281, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .form-control {
         padding: 4px 33px 4px 4px;
         margin: 0;
@@ -2735,21 +2786,24 @@ footer {
         max-width: 85px;
         position: relative;
         z-index: 66; }
-        /* line 248, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 289, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.prestar .form-control:focus {
           border-color: #0ABAB7;
           outline: 0;
           -webkit-box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6);
           box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
         @media screen and (max-width: 570px) {
-          /* line 240, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 281, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li.prestar .form-control {
             width: 100px;
             max-width: none;
             float: left;
-            margin: 10px;
+            margin: 10px 4px;
             height: 38px; } }
-      /* line 262, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 303, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .solicitud > li.prestar .sxs-cta {
+        float: right; }
+      /* line 306, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .btn {
         display: none;
         position: absolute;
@@ -2768,35 +2822,68 @@ footer {
         animation-duration: .5s;
         border-left: 1px solid #00AE76; }
         @media screen and (max-width: 570px) {
-          /* line 262, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          /* line 306, C:/xampp/htdocs/invest-new/css/_sols.scss */
           .solicitud > li.prestar .btn {
             position: relative;
-            background-image: none;
-            width: 110px;
+            /*background-image: none;*/
+            width: 40px;
+            margin: 3px;
             padding: 10px;
-            height: auto;
-            display: block; } }
-        /* line 287, C:/xampp/htdocs/invest-new/css/_sols.scss */
+            height: 38px;
+            display: block !important;
+            color: #fff; } }
+        @media screen and (max-width: 370px) {
+          /* line 306, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li.prestar .btn {
+            white-space: normal;
+            line-height: 13px;
+            /*width: 80px;*/
+            font-size: 12px;
+            padding: 7px 4px 10px 4px; } }
+        /* line 340, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn:hover {
           background-color: #00E00B; }
-        /* line 290, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 343, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn .txt_car {
           display: none; }
           @media screen and (max-width: 570px) {
-            /* line 290, C:/xampp/htdocs/invest-new/css/_sols.scss */
+            /* line 343, C:/xampp/htdocs/invest-new/css/_sols.scss */
             .solicitud > li.prestar .btn .txt_car {
               display: block; } }
       @media screen and (max-width: 570px) {
-        /* line 235, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 275, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .solicitud > li.prestar {
+          display: none;
           max-width: none;
           padding: 0; } }
-      /* line 302, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 356, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-bar {
+        color: #6B6B6B;
         width: 100%;
-        padding: 12px 20px;
-        background: #eee; }
-      /* line 308, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        padding: 12px 10px;
+        background: #eee;
+        font-size: 12px;
+        position: relative; }
+        /* line 364, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.prestar .sxs-bar .por {
+          font-weight: 700;
+          margin-right: 10px; }
+        /* line 369, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.prestar .sxs-bar b {
+          font-weight: 500; }
+        /* line 372, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.prestar .sxs-bar .bg {
+          background: rgba(0, 224, 11, 0.3);
+          position: absolute;
+          width: 30%;
+          height: 40px;
+          top: 0;
+          left: 0; }
+        /* line 380, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.prestar .sxs-bar span {
+          position: relative;
+          z-index: 8; }
+      /* line 385, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-det {
         width: 80px;
         text-align: center;
@@ -2805,7 +2892,13 @@ footer {
         border-radius: 4px;
         margin: 10px;
         float: left; }
-      /* line 317, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        @media screen and (max-width: 570px) {
+          /* line 385, C:/xampp/htdocs/invest-new/css/_sols.scss */
+          .solicitud > li.prestar .sxs-det {
+            padding: 7px;
+            width: auto;
+            font-size: 13px; } }
+      /* line 399, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .yap {
         display: none;
         font-size: 9px;
@@ -2823,10 +2916,10 @@ footer {
         color: #999;
         z-index: 1234;
         white-space: nowrap; }
-      /* line 335, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 417, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.prestar .popover {
         font-size: 12px; }
-    /* line 339, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 421, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.yap-pleca {
       width: 0px;
       height: 0px;
@@ -2837,29 +2930,60 @@ footer {
       border-left: 25px solid transparent;
       border-top: 20px solid #d6d6d6;
       border-top-left-radius: 4px; }
-    /* line 350, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 432, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .solicitud > li.porcentaje {
       width: 100%;
       background: #dedede;
       height: 4px; }
-      /* line 354, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 436, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .solicitud > li.porcentaje .barra {
         width: 40%;
         background: #00E00B;
         height: 4px; }
-  /* line 361, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 442, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    .solicitud > li.sxs-trigger {
+      display: none;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+      padding: 10px;
+      text-align: center;
+      color: #aaa; }
+      @media screen and (max-width: 570px) {
+        /* line 442, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        .solicitud > li.sxs-trigger {
+          display: block; } }
+  /* line 454, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud:after {
     content: '';
     display: block;
     clear: both; }
-  /* line 366, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 459, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud:hover {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); }
-  /* line 371, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 465, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  .solicitud.yalep .sxs-mid .yap {
+    display: block; }
+    @media screen and (max-width: 570px) {
+      /* line 465, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .solicitud.yalep .sxs-mid .yap {
+        display: block;
+        margin: auto;
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 1em;
+        background: #e3feed;
+        text-align: center;
+        padding: 6px;
+        color: #00AE76; } }
+  /* line 482, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .solicitud.yalep:hover .prestar .yap {
     display: block; }
+    @media screen and (max-width: 570px) {
+      /* line 482, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      .solicitud.yalep:hover .prestar .yap {
+        display: none; } }
 
-/* line 374, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 487, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .message {
   background: #dedede;
   color: #999;
@@ -2867,22 +2991,22 @@ footer {
   letter-spacing: .03em;
   max-width: 780px; }
   @media screen and (max-width: 1200px) {
-    /* line 374, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 487, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .message {
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (max-width: 767px) {
-    /* line 374, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 487, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .message {
       max-width: 530px; } }
 
-/* line 389, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 502, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .pre-carrito {
   padding: 0;
   font-size: .9em;
   text-align: center;
   max-width: 340px; }
-  /* line 395, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 508, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .pre-carrito h2 {
     font-size: 1.2em;
     /*margin: -20px -20px 10px -20px;*/
@@ -2891,41 +3015,41 @@ footer {
     background: #fafafa;
     font-weight: normal;
     border-bottom: 1px solid #eee; }
-  /* line 404, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 517, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .pre-carrito .table {
     margin: auto;
     margin-bottom: 10px; }
-    /* line 407, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 520, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .pre-carrito .table tr {
       border-color: #eee; }
-      /* line 410, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 523, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .pre-carrito .table tr:first-child td {
         color: #aaa;
         border: 0; }
-      /* line 415, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 528, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .pre-carrito .table tr td {
         color: #777; }
-        /* line 417, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 530, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .pre-carrito .table tr td:last-child {
           padding: 8px 0; }
-        /* line 420, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 533, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .pre-carrito .table tr td:first-child {
           font-size: .9em; }
-        /* line 423, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 536, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .pre-carrito .table tr td b, .pre-carrito .table tr td strong {
           font-weight: 500; }
-      /* line 426, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 539, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .pre-carrito .table tr.tot td {
         padding: 8px 8px;
         font-size: 16px;
         /*background: #f4fff8;*/ }
-        /* line 429, C:/xampp/htdocs/invest-new/css/_sols.scss */
+        /* line 542, C:/xampp/htdocs/invest-new/css/_sols.scss */
         .pre-carrito .table tr.tot td b {
           color: #0ABAB7; }
-      /* line 437, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 550, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .pre-carrito .table tr:hover .eliminar {
         opacity: 1; }
-  /* line 443, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 556, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .pre-carrito .eliminar {
     border: 0;
     display: block;
@@ -2933,30 +3057,30 @@ footer {
     height: 20px;
     background: url(../img/tacha.svg);
     opacity: .3; }
-  /* line 452, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 565, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .pre-carrito .btns {
     padding: 0 10px 10px 10px; }
-    /* line 454, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 567, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .pre-carrito .btns .btn-aqua {
       padding-left: 17px;
       padding-right: 17px; }
 
-/* line 461, C:/xampp/htdocs/invest-new/css/_sols.scss */
+/* line 574, C:/xampp/htdocs/invest-new/css/_sols.scss */
 .filtros {
   padding: 0 0 20px 0px;
   border-bottom: 1px solid #ddd;
   max-width: 780px;
   margin: auto; }
   @media screen and (max-width: 767px) {
-    /* line 461, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 574, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .filtros {
       max-width: 530px; } }
-  /* line 473, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 586, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .filtros .btn-gris {
     float: left;
     font-weight: 300;
     margin-right: 10px; }
-  /* line 478, C:/xampp/htdocs/invest-new/css/_sols.scss */
+  /* line 591, C:/xampp/htdocs/invest-new/css/_sols.scss */
   .filtros .form-control {
     background-color: #f4f4f4;
     padding: 9px 16px;
@@ -2966,19 +3090,19 @@ footer {
     margin-right: 10px;
     font-weight: 300; }
   @media screen and (max-width: 570px) {
-    /* line 461, C:/xampp/htdocs/invest-new/css/_sols.scss */
+    /* line 574, C:/xampp/htdocs/invest-new/css/_sols.scss */
     .filtros {
       padding: 0; }
-      /* line 489, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 602, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .filtros .btn-gris, .filtros .form-control {
         float: none;
         margin-bottom: 20px; }
-      /* line 493, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 606, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .filtros .form-control {
         max-width: 100%;
         float: none;
         margin-bottom: 20px; }
-      /* line 498, C:/xampp/htdocs/invest-new/css/_sols.scss */
+      /* line 611, C:/xampp/htdocs/invest-new/css/_sols.scss */
       .filtros .fltrs .btn-gris {
         float: right; } }
 
