@@ -1,0 +1,129 @@
+@import "variables";
+@import "mixins";
+.card-margin-lr{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.card-margin-tp{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.table-aside{
+    margin: 0;
+    >tbody>tr{
+        >td{
+            font-size: .9em;
+            color: $gris-parrafo;
+            &:last-child{
+                text-align: right;
+            }
+        }
+        &:first-child{
+            >td{
+                border: 0;
+                color: #555;
+                font-size: 1.1em;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.table-movements{
+    >tbody, >thead{
+        >tr{
+            >td{
+                font-size: .9em;
+                color: $gris-parrafo;
+                border:0;
+                padding: 14px 2px;
+                @include sols-xs{display: none}
+                &.aut{
+                    span{
+                        background: #eee;
+                        padding: 2px;
+                        border-radius: 3px;
+                        font-size: 11px;
+                    }
+                }
+                &.date{
+                    span{
+                        color: #999;
+                        font-size: 11px;
+                    }
+                }
+                &.type{}
+                &.amount{}
+                &.reference{
+                    span{
+                        display: block;
+                        margin: auto;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        max-width: 6em;
+                    }
+                }
+                &.status{}
+                &.balance{
+                    font-weight: 500;
+                }
+                &.mov-link {
+	                display: none;
+                    padding: 0;
+                    @include sols-xs{
+                        display: table-cell;
+                    }
+                    
+                    >a{
+                        display: block;
+                        >table{
+                            @extend .table-movements;
+                            width: 100%;
+                            >tbody, >thead{
+                                >tr{
+                                    >td{
+                                        width: 25%;
+                                        font-size: .9em;
+                                        color: $gris-parrafo;
+                                        border:0;
+                                        padding: 14px 2px;
+                                        display: table-cell;
+                                        &.date{
+                                            font-size: .8em;
+                                            span{display: none;}
+                                        }
+                                    }//td
+                                }
+                            }
+                        }//table
+                    }
+                }//movlink
+                /*<td class="aut">17977</td> 
+                 <td class="date">2016-04-27</td>
+                 <td class="comision">Comisión</td>
+                 <td class="amount">-$0.21</td>
+                 <td class="reference">Sin Referencia</td>
+                 <td class="status">Aplicado</td>
+                 <td class="balance">$158.20</td>*/
+            }
+            &.neg{
+                td{
+                    &.type,&.amount{ color: $error}
+                }
+            }
+            &.pos{
+                td{
+                     &.type,&.amount{ color: $aqua}
+                }
+            }
+            /*&.tr-sxs{
+                >td{
+                    @include sols-xs{display: table-cell}
+                    
+                }
+                
+            }*/
+        }//tr
+    }
+}
