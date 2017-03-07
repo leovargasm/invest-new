@@ -1,13 +1,6 @@
 @import "variables";
 @import "mixins";
-.card-margin-lr{
-    margin-left: -20px;
-    margin-right: -20px;
-}
-.card-margin-tp{
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
+
 .table-aside{
     margin: 0;
     >tbody>tr{

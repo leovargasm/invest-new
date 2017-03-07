@@ -181,6 +181,17 @@ button:focus {outline:0;}
         border-bottom: 1px solid #eee;
     }
 }
+.card-margin-lr{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.card-margin-tp{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.card-margin{
+	margin: -20px;
+}
 /*.aside-card {
 	@extend .card; 
 }*/

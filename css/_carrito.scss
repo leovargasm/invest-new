@@ -1,0 +1,144 @@
+@import "variables";
+@import "mixins";
+
+.table-cart{
+    thead>tr>td{
+        font-size: .9em;
+        &.dest{
+            @include bp-med{
+                display: none;
+            }
+        }
+        &.days{
+            @include max(850px){
+                display: none;
+            }
+        }
+        &.profit,&.rest-amount,&.rate{
+            @include sols-xs{
+                    display: none;
+                }
+        }
+    }
+    tbody>tr{
+        >td{
+            color:$gris-parrafo; 
+            vertical-align: middle;
+            font-size: .9em;
+            @include sols-xs{
+                        padding: 10px 3px;
+                    }
+            &.id{
+                span{
+                    background: #eee;
+                    border-radius: 3px;
+                    padding: 3px;
+                    font-size: .9em;
+                }
+            }
+            &.days{
+                span{
+                    @include bp-med{
+                        display: none;
+                    }
+                }
+                @include max(850px){
+                        display: none;
+                    }
+            }
+            &.calif{
+                border-left:5px solid transparent;
+                span{
+                    display: block;
+                    width: 26px;
+                    margin: auto;
+                    padding:3px 1px;
+                    border:1px solid $aqua;
+                    color: $aqua;
+                    border-radius: 100%;
+                    &.calif-a{border-color:$calif-a;}
+                    &.calif-b{border-color:$calif-b;}
+                    &.calif-c{border-color:$calif-c;}
+                }
+            }
+            
+            &.amount{
+                .form-control{ 
+                    width: 80px;
+                    display: block;
+                    margin: auto;
+                    padding: 3px;
+                    height: auto;
+                    background: #f6f6f6;
+                    &:focus{
+                        background: #fff;
+                    }
+                    @include sols-xs{
+                        width: 60px;
+                    }
+                }
+            }
+            &.dest{
+                font-size: .9em;
+                @include bp-med{
+                    display: none;
+                }
+            }
+            &.profit{
+                span{
+                    background: #e3feed;
+                    border-radius: 3px;
+                    padding: 3px;
+                    font-size: .9em;
+                    color: $botella-logo;
+                    font-weight: 500;
+                }
+                @include sols-xs{
+                    display: none;
+                }
+            }
+            &.rest-amount, &.rate{
+                @include sols-xs{
+                    display: none;
+                }
+            }
+            .delete{
+                background: url(../img/tacha.svg) no-repeat;
+                width: 28px;
+                height: 28px;
+                opacity: .4;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        &.results{
+            >td{
+                font-size: 1.2em;
+                padding:20px 10px; 
+                text-align: right;
+                &.total-profit{
+                    @include sols-xs{
+                    display: none;
+                    }
+                }
+                &.med{
+                    @include bp-med{
+                        display: none;
+                    }
+                }
+                &.xs{
+                    @include sols-xs{
+                        display: none;
+                    }
+                }
+                &.total{
+                    @include sols-xs{
+                    width: 100%;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}

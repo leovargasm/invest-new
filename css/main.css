@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*@import "_bootstrap";*/
 /*$negro-footer: #242424;*/
 /*$negro-footer: #242424;*/
@@ -213,28 +212,14 @@ button:focus {
     color: #6B6B6B;
     border-bottom: 1px solid #eee; }
 
-/* line 184, /Users/Leo/workspace/invest-new/css/_general.scss */
-.card-margin-lr {
-  margin-left: -20px;
-  margin-right: -20px; }
-
-/* line 188, /Users/Leo/workspace/invest-new/css/_general.scss */
-.card-margin-tp {
-  margin-top: -20px;
-  margin-bottom: -20px; }
-
-/* line 192, /Users/Leo/workspace/invest-new/css/_general.scss */
-.card-margin {
-  margin: -20px; }
-
 /*.aside-card {
 	@extend .card; 
 }*/
-/* line 200, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 189, /Users/Leo/workspace/invest-new/css/_general.scss */
 .table-lc-tr tr td:last-child {
   text-align: right; }
 
-/* line 205, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 194, /Users/Leo/workspace/invest-new/css/_general.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -244,42 +229,42 @@ button:focus {
   padding-right: 10px;
   padding-left: 10px; }
 
-/* line 215, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 204, /Users/Leo/workspace/invest-new/css/_general.scss */
 .col-xs-5ths {
   width: 20%;
   float: left; }
 
-/* line 220, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 209, /Users/Leo/workspace/invest-new/css/_general.scss */
 .mt-30 {
   margin-top: 30px; }
 
 @media (min-width: 768px) {
-  /* line 224, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 213, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-sm-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 992px) {
-  /* line 231, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 220, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-md-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 1200px) {
-  /* line 238, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 227, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-lg-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 768px) {
-  /* line 250, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 239, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 5px;
     padding-right: 5px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 256, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 245, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
@@ -287,12 +272,12 @@ button:focus {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /*default so you don't need this*/
-  /* line 263, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 252, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
 
-/* line 265, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 254, /Users/Leo/workspace/invest-new/css/_general.scss */
 .container-fluid, .sols {
   padding: 20px;
   max-width: 1300px;
@@ -3530,397 +3515,9 @@ footer {
   color: #43d9f9;
   border-left-color: #43d9f9; }
 
-/*$negro-footer: #242424;*/
-/* line 4, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-.table-aside {
-  margin: 0; }
-  /* line 7, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .table-aside > tbody > tr > td {
-    font-size: .9em;
-    color: #6B6B6B; }
-    /* line 10, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-aside > tbody > tr > td:last-child {
-      text-align: right; }
-  /* line 15, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .table-aside > tbody > tr:first-child > td {
-    border: 0;
-    color: #555;
-    font-size: 1.1em;
-    font-weight: 500; }
-
-/* line 27, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-.table-movements > tbody > tr, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr, .table-movements > thead > tr, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr, .table-movements > thead > tr > td.mov-link > a > table > thead > tr {
-  /*&.tr-sxs{
-                >td{
-                    @include sols-xs{display: table-cell}
-                    
-                }
-                
-            }*/ }
-  /* line 28, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .table-movements > tbody > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td {
-    font-size: .9em;
-    color: #6B6B6B;
-    border: 0;
-    padding: 14px 2px;
-    /*<td class="aut">17977</td> 
-                 <td class="date">2016-04-27</td>
-                 <td class="comision">Comisión</td>
-                 <td class="amount">-$0.21</td>
-                 <td class="reference">Sin Referencia</td>
-                 <td class="status">Aplicado</td>
-                 <td class="balance">$158.20</td>*/ }
-    @media screen and (max-width: 570px) {
-      /* line 28, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-      .table-movements > tbody > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td {
-        display: none; } }
-    /* line 35, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-movements > tbody > tr > td.aut span, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.aut span, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.aut span, .table-movements > thead > tr > td.aut span, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.aut span, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.aut span {
-      background: #eee;
-      padding: 2px;
-      border-radius: 3px;
-      font-size: 11px; }
-    /* line 43, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-movements > tbody > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > thead > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.date span {
-      color: #999;
-      font-size: 11px; }
-    /* line 51, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-movements > tbody > tr > td.reference span, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.reference span, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.reference span, .table-movements > thead > tr > td.reference span, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.reference span, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.reference span {
-      display: block;
-      margin: auto;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      max-width: 6em; }
-    /* line 61, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-movements > tbody > tr > td.balance, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.balance, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.balance, .table-movements > thead > tr > td.balance, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.balance, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.balance {
-      font-weight: 500; }
-    /* line 64, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-movements > tbody > tr > td.mov-link, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link, .table-movements > thead > tr > td.mov-link, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link {
-      display: none;
-      padding: 0; }
-      @media screen and (max-width: 570px) {
-        /* line 64, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-        .table-movements > tbody > tr > td.mov-link, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link, .table-movements > thead > tr > td.mov-link, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link {
-          display: table-cell; } }
-      /* line 71, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-      .table-movements > tbody > tr > td.mov-link > a, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a, .table-movements > thead > tr > td.mov-link > a, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a {
-        display: block; }
-        /* line 73, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-        .table-movements > tbody > tr > td.mov-link > a > table, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table, .table-movements > thead > tr > td.mov-link > a > table, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table {
-          width: 100%; }
-          /* line 78, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-          .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > thead > tr > td, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > thead > tr > td, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > tbody > tr > td, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > thead > tr > td, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > thead > tr > td {
-            width: 25%;
-            font-size: .9em;
-            color: #6B6B6B;
-            border: 0;
-            padding: 14px 2px;
-            display: table-cell; }
-            /* line 85, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-            .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.date, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > tbody > tr > td.date, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > tbody > tr > td.date, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.date, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > thead > tr > td.date, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > thead > tr > td.date, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.date, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > tbody > tr > td.date, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > tbody > tr > td.date, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.date, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > thead > tr > td.date, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > thead > tr > td.date {
-              font-size: .8em; }
-              /* line 87, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-              .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > thead > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.mov-link > a > table > thead > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > tbody > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.date span, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > thead > tr > td.date span, .table-movements > thead > tr > td.mov-link > a > table > thead > tr > td.mov-link > a > table > thead > tr > td.date span {
-                display: none; }
-  /* line 105, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .table-movements > tbody > tr.neg td.type, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr.neg td.type, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr.neg td.type, .table-movements > tbody > tr.neg td.amount, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr.neg td.amount, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr.neg td.amount, .table-movements > thead > tr.neg td.type, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr.neg td.type, .table-movements > thead > tr > td.mov-link > a > table > thead > tr.neg td.type, .table-movements > thead > tr.neg td.amount, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr.neg td.amount, .table-movements > thead > tr > td.mov-link > a > table > thead > tr.neg td.amount {
-    color: #FC6548; }
-  /* line 110, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .table-movements > tbody > tr.pos td.type, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr.pos td.type, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr.pos td.type, .table-movements > tbody > tr.pos td.amount, .table-movements > tbody > tr > td.mov-link > a > table > tbody > tr.pos td.amount, .table-movements > thead > tr > td.mov-link > a > table > tbody > tr.pos td.amount, .table-movements > thead > tr.pos td.type, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr.pos td.type, .table-movements > thead > tr > td.mov-link > a > table > thead > tr.pos td.type, .table-movements > thead > tr.pos td.amount, .table-movements > tbody > tr > td.mov-link > a > table > thead > tr.pos td.amount, .table-movements > thead > tr > td.mov-link > a > table > thead > tr.pos td.amount {
-    color: #0ABAB7; }
-
-/* line 123, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-.movement {
-  padding-bottom: 0; }
-  /* line 124, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .movement h2 {
-    margin-bottom: 0; }
-
-/* line 129, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-.table-movement {
-  margin-bottom: 0; }
-  /* line 132, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-  .table-movement > tbody > tr, .table-movement > thead > tr {
-    /*&.tr-sxs{
-                >td{
-                    @include sols-xs{display: table-cell}
-                    
-                }
-                
-            }*/ }
-    /* line 133, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    .table-movement > tbody > tr > td, .table-movement > thead > tr > td {
-      font-size: 1em;
-      color: #333;
-      border: 0;
-      padding: 14px 10px; }
-      /* line 140, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-      .table-movement > tbody > tr > td.date span, .table-movement > thead > tr > td.date span {
-        color: #999;
-        font-size: 11px; }
-      /* line 145, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-      .table-movement > tbody > tr > td:last-child, .table-movement > thead > tr > td:last-child {
-        text-align: right;
-        color: #6B6B6B; }
-
-/* line 161, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-#mismo-filter {
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  transition: none; }
-  @media screen and (max-width: 992px) {
-    /* line 161, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-    #mismo-filter {
-      display: none; } }
-
-/* line 167, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-#movement {
-  display: none; }
-
-/* line 170, /Users/Leo/workspace/invest-new/css/_movimientos.scss */
-#mobement, #movements {
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  transition: none; }
-
 /* line 1, /Users/Leo/workspace/invest-new/css/_detalle.scss */
 .c_desp {
   margin-top: 20px;
   display: none; }
 
-/* line 5, /Users/Leo/workspace/invest-new/css/_detalle.scss */
-.table-detail-general {
-  width: 100%; }
-  /* line 8, /Users/Leo/workspace/invest-new/css/_detalle.scss */
-  .table-detail-general > tbody > tr > td {
-    padding: 10px;
-    text-align: center;
-    border-right: 1px solid #eee; }
-    /* line 12, /Users/Leo/workspace/invest-new/css/_detalle.scss */
-    .table-detail-general > tbody > tr > td:last-child {
-      border: 0; }
-
-/*$negro-footer: #242424;*/
-/* line 5, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-.table-cart thead > tr > td {
-  font-size: .9em; }
-  @media screen and (max-width: 992px) {
-    /* line 7, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart thead > tr > td.dest {
-      display: none; } }
-  @media screen and (max-width: 850px) {
-    /* line 12, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart thead > tr > td.days {
-      display: none; } }
-  @media screen and (max-width: 570px) {
-    /* line 17, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart thead > tr > td.profit, .table-cart thead > tr > td.rest-amount, .table-cart thead > tr > td.rate {
-      display: none; } }
-
-/* line 24, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-.table-cart tbody > tr > td {
-  color: #6B6B6B;
-  vertical-align: middle;
-  font-size: .9em; }
-  @media screen and (max-width: 570px) {
-    /* line 24, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td {
-      padding: 10px 3px; } }
-  /* line 32, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-  .table-cart tbody > tr > td.id span {
-    background: #eee;
-    border-radius: 3px;
-    padding: 3px;
-    font-size: .9em; }
-  @media screen and (max-width: 992px) {
-    /* line 40, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td.days span {
-      display: none; } }
-  @media screen and (max-width: 850px) {
-    /* line 39, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td.days {
-      display: none; } }
-  /* line 49, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-  .table-cart tbody > tr > td.calif {
-    border-left: 5px solid transparent; }
-    /* line 51, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td.calif span {
-      display: block;
-      width: 26px;
-      margin: auto;
-      padding: 3px 1px;
-      border: 1px solid #0ABAB7;
-      color: #0ABAB7;
-      border-radius: 100%; }
-      /* line 59, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-      .table-cart tbody > tr > td.calif span.calif-a {
-        border-color: #6bdce7; }
-      /* line 60, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-      .table-cart tbody > tr > td.calif span.calif-b {
-        border-color: #02c39e; }
-      /* line 61, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-      .table-cart tbody > tr > td.calif span.calif-c {
-        border-color: #067e79; }
-  /* line 66, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-  .table-cart tbody > tr > td.amount .form-control {
-    width: 80px;
-    display: block;
-    margin: auto;
-    padding: 3px;
-    height: auto;
-    background: #f6f6f6; }
-    /* line 73, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td.amount .form-control:focus {
-      background: #fff; }
-    @media screen and (max-width: 570px) {
-      /* line 66, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-      .table-cart tbody > tr > td.amount .form-control {
-        width: 60px; } }
-  /* line 81, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-  .table-cart tbody > tr > td.dest {
-    font-size: .9em; }
-    @media screen and (max-width: 992px) {
-      /* line 81, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-      .table-cart tbody > tr > td.dest {
-        display: none; } }
-  /* line 88, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-  .table-cart tbody > tr > td.profit span {
-    background: #e3feed;
-    border-radius: 3px;
-    padding: 3px;
-    font-size: .9em;
-    color: #00AE76;
-    font-weight: 500; }
-  @media screen and (max-width: 570px) {
-    /* line 87, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td.profit {
-      display: none; } }
-  @media screen and (max-width: 570px) {
-    /* line 100, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td.rest-amount, .table-cart tbody > tr > td.rate {
-      display: none; } }
-  /* line 105, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-  .table-cart tbody > tr > td .delete {
-    background: url(../img/tacha.svg) no-repeat;
-    width: 28px;
-    height: 28px;
-    opacity: .4; }
-    /* line 110, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr > td .delete:hover {
-      opacity: 1; }
-
-/* line 116, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-.table-cart tbody > tr.results > td {
-  font-size: 1.2em;
-  padding: 20px 10px;
-  text-align: right; }
-  @media screen and (max-width: 570px) {
-    /* line 120, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr.results > td.total-profit {
-      display: none; } }
-  @media screen and (max-width: 992px) {
-    /* line 125, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr.results > td.med {
-      display: none; } }
-  @media screen and (max-width: 570px) {
-    /* line 130, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr.results > td.xs {
-      display: none; } }
-  @media screen and (max-width: 570px) {
-    /* line 135, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr.results > td.total {
-      width: 100%;
-      border: 0; } }
-
-/*$negro-footer: #242424;*/
-/* line 3, /Users/Leo/workspace/invest-new/css/_loader.scss */
-.blur {
-  -webkit-filter: blur(5px);
-  filter: blur(5px); }
-
-/* line 7, /Users/Leo/workspace/invest-new/css/_loader.scss */
-.loader {
-  color: #fff;
-  position: fixed;
-  box-sizing: border-box;
-  left: -9999px;
-  top: -9999px;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: 999999999999999;
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  transition: none; }
-  /* line 18, /Users/Leo/workspace/invest-new/css/_loader.scss */
-  .loader.is-active {
-    -moz-transition: none;
-    -o-transition: none;
-    -webkit-transition: none;
-    transition: none;
-    background-color: rgba(0, 0, 0, 0.85);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0; }
-  /* line 26, /Users/Leo/workspace/invest-new/css/_loader.scss */
-  .loader .loader-container {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    margin-top: -10px; }
-    /* line 31, /Users/Leo/workspace/invest-new/css/_loader.scss */
-    .loader .loader-container h3 {
-      text-align: center;
-      font-weight: 300;
-      color: #999; }
-  /* line 37, /Users/Leo/workspace/invest-new/css/_loader.scss */
-  .loader .spinner {
-    width: 70px;
-    margin: auto;
-    text-align: center; }
-  /* line 44, /Users/Leo/workspace/invest-new/css/_loader.scss */
-  .loader .spinner > div {
-    width: 18px;
-    height: 18px;
-    background-color: #0ABAB7;
-    border-radius: 100%;
-    display: inline-block;
-    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-    animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
-  /* line 54, /Users/Leo/workspace/invest-new/css/_loader.scss */
-  .loader .spinner .bounce1 {
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s; }
-  /* line 59, /Users/Leo/workspace/invest-new/css/_loader.scss */
-  .loader .spinner .bounce2 {
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s; }
-
-@-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0);
-    background-color: #00E00B; }
-  40% {
-    -webkit-transform: scale(1);
-    background-color: #00AE76; } }
-
-@keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0);
-    transform: scale(0); }
-  0% {
-    background-color: #00E00B; }
-  80% {
-    background-color: #00E00B; }
-  20% {
-    background-color: #0ABAB7; }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
-/*# sourceMappingURL=invest-new.css.map */
+/*# sourceMappingURL=main.css.map */
