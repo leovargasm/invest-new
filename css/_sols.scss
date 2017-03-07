@@ -865,7 +865,7 @@
 }
 //<1250= quitar cuanto faltan y arreglar botones de mini carro
 .mispre-stats{
-    @include transition(none)
+    @include transition(none);
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
@@ -920,7 +920,6 @@
 .c-overdue,.c-overdue .status{color:$error;border-left-color:$error}
 .c-paid,.c-paid .status{color:$lima-logo;border-left-color:$lima-logo}
 .c-founding,.c-founding .status{color:#43d9f9;border-left-color:#43d9f9}
-
 
 
 

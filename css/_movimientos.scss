@@ -127,3 +127,53 @@
         }//tr
     }
 }
+.movement {
+    h2{
+        margin-bottom: 0;
+    }
+    padding-bottom: 0;
+}
+.table-movement{
+     margin-bottom: 0;
+    >tbody, >thead{
+        >tr{
+            >td{
+                font-size: 1em;
+                color: #333;
+                border:0;
+                padding: 14px 10px;
+               
+                &.date{
+                    span{
+                        color: #999;
+                        font-size: 11px;
+                    }
+                }
+                &:last-child{
+                    text-align: right;
+                    color: $gris-parrafo;
+                }
+            }//td
+            /*&.tr-sxs{
+                >td{
+                    @include sols-xs{display: table-cell}
+                    
+                }
+                
+            }*/
+        }//tr
+    }
+}
+
+#mismo-filter{
+     @include transition(none);
+    @include bp-med{
+        display: none;
+    }
+}
+#movement{
+    display: none;
+}
+#mobement, #movements{
+    @include transition(none)
+}
