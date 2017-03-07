@@ -4,8 +4,17 @@
 .c-bot {
     color: $botella-logo !important;
 }
+.c-lima{
+    color: $lima-logo !important;
+}
 .c-error{
     color: $error !important;
+}
+.c-blue{
+    color: $calif-a !important;
+}
+.c-danger{
+    color: $danger !important;
 }
 .session {
 	color: #999;
@@ -238,15 +247,7 @@ label{
 //add fondos
 .card{
     overflow: hidden;
-    h2{
-        font-size: 1.2em;
-        margin: -20px -20px 10px -20px;
-        padding: 10px;
-        background: #fafafa;
-        font-weight: normal;
-        color: $gris-parrafo;
-        border-bottom: 1px solid #eee;
-    }
+    
 }
 .i-agregar {
 	width: 40%;
