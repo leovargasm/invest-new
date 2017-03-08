@@ -1,21 +1,7 @@
 @import "variables";
 @import "mixins";
 
-.c-bot {
-    color: $botella-logo !important;
-}
-.c-lima{
-    color: $lima-logo !important;
-}
-.c-error{
-    color: $error !important;
-}
-.c-blue{
-    color: $calif-a !important;
-}
-.c-danger{
-    color: $danger !important;
-}
+
 .session {
 	color: #999;
     b{
@@ -243,6 +229,22 @@ label{
     color: $gris-parrafo;
     font-size: .9em;
     margin: 20px auto;
+}
+#password-error{ 
+     width: 100%;
+    >ul{
+        width: 255px;
+        float: right;
+        text-align: left;
+        }
+    @include bp-small{
+        float: left;
+        width: 200px;
+        >ul{
+            width: auto;
+            float: none;
+        }
+    }
 }
 //add fondos
 .card{

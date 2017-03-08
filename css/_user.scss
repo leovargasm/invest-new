@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+.table-user {
+    >tbody>tr{
+        >td{
+            border:0;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+            small{
+                color: #999;
+                font-size: .8em;
+            }
+            p{
+                font-size: .9em;
+            }
+            p.c-aqua{
+                max-width: 100px;
+                
+            }
+            p.name{
+                max-width: 160px;
+            }
+            &.sxs-hide{
+                @include sols-xs{
+                    display: none;
+                }
+            }
+            @include sols-xs{
+                   border:0;
+                }
+        }//td
+            &.row-users-sxs{
+                display: none;
+                @include sols-xs{
+                   display:table-row;
+                    text-align: right;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+    }//tr
+}//banks

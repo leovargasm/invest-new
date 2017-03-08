@@ -132,13 +132,47 @@
                         display: none;
                     }
                 }
-                &.total{
-                    @include sols-xs{
-                    width: 100%;
-                        border: 0;
+            }
+            @include sols-xs{
+                    display: none;
                     }
-                }
+        }
+        &.table-cart-tr-sxs{
+            display: none;
+            @include sols-xs{
+                    display: table-row;
+                    }
+            &>td{
+                font-size: 1.2em;
             }
         }
+    }
+}
+.btns-autorize{
+    &, & *{
+        @include transition(none); 
+    }
+    @extend .clearx;
+    margin: auto;
+    margin-top: 30px;
+    width: 275px;
+    .btn{
+        float:left; 
+        height: 38px;
+        margin-left: -4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        line-height: 18px;
+    }
+    .form-control{
+        float: left;
+        width: 180px;
+        border-color:$botella-logo;
+        @include sols-xs{
+            width: 130px;
+        }
+    }
+    @include sols-xs{
+        width: 225px;
     }
 }

@@ -404,6 +404,11 @@
                     &.plazo{
                         font-size: 16px;
                         padding: 8px 14px;
+                        @include max(850px){
+                            line-height: 1.9em;
+                            padding: 7px 12px;
+                            font-size: .9em;
+                        }
                         @extend .sxs-hide;
                     }
                     &.tasa{
@@ -517,6 +522,11 @@
                     height: 38px;
                 }
             }
+            .form-control::-webkit-inner-spin-button, .nform-control::-webkit-outer-spin-button {
+                    -webkit-appearance: none !important;
+                    margin: 0 !important;
+                    -moz-appearance:textfield !important;
+                }
             .sxs-cta{
                 float: right;
             }

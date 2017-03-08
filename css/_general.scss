@@ -24,6 +24,24 @@ body{
 .bg-gris-medio {
 	background: #ddd;
 }
+.c-bot {
+    color: $botella-logo !important;
+}
+.c-lima{
+    color: $lima-logo !important;
+}
+.c-error{
+    color: $error !important;
+}
+.c-blue{
+    color: $calif-a !important;
+}
+.c-danger{
+    color: $danger !important;
+}
+.c-aqua {
+	color: $aqua !important;
+}
 .hel{
    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
 }
@@ -111,6 +129,14 @@ button:focus {outline:0;}
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0px 0px 6px rgba(0,174,118,.2);
     }
 }
+.elipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.no-mar-b {
+	margin-bottom: 0 !important;
+}
 .btn{
     /*border: 0;*/
 }
@@ -136,6 +162,23 @@ button:focus {outline:0;}
     border:1px solid #aaa;
     &:hover,&:focus,&:active{
         background: #f4f4f4; 
+    }
+}
+.btn-w {
+    color: #888;
+    background: #f8f8f8;
+    border:1px solid #eee;
+    &:hover,&:focus,&:active{
+        background: #f4f4f4; 
+        border-color: #ddd;
+    }
+}
+.btn-normal {
+    color: #444;
+    background: #f4f4f4;
+    border:1px solid #aaa;
+    &:hover,&:focus,&:active{
+        background: #ccc; 
     }
 }
 .btn-danger{
@@ -172,13 +215,14 @@ button:focus {outline:0;}
         /*padding-bottom: 0px;*/
     }
     h2{
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin: -20px -20px 10px -20px;
         padding: 10px;
         background: #fafafa;
         font-weight: normal;
-        color: $gris-parrafo;
+        color: #999;
         border-bottom: 1px solid #eee;
+        text-align: left;
     }
 }
 .card-margin-lr{

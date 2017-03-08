@@ -34,82 +34,106 @@ body {
   background: #ddd; }
 
 /* line 27, /Users/Leo/workspace/invest-new/css/_general.scss */
+.c-bot {
+  color: #00AE76 !important; }
+
+/* line 30, /Users/Leo/workspace/invest-new/css/_general.scss */
+.c-lima {
+  color: #00E00B !important; }
+
+/* line 33, /Users/Leo/workspace/invest-new/css/_general.scss */
+.c-error {
+  color: #FC6548 !important; }
+
+/* line 36, /Users/Leo/workspace/invest-new/css/_general.scss */
+.c-blue {
+  color: #6bdce7 !important; }
+
+/* line 39, /Users/Leo/workspace/invest-new/css/_general.scss */
+.c-danger {
+  color: #FFBF2E !important; }
+
+/* line 42, /Users/Leo/workspace/invest-new/css/_general.scss */
+.c-aqua {
+  color: #0ABAB7 !important; }
+
+/* line 45, /Users/Leo/workspace/invest-new/css/_general.scss */
 .hel {
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/ }
 
-/* line 31, /Users/Leo/workspace/invest-new/css/_general.scss */
-.clearx:after, .solicitud > li a > ul:after, .solicitud > li.prestar:after, .filtros:after, .filtros .fltrs:after {
+/* line 49, /Users/Leo/workspace/invest-new/css/_general.scss */
+.clearx:after, .solicitud > li a > ul:after, .solicitud > li.prestar:after, .filtros:after, .filtros .fltrs:after, .btns-autorize:after {
   content: '';
   display: block;
   clear: both; }
 
-/* line 37, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 55, /Users/Leo/workspace/invest-new/css/_general.scss */
 h1 {
   font-size: 36px;
   color: #fff;
   font-weight: 300; }
   @media screen and (max-width: 992px) {
-    /* line 37, /Users/Leo/workspace/invest-new/css/_general.scss */
+    /* line 55, /Users/Leo/workspace/invest-new/css/_general.scss */
     h1 {
       font-size: 28px; } }
 
-/* line 45, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 63, /Users/Leo/workspace/invest-new/css/_general.scss */
 h2 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 60px; }
   @media screen and (max-width: 767px) {
-    /* line 45, /Users/Leo/workspace/invest-new/css/_general.scss */
+    /* line 63, /Users/Leo/workspace/invest-new/css/_general.scss */
     h2 {
       margin-bottom: 30px; } }
 
-/* line 53, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 71, /Users/Leo/workspace/invest-new/css/_general.scss */
 h3 {
   font-size: 20px;
   color: #6B6B6B;
   margin-top: 0;
   margin-bottom: 20px; }
 
-/* line 59, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 77, /Users/Leo/workspace/invest-new/css/_general.scss */
 ul {
   padding: 0px; }
-  /* line 61, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 79, /Users/Leo/workspace/invest-new/css/_general.scss */
   ul li {
     list-style: none; }
 
-/* line 65, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 83, /Users/Leo/workspace/invest-new/css/_general.scss */
 p {
   color: #6B6B6B;
   line-height: 180%; }
 
-/* line 69, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 87, /Users/Leo/workspace/invest-new/css/_general.scss */
 a {
   color: #0ABAB7; }
-  /* line 71, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 89, /Users/Leo/workspace/invest-new/css/_general.scss */
   a:focus, a:hover, a:active, a:visited {
     text-decoration: none; }
-  /* line 75, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 93, /Users/Leo/workspace/invest-new/css/_general.scss */
   a:hover {
     color: #009D6F; }
 
-/* line 79, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 97, /Users/Leo/workspace/invest-new/css/_general.scss */
 label {
   font-weight: normal;
   color: #6B6B6B; }
 
-/* line 83, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 101, /Users/Leo/workspace/invest-new/css/_general.scss */
 section {
   padding: 60px 0px; }
   @media screen and (max-width: 767px) {
-    /* line 83, /Users/Leo/workspace/invest-new/css/_general.scss */
+    /* line 101, /Users/Leo/workspace/invest-new/css/_general.scss */
     section {
       padding: 30px 0px; } }
 
-/* line 89, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 107, /Users/Leo/workspace/invest-new/css/_general.scss */
 video {
   width: 100%; }
 
-/* line 92, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 110, /Users/Leo/workspace/invest-new/css/_general.scss */
 button:focus {
   outline: 0; }
 
@@ -124,74 +148,103 @@ button:focus {
     </div><!--container-->
 </section>
 */
-/* line 104, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 122, /Users/Leo/workspace/invest-new/css/_general.scss */
 .form-control {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.045);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.045); }
-  /* line 107, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 125, /Users/Leo/workspace/invest-new/css/_general.scss */
   .form-control:focus {
     border-color: #00E00B;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 1px 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0px 0px 6px rgba(0, 174, 118, 0.2); }
 
-/* line 114, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 132, /Users/Leo/workspace/invest-new/css/_general.scss */
+.elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+/* line 137, /Users/Leo/workspace/invest-new/css/_general.scss */
+.no-mar-b {
+  margin-bottom: 0 !important; }
+
+/* line 140, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn {
   /*border: 0;*/ }
 
-/* line 117, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 143, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-primary {
   background: #00AE76;
   border-color: #009D6F; }
-  /* line 120, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 146, /Users/Leo/workspace/invest-new/css/_general.scss */
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #009D6F; }
 
-/* line 124, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 150, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-aqua {
   color: #fff;
   background: #0ABAB7;
   border-color: #009D6F; }
-  /* line 128, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 154, /Users/Leo/workspace/invest-new/css/_general.scss */
   .btn-aqua:hover, .btn-aqua:focus, .btn-aqua:active {
     background: #089b99;
     color: #fff; }
 
-/* line 133, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 159, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-gris {
   color: #888;
   background: #d4d4d4;
   border: 1px solid #aaa; }
-  /* line 137, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 163, /Users/Leo/workspace/invest-new/css/_general.scss */
   .btn-gris:hover, .btn-gris:focus, .btn-gris:active {
     background: #f4f4f4; }
 
-/* line 141, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 167, /Users/Leo/workspace/invest-new/css/_general.scss */
+.btn-w {
+  color: #888;
+  background: #f8f8f8;
+  border: 1px solid #eee; }
+  /* line 171, /Users/Leo/workspace/invest-new/css/_general.scss */
+  .btn-w:hover, .btn-w:focus, .btn-w:active {
+    background: #f4f4f4;
+    border-color: #ddd; }
+
+/* line 176, /Users/Leo/workspace/invest-new/css/_general.scss */
+.btn-normal {
+  color: #444;
+  background: #f4f4f4;
+  border: 1px solid #aaa; }
+  /* line 180, /Users/Leo/workspace/invest-new/css/_general.scss */
+  .btn-normal:hover, .btn-normal:focus, .btn-normal:active {
+    background: #ccc; }
+
+/* line 184, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-danger {
   background: #ff6154; }
-  /* line 143, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 186, /Users/Leo/workspace/invest-new/css/_general.scss */
   .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
     background: #d84a3e; }
 
-/* line 147, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 190, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-lg {
   padding: 9px 16px;
   font-size: 16px;
   line-height: 1.3333333;
   border-radius: 4px; }
 
-/* line 153, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 196, /Users/Leo/workspace/invest-new/css/_general.scss */
 .btn-line {
   color: #0ABAB7;
   background: transparent;
   border: 1px solid #0ABAB7; }
-  /* line 157, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 200, /Users/Leo/workspace/invest-new/css/_general.scss */
   .btn-line:hover, .btn-line:focus, .btn-line:active {
     background: #f3f3f3;
     color: #089b99;
     border-color: #089b99; }
 
-/* line 163, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 206, /Users/Leo/workspace/invest-new/css/_general.scss */
 .card, .solicitud, .message, .pre-carrito {
   /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -199,42 +252,43 @@ button:focus {
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
   margin-bottom: 20px; }
-  /* line 170, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 213, /Users/Leo/workspace/invest-new/css/_general.scss */
   .card.cardtab, .cardtab.solicitud, .cardtab.message, .cardtab.pre-carrito {
     margin-bottom: 20px;
     /*padding-bottom: 0px;*/ }
-  /* line 174, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 217, /Users/Leo/workspace/invest-new/css/_general.scss */
   .card h2, .solicitud h2, .message h2, .pre-carrito h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: -20px -20px 10px -20px;
     padding: 10px;
     background: #fafafa;
     font-weight: normal;
-    color: #6B6B6B;
-    border-bottom: 1px solid #eee; }
+    color: #999;
+    border-bottom: 1px solid #eee;
+    text-align: left; }
 
-/* line 184, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 228, /Users/Leo/workspace/invest-new/css/_general.scss */
 .card-margin-lr {
   margin-left: -20px;
   margin-right: -20px; }
 
-/* line 188, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 232, /Users/Leo/workspace/invest-new/css/_general.scss */
 .card-margin-tp {
   margin-top: -20px;
   margin-bottom: -20px; }
 
-/* line 192, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 236, /Users/Leo/workspace/invest-new/css/_general.scss */
 .card-margin {
   margin: -20px; }
 
 /*.aside-card {
 	@extend .card; 
 }*/
-/* line 200, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 244, /Users/Leo/workspace/invest-new/css/_general.scss */
 .table-lc-tr tr td:last-child {
   text-align: right; }
 
-/* line 205, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 249, /Users/Leo/workspace/invest-new/css/_general.scss */
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -244,42 +298,42 @@ button:focus {
   padding-right: 10px;
   padding-left: 10px; }
 
-/* line 215, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 259, /Users/Leo/workspace/invest-new/css/_general.scss */
 .col-xs-5ths {
   width: 20%;
   float: left; }
 
-/* line 220, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 264, /Users/Leo/workspace/invest-new/css/_general.scss */
 .mt-30 {
   margin-top: 30px; }
 
 @media (min-width: 768px) {
-  /* line 224, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 268, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-sm-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 992px) {
-  /* line 231, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 275, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-md-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 1200px) {
-  /* line 238, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 282, /Users/Leo/workspace/invest-new/css/_general.scss */
   .col-lg-5ths {
     width: 20%;
     float: left; } }
 
 @media (min-width: 768px) {
-  /* line 250, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 294, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 5px;
     padding-right: 5px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /* line 256, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 300, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
@@ -287,12 +341,12 @@ button:focus {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /*default so you don't need this*/
-  /* line 263, /Users/Leo/workspace/invest-new/css/_general.scss */
+  /* line 307, /Users/Leo/workspace/invest-new/css/_general.scss */
   div[class^="col"] {
     padding-left: 10px;
     padding-right: 10px; } }
 
-/* line 265, /Users/Leo/workspace/invest-new/css/_general.scss */
+/* line 309, /Users/Leo/workspace/invest-new/css/_general.scss */
 .container-fluid, .sols {
   padding: 20px;
   max-width: 1300px;
@@ -936,209 +990,189 @@ input.complete {
   color: #0ABAB7; }
 
 /*$negro-footer: #242424;*/
-/* line 4, /Users/Leo/workspace/invest-new/css/_content.scss */
-.c-bot {
-  color: #00AE76 !important; }
-
-/* line 7, /Users/Leo/workspace/invest-new/css/_content.scss */
-.c-lima {
-  color: #00E00B !important; }
-
-/* line 10, /Users/Leo/workspace/invest-new/css/_content.scss */
-.c-error {
-  color: #FC6548 !important; }
-
-/* line 13, /Users/Leo/workspace/invest-new/css/_content.scss */
-.c-blue {
-  color: #6bdce7 !important; }
-
-/* line 16, /Users/Leo/workspace/invest-new/css/_content.scss */
-.c-danger {
-  color: #FFBF2E !important; }
-
-/* line 19, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 5, /Users/Leo/workspace/invest-new/css/_content.scss */
 .session {
   color: #999; }
-  /* line 21, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 7, /Users/Leo/workspace/invest-new/css/_content.scss */
   .session b {
     font-weight: 500; }
   @media screen and (max-width: 767px) {
-    /* line 19, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 5, /Users/Leo/workspace/invest-new/css/_content.scss */
     .session {
       font-size: .9em; } }
 
-/* line 28, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 14, /Users/Leo/workspace/invest-new/css/_content.scss */
 h1 {
   color: #D1D1D1;
   font-weight: 300;
   font-size: 20px;
   margin: 0px auto 10px auto; }
 
-/* line 34, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 20, /Users/Leo/workspace/invest-new/css/_content.scss */
 .border-column {
   padding: 0; }
-  /* line 36, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 22, /Users/Leo/workspace/invest-new/css/_content.scss */
   .border-column .row {
     margin: 0; }
-  /* line 39, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 25, /Users/Leo/workspace/invest-new/css/_content.scss */
   .border-column .col-sm-3, .border-column .col-sm-4 {
     border-right: 1px solid #ddd;
     min-height: 160px;
     /*padding-top: 20px;
         padding-bottom: 20px;*/
     padding: 20px 10px; }
-    /* line 45, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 31, /Users/Leo/workspace/invest-new/css/_content.scss */
     .border-column .col-sm-3:last-child, .border-column .col-sm-4:last-child {
       border: 0;
       /*padding-right: 30px;*/ }
-    /* line 49, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 35, /Users/Leo/workspace/invest-new/css/_content.scss */
     .border-column .col-sm-3:first-child, .border-column .col-sm-4:first-child {
       /*padding-left: 30px;*/ }
     @media screen and (max-width: 767px) {
-      /* line 39, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 25, /Users/Leo/workspace/invest-new/css/_content.scss */
       .border-column .col-sm-3, .border-column .col-sm-4 {
         padding: 0;
         min-height: auto; } }
-  /* line 58, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 44, /Users/Leo/workspace/invest-new/css/_content.scss */
   .border-column.ad .col-sm-3, .border-column.ad .col-sm-4 {
     min-height: auto;
     padding: 0px; }
-    /* line 63, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 49, /Users/Leo/workspace/invest-new/css/_content.scss */
     .border-column.ad .col-sm-3:first-child a, .border-column.ad .col-sm-3:last-child a, .border-column.ad .col-sm-4:first-child a, .border-column.ad .col-sm-4:last-child a {
       line-height: 34px; }
-    /* line 67, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 53, /Users/Leo/workspace/invest-new/css/_content.scss */
     .border-column.ad .col-sm-3 a, .border-column.ad .col-sm-4 a {
       padding: 10px 0px;
       display: block;
       color: #6B6B6B;
       font-size: 12px; }
-      /* line 72, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 58, /Users/Leo/workspace/invest-new/css/_content.scss */
       .border-column.ad .col-sm-3 a:hover, .border-column.ad .col-sm-4 a:hover {
         background: #f1f1f1; }
 
-/* line 79, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 65, /Users/Leo/workspace/invest-new/css/_content.scss */
 .lc-tr {
   margin-right: -10px; }
 
-/* line 83, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 69, /Users/Leo/workspace/invest-new/css/_content.scss */
 .table-lc-tr {
   margin: -20px -10px 10px -10px; }
-  /* line 85, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 71, /Users/Leo/workspace/invest-new/css/_content.scss */
   .table-lc-tr tbody > tr {
     border-right: 1px solid #ddd; }
-    /* line 87, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 73, /Users/Leo/workspace/invest-new/css/_content.scss */
     .table-lc-tr tbody > tr > td {
       padding: 15px;
       color: #6B6B6B; }
 
-/* line 93, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 79, /Users/Leo/workspace/invest-new/css/_content.scss */
 .dash-dat {
   text-align: center; }
-  /* line 95, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 81, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat p {
     /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;*/
     font-size: 18px;
     text-align: center;
     font-weight: 400;
     padding: 20px 0px 0px 0px; }
-  /* line 102, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 88, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat label {
     font-size: 11px; }
-  /* line 105, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 91, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat small {
     font-weight: 400;
     display: block;
     font-size: 12px; }
-  /* line 111, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 97, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat.valor-cuenta p {
     padding-top: 10px;
     font-size: 22px;
     font-weight: 500; }
     @media screen and (max-width: 992px) {
-      /* line 111, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 97, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat.valor-cuenta p {
         font-size: 18px; } }
     @media screen and (max-width: 767px) {
-      /* line 111, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 97, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat.valor-cuenta p {
         font-size: 24px; } }
-  /* line 122, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 108, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat.valor-cuenta label {
     font-size: 16px; }
-  /* line 128, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 114, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat.rendimiento p {
     padding-top: 10px;
     font-size: 22px;
     font-weight: 500;
     color: #00E00B; }
-  /* line 134, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 120, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-dat.rendimiento label {
     font-size: 16px; }
   @media screen and (max-width: 767px) {
-    /* line 93, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 79, /Users/Leo/workspace/invest-new/css/_content.scss */
     .dash-dat {
       padding: 5px 10px;
       border-bottom: 1px solid #ddd; }
-      /* line 141, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 127, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat:after {
         content: '';
         display: block;
         clear: both; }
-      /* line 146, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 132, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat.valor-cuenta {
         text-align: center; }
-        /* line 148, /Users/Leo/workspace/invest-new/css/_content.scss */
+        /* line 134, /Users/Leo/workspace/invest-new/css/_content.scss */
         .dash-dat.valor-cuenta p {
           float: none;
           padding: 0; }
-        /* line 153, /Users/Leo/workspace/invest-new/css/_content.scss */
+        /* line 139, /Users/Leo/workspace/invest-new/css/_content.scss */
         .dash-dat.valor-cuenta label {
           float: none;
           font-size: 16px; }
-      /* line 158, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 144, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat.rendimiento {
         text-align: center;
         border: 0; }
-        /* line 161, /Users/Leo/workspace/invest-new/css/_content.scss */
+        /* line 147, /Users/Leo/workspace/invest-new/css/_content.scss */
         .dash-dat.rendimiento p {
           float: none;
           padding: 0; }
-        /* line 165, /Users/Leo/workspace/invest-new/css/_content.scss */
+        /* line 151, /Users/Leo/workspace/invest-new/css/_content.scss */
         .dash-dat.rendimiento label {
           float: none;
           font-size: 16px; }
-      /* line 170, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 156, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat label {
         max-width: 60%;
         float: left;
         font-size: 16px;
         margin-top: 5px;
         text-align: left; }
-      /* line 177, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 163, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat p {
         float: right;
         padding: 0;
         margin: 0;
         font-size: 14px; }
-      /* line 183, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 169, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-dat small {
         display: block;
         margin: 0;
         text-align: right;
         margin-top: -5px; } }
 
-/* line 191, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 177, /Users/Leo/workspace/invest-new/css/_content.scss */
 .dash-fon {
   text-align: center;
   min-height: 160px; }
-  /* line 194, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 180, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-fon .btn {
     color: #fff;
     background: #FC6548; }
-  /* line 198, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 184, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-fon hr {
     margin: 10px -20px; }
-  /* line 201, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 187, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-fon span {
     font-weight: bold;
     color: #FC6548;
@@ -1146,36 +1180,36 @@ h1 {
     background: #eee;
     padding: 6px 10px 6px 7px;
     border-radius: 10px; }
-  /* line 209, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 195, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-fon .fon {
     padding: 10px 0px; }
-  /* line 212, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 198, /Users/Leo/workspace/invest-new/css/_content.scss */
   .dash-fon .colocado {
     text-align: center;
     font-size: 14px;
     margin-top: 22px;
     margin-bottom: 0; }
     @media screen and (max-width: 1200px) {
-      /* line 212, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 198, /Users/Leo/workspace/invest-new/css/_content.scss */
       .dash-fon .colocado {
         font-size: 12px; } }
 
-/* line 222, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 208, /Users/Leo/workspace/invest-new/css/_content.scss */
 .visible-xs .dash-fon {
   min-height: auto; }
 
-/* line 226, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 212, /Users/Leo/workspace/invest-new/css/_content.scss */
 label {
   color: #6B6B6B; }
 
 @media screen and (min-width: 1200px) {
-  /* line 230, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 216, /Users/Leo/workspace/invest-new/css/_content.scss */
   .cont-static {
     max-width: 800px;
     margin: auto;
     float: none; } }
 
-/* line 236, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 222, /Users/Leo/workspace/invest-new/css/_content.scss */
 .contrato {
   height: 300px;
   background: #fafafa;
@@ -1187,11 +1221,29 @@ label {
   font-size: .9em;
   margin: 20px auto; }
 
-/* line 248, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 233, /Users/Leo/workspace/invest-new/css/_content.scss */
+#password-error {
+  width: 100%; }
+  /* line 235, /Users/Leo/workspace/invest-new/css/_content.scss */
+  #password-error > ul {
+    width: 255px;
+    float: right;
+    text-align: left; }
+  @media screen and (max-width: 767px) {
+    /* line 233, /Users/Leo/workspace/invest-new/css/_content.scss */
+    #password-error {
+      float: left;
+      width: 200px; }
+      /* line 243, /Users/Leo/workspace/invest-new/css/_content.scss */
+      #password-error > ul {
+        width: auto;
+        float: none; } }
+
+/* line 250, /Users/Leo/workspace/invest-new/css/_content.scss */
 .card, .solicitud, .message, .pre-carrito {
   overflow: hidden; }
 
-/* line 252, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 254, /Users/Leo/workspace/invest-new/css/_content.scss */
 .i-agregar, .i-retirar, .i-resumen-sinfondeo, .i-resumen-sinprestar {
   width: 40%;
   float: left;
@@ -1201,42 +1253,42 @@ label {
   /*background-position: 10px 10px;*/
   background-size: cover; }
 
-/* line 261, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 263, /Users/Leo/workspace/invest-new/css/_content.scss */
 .clabe {
   display: inline-block;
   background: #f1f1f1;
   padding: 10px;
   border-radius: 4px; }
 
-/* line 267, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 269, /Users/Leo/workspace/invest-new/css/_content.scss */
 .cod {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
-/* line 270, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 272, /Users/Leo/workspace/invest-new/css/_content.scss */
 .lst_add {
   padding-left: 48px;
   padding-top: 12px;
   padding-bottom: 20px;
   background: url(https://s3-us-west-2.amazonaws.com/assets-site-v2/panel/add2.png) left top no-repeat; }
-  /* line 275, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 277, /Users/Leo/workspace/invest-new/css/_content.scss */
   .lst_add li {
     list-style: none;
     padding: 2px;
     /*margin-bottom: 23px;*/
     min-height: 78px; }
 
-/* line 283, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 285, /Users/Leo/workspace/invest-new/css/_content.scss */
 .collapse {
   /* transition: none;*/ }
 
-/* line 286, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 288, /Users/Leo/workspace/invest-new/css/_content.scss */
 .i-retirar {
   background-image: url(../img/bg-retirar.jpg);
   margin-top: -20px;
   width: 50%;
   height: 245px; }
 
-/* line 293, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 295, /Users/Leo/workspace/invest-new/css/_content.scss */
 .i-resumen-sinfondeo, .i-resumen-sinprestar {
   background-image: url(../img/on-b-2.svg);
   background-size: cover;
@@ -1246,54 +1298,54 @@ label {
   width: 40%;
   height: 240px; }
 
-/* line 303, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 305, /Users/Leo/workspace/invest-new/css/_content.scss */
 .i-resumen-sinprestar {
   background-image: url(../img/on-b-1.svg);
   background-size: contain; }
 
-/* line 308, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 310, /Users/Leo/workspace/invest-new/css/_content.scss */
 .resumen-statico {
   margin: auto;
   width: 60%;
   float: left; }
   @media screen and (max-width: 767px) {
-    /* line 308, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 310, /Users/Leo/workspace/invest-new/css/_content.scss */
     .resumen-statico {
       width: 100%; } }
 
-/* line 316, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 318, /Users/Leo/workspace/invest-new/css/_content.scss */
 .reinvertir {
   background: #eee;
   margin: -20px;
   margin-top: 30px;
   padding: 20px; }
   @media screen and (max-width: 767px) {
-    /* line 316, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 318, /Users/Leo/workspace/invest-new/css/_content.scss */
     .reinvertir {
       margin-bottom: auto; } }
 
-/* line 326, /Users/Leo/workspace/invest-new/css/_content.scss */
+/* line 328, /Users/Leo/workspace/invest-new/css/_content.scss */
 .form-retirar {
   /*prueba*/
   margin: auto;
   width: 50%;
   float: left;
   margin-bottom: -20px; }
-  /* line 332, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 334, /Users/Leo/workspace/invest-new/css/_content.scss */
   .form-retirar .form-group {
     max-width: 200px;
     margin: auto;
     margin-bottom: 10px; }
     @media screen and (max-width: 767px) {
-      /* line 332, /Users/Leo/workspace/invest-new/css/_content.scss */
+      /* line 334, /Users/Leo/workspace/invest-new/css/_content.scss */
       .form-retirar .form-group {
         max-width: 100%; } }
-  /* line 340, /Users/Leo/workspace/invest-new/css/_content.scss */
+  /* line 342, /Users/Leo/workspace/invest-new/css/_content.scss */
   .form-retirar .form-control {
     display: inline-block;
     /*max-width: 180px;*/ }
   @media screen and (max-width: 767px) {
-    /* line 326, /Users/Leo/workspace/invest-new/css/_content.scss */
+    /* line 328, /Users/Leo/workspace/invest-new/css/_content.scss */
     .form-retirar {
       width: 100%; } }
 
@@ -2999,56 +3051,62 @@ footer {
         .solicitud > li a > ul > li.plazo {
           font-size: 16px;
           padding: 8px 14px; }
-        /* line 415, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          @media screen and (max-width: 850px) {
+            /* line 404, /Users/Leo/workspace/invest-new/css/_sols.scss */
+            .solicitud > li a > ul > li.plazo {
+              line-height: 1.9em;
+              padding: 7px 12px;
+              font-size: .9em; } }
+        /* line 420, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif {
           line-height: normal;
           padding: 7px 11px; }
           @media screen and (max-width: 850px) {
-            /* line 415, /Users/Leo/workspace/invest-new/css/_sols.scss */
+            /* line 420, /Users/Leo/workspace/invest-new/css/_sols.scss */
             .solicitud > li a > ul > li.calif {
               padding: 7px 12px; } }
-          /* line 422, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 427, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.calif span {
             display: block;
             padding: 6px 6px;
             border: 1px solid #0ABAB7;
             color: #0ABAB7;
             border-radius: 100%; }
-        /* line 431, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 436, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif-a span {
           border-color: #6bdce7;
           color: #6bdce7; }
-        /* line 437, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 442, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif-b span {
           border-color: #02c39e;
           color: #02c39e; }
-        /* line 443, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 448, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li a > ul > li.calif-c span {
           border-color: #067e79;
           color: #067e79; }
         @media screen and (max-width: 767px) {
-          /* line 448, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 453, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.destino {
             font-size: .8em;
             padding: 10px 2px; } }
         @media screen and (max-width: 1250px) and (min-width: 1200px) {
-          /* line 454, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 459, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
         @media screen and (max-width: 992px) {
-          /* line 454, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 459, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.faltan {
             display: none; } }
         @media screen and (max-width: 920px) {
-          /* line 464, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 469, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li a > ul > li.resta {
             display: none; } }
-      /* line 475, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 480, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li a:hover {
         /*background: #e8efef;*/
         background: #f4fff8;
         border-right: 1px solid #dae0e0; }
-    /* line 481, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 486, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.sxs-link a {
       display: none;
       background: #fafafa;
@@ -3057,10 +3115,10 @@ footer {
       text-align: center;
       color: #aaa; }
       @media screen and (max-width: 570px) {
-        /* line 481, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 486, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.sxs-link a {
           display: block; } }
-    /* line 492, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 497, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.prestar {
       max-width: 200px;
       padding: 6px 10px;
@@ -3069,7 +3127,7 @@ footer {
       -o-transition: none;
       -webkit-transition: none;
       transition: none; }
-      /* line 498, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 503, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .form-control {
         padding: 4px 33px 4px 4px;
         margin: 0;
@@ -3078,24 +3136,29 @@ footer {
         max-width: 85px;
         position: relative;
         z-index: 66; }
-        /* line 506, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 511, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .form-control:focus {
           border-color: #0ABAB7;
           outline: 0;
           -webkit-box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6);
           box-shadow: inset 0 1px 1px rgba(0, 224, 11, 0.075), 0 0 5px rgba(102, 175, 233, 0.6); }
         @media screen and (max-width: 570px) {
-          /* line 498, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 503, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li.prestar .form-control {
             width: 100px;
             max-width: none;
             float: left;
             margin: 10px 4px;
             height: 38px; } }
-      /* line 520, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 525, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      .solicitud > li.prestar .form-control::-webkit-inner-spin-button, .solicitud > li.prestar .nform-control::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -moz-appearance: textfield !important; }
+      /* line 530, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-cta {
         float: right; }
-      /* line 523, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 533, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .btn {
         display: none;
         position: absolute;
@@ -3114,7 +3177,7 @@ footer {
         animation-duration: .5s;
         border-left: 1px solid #00AE76; }
         @media screen and (max-width: 570px) {
-          /* line 523, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 533, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li.prestar .btn {
             position: relative;
             /*background-image: none;*/
@@ -3125,30 +3188,30 @@ footer {
             display: block !important;
             color: #fff; } }
         @media screen and (max-width: 370px) {
-          /* line 523, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 533, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li.prestar .btn {
             white-space: normal;
             line-height: 13px;
             /*width: 80px;*/
             font-size: 12px;
             padding: 7px 4px 10px 4px; } }
-        /* line 557, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 567, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn:hover {
           background-color: #00E00B; }
-        /* line 560, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 570, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .btn .txt_car {
           display: none; }
           @media screen and (max-width: 570px) {
-            /* line 560, /Users/Leo/workspace/invest-new/css/_sols.scss */
+            /* line 570, /Users/Leo/workspace/invest-new/css/_sols.scss */
             .solicitud > li.prestar .btn .txt_car {
               display: block; } }
       @media screen and (max-width: 570px) {
-        /* line 492, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 497, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar {
           display: none;
           max-width: none;
           padding: 0; } }
-      /* line 573, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 583, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-bar {
         color: #6B6B6B;
         width: 100%;
@@ -3156,14 +3219,14 @@ footer {
         background: #eee;
         font-size: 12px;
         position: relative; }
-        /* line 581, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 591, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .sxs-bar .por {
           font-weight: 700;
           margin-right: 10px; }
-        /* line 586, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 596, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .sxs-bar b {
           font-weight: 500; }
-        /* line 589, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 599, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .sxs-bar .bg {
           background: rgba(0, 224, 11, 0.3);
           position: absolute;
@@ -3171,11 +3234,11 @@ footer {
           height: 40px;
           top: 0;
           left: 0; }
-        /* line 597, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 607, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.prestar .sxs-bar span {
           position: relative;
           z-index: 8; }
-      /* line 602, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 612, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .sxs-det {
         width: 80px;
         text-align: center;
@@ -3185,12 +3248,12 @@ footer {
         margin: 10px;
         float: left; }
         @media screen and (max-width: 570px) {
-          /* line 602, /Users/Leo/workspace/invest-new/css/_sols.scss */
+          /* line 612, /Users/Leo/workspace/invest-new/css/_sols.scss */
           .solicitud > li.prestar .sxs-det {
             padding: 7px;
             width: auto;
             font-size: 13px; } }
-      /* line 616, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 626, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .yap {
         display: none;
         font-size: 9px;
@@ -3208,10 +3271,10 @@ footer {
         color: #999;
         z-index: 1234;
         white-space: nowrap; }
-      /* line 634, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 644, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.prestar .popover {
         font-size: 12px; }
-    /* line 638, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 648, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.yap-pleca {
       width: 0px;
       height: 0px;
@@ -3222,17 +3285,17 @@ footer {
       border-left: 25px solid transparent;
       border-top: 20px solid #d6d6d6;
       border-top-left-radius: 4px; }
-    /* line 649, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 659, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.porcentaje {
       width: 100%;
       background: #dedede;
       height: 4px; }
-      /* line 653, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 663, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud > li.porcentaje .barra {
         width: 40%;
         background: #00E00B;
         height: 4px; }
-    /* line 659, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 669, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .solicitud > li.sxs-trigger {
       display: none;
       background: #fafafa;
@@ -3241,22 +3304,22 @@ footer {
       text-align: center;
       color: #aaa; }
       @media screen and (max-width: 570px) {
-        /* line 659, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 669, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .solicitud > li.sxs-trigger {
           display: block; } }
-  /* line 671, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 681, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud:after {
     content: '';
     display: block;
     clear: both; }
-  /* line 676, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 686, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud:hover {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); }
-  /* line 682, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 692, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud.yalep .sxs-mid .yap {
     display: block; }
     @media screen and (max-width: 570px) {
-      /* line 682, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 692, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud.yalep .sxs-mid .yap {
         display: block;
         margin: auto;
@@ -3267,15 +3330,15 @@ footer {
         text-align: center;
         padding: 6px;
         color: #00AE76; } }
-  /* line 699, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 709, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .solicitud.yalep:hover .prestar .yap {
     display: block; }
     @media screen and (max-width: 570px) {
-      /* line 699, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 709, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .solicitud.yalep:hover .prestar .yap {
         display: none; } }
 
-/* line 704, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 714, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .message {
   background: #dedede;
   color: #999;
@@ -3283,22 +3346,22 @@ footer {
   letter-spacing: .03em;
   max-width: 780px; }
   @media screen and (max-width: 1200px) {
-    /* line 704, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 714, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .message {
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (max-width: 767px) {
-    /* line 704, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 714, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .message {
       max-width: 530px; } }
 
-/* line 719, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 729, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .pre-carrito {
   padding: 0;
   font-size: .9em;
   text-align: center;
   max-width: 340px; }
-  /* line 725, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 735, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito h2 {
     font-size: 1.2em;
     /*margin: -20px -20px 10px -20px;*/
@@ -3307,41 +3370,41 @@ footer {
     background: #fafafa;
     font-weight: normal;
     border-bottom: 1px solid #eee; }
-  /* line 734, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 744, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito .table {
     margin: auto;
     margin-bottom: 10px; }
-    /* line 737, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 747, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .pre-carrito .table tr {
       border-color: #eee; }
-      /* line 740, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 750, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr:first-child td {
         color: #aaa;
         border: 0; }
-      /* line 745, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 755, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr td {
         color: #777; }
-        /* line 747, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 757, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr td:last-child {
           padding: 8px 0; }
-        /* line 750, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 760, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr td:first-child {
           font-size: .9em; }
-        /* line 753, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 763, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr td b, .pre-carrito .table tr td strong {
           font-weight: 500; }
-      /* line 756, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 766, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr.tot td {
         padding: 8px 8px;
         font-size: 16px;
         /*background: #f4fff8;*/ }
-        /* line 759, /Users/Leo/workspace/invest-new/css/_sols.scss */
+        /* line 769, /Users/Leo/workspace/invest-new/css/_sols.scss */
         .pre-carrito .table tr.tot td b {
           color: #0ABAB7; }
-      /* line 767, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 777, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .pre-carrito .table tr:hover .eliminar {
         opacity: 1; }
-  /* line 773, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 783, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito .eliminar {
     border: 0;
     display: block;
@@ -3349,30 +3412,30 @@ footer {
     height: 20px;
     background: url(../img/tacha.svg);
     opacity: .3; }
-  /* line 782, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 792, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .pre-carrito .btns {
     padding: 0 10px 10px 10px; }
-    /* line 784, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 794, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .pre-carrito .btns .btn-aqua {
       padding-left: 17px;
       padding-right: 17px; }
 
-/* line 791, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 801, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .filtros {
   padding: 0 0 20px 0px;
   border-bottom: 1px solid #ddd;
   max-width: 780px;
   margin: auto; }
   @media screen and (max-width: 767px) {
-    /* line 791, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 801, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .filtros {
       max-width: 530px; } }
-  /* line 803, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 813, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .filtros .btn-gris {
     float: left;
     font-weight: 300;
     margin-right: 10px; }
-  /* line 808, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 818, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .filtros .form-control {
     background-color: #f4f4f4;
     padding: 9px 16px;
@@ -3382,23 +3445,23 @@ footer {
     margin-right: 10px;
     font-weight: 300; }
   @media screen and (max-width: 570px) {
-    /* line 791, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 801, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .filtros {
       padding: 0; }
-      /* line 819, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 829, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .filtros .btn-gris, .filtros .form-control {
         float: none;
         margin-bottom: 20px; }
-      /* line 823, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 833, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .filtros .form-control {
         max-width: 100%;
         float: none;
         margin-bottom: 20px; }
-      /* line 828, /Users/Leo/workspace/invest-new/css/_sols.scss */
+      /* line 838, /Users/Leo/workspace/invest-new/css/_sols.scss */
       .filtros .fltrs .btn-gris {
         float: right; } }
 
-/* line 833, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 843, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .mispre-filters {
   -moz-transition: none;
   -o-transition: none;
@@ -3407,37 +3470,37 @@ footer {
   max-width: 780px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 838, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 848, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-filters .delete-filters {
     padding-top: 15px; }
-  /* line 841, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 851, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-filters h3 {
     margin-bottom: 8px;
     font-size: 1.2em;
     font-weight: 400; }
-  /* line 846, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 856, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-filters p {
     line-height: normal;
     margin: 0; }
-  /* line 850, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 860, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-filters .mispre-description {
     margin: 20px -20px 0px -20px;
     padding: 15px 20px;
     padding-bottom: 0;
     border-top: 1px solid #eee; }
-  /* line 856, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 866, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-filters hr {
     margin: 15px -20px; }
   @media screen and (max-width: 1200px) {
-    /* line 833, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 843, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .mispre-filters {
       display: none; } }
   @media screen and (min-width: 1200px) {
-    /* line 833, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 843, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .mispre-filters {
       margin-top: 42px; } }
 
-/* line 867, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 877, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .mispre-stats {
   -moz-transition: none;
   -o-transition: none;
@@ -3447,85 +3510,85 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0; }
-  /* line 873, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 883, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-stats h2 {
     margin-bottom: 0; }
-  /* line 876, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 886, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-stats .table-stats {
     margin-top: 0;
     margin-bottom: 0; }
-    /* line 881, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 891, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .mispre-stats .table-stats > tbody > tr > td {
       color: #6B6B6B;
       font-size: .8em; }
-    /* line 886, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 896, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .mispre-stats .table-stats > tbody > tr:first-child > td {
       border: 0; }
   @media screen and (max-width: 1200px) {
-    /* line 867, /Users/Leo/workspace/invest-new/css/_sols.scss */
+    /* line 877, /Users/Leo/workspace/invest-new/css/_sols.scss */
     .mispre-stats {
       display: none; } }
 
-/* line 898, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 908, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .stats {
   background-repeat: no-repeat;
   height: 34px;
   width: 34px; }
-  /* line 901, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 911, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .stats, .stats:hover, .stats:active, .stats:focus {
     background-image: url(../img/stats.svg); }
 
-/* line 905, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 915, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .mispre-aside {
   max-width: 780px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 909, /Users/Leo/workspace/invest-new/css/_sols.scss */
+  /* line 919, /Users/Leo/workspace/invest-new/css/_sols.scss */
   .mispre-aside hr {
     border-color: #ddd;
     margin-bottom: 0px; }
 
-/* line 914, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 924, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-aware, .c-aware .status {
   color: #00AE76;
   border-left-color: #00AE76; }
 
-/* line 915, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 925, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-payment-process, .c-payment-process .status {
   color: #0285d6;
   border-left-color: #0285d6; }
 
-/* line 916, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 926, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-canceled, .c-canceled .status {
   color: #999;
   border-left-color: #999; }
 
-/* line 917, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 927, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-opened, .c-opened .status {
   color: #0ABAB7;
   border-left-color: #0ABAB7; }
 
-/* line 918, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 928, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-formalize, .c-formalize .status {
   color: #9900cc;
   border-left-color: #9900cc; }
 
-/* line 919, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 929, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-delayed, .c-delayed .status {
   color: #ffba22;
   border-left-color: #ffba22; }
 
-/* line 920, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 930, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-overdue, .c-overdue .status {
   color: #FC6548;
   border-left-color: #FC6548; }
 
-/* line 921, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 931, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-paid, .c-paid .status {
   color: #00E00B;
   border-left-color: #00E00B; }
 
-/* line 922, /Users/Leo/workspace/invest-new/css/_sols.scss */
+/* line 932, /Users/Leo/workspace/invest-new/css/_sols.scss */
 .c-founding, .c-founding .status {
   color: #43d9f9;
   border-left-color: #43d9f9; }
@@ -3829,11 +3892,55 @@ footer {
     /* line 130, /Users/Leo/workspace/invest-new/css/_carrito.scss */
     .table-cart tbody > tr.results > td.xs {
       display: none; } }
+
+@media screen and (max-width: 570px) {
+  /* line 115, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+  .table-cart tbody > tr.results {
+    display: none; } }
+
+/* line 140, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+.table-cart tbody > tr.table-cart-tr-sxs {
+  display: none; }
   @media screen and (max-width: 570px) {
-    /* line 135, /Users/Leo/workspace/invest-new/css/_carrito.scss */
-    .table-cart tbody > tr.results > td.total {
-      width: 100%;
-      border: 0; } }
+    /* line 140, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+    .table-cart tbody > tr.table-cart-tr-sxs {
+      display: table-row; } }
+  /* line 145, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+  .table-cart tbody > tr.table-cart-tr-sxs > td {
+    font-size: 1.2em; }
+
+/* line 151, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+.btns-autorize {
+  margin: auto;
+  margin-top: 30px;
+  width: 275px; }
+  /* line 152, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+  .btns-autorize, .btns-autorize * {
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+    transition: none; }
+  /* line 159, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+  .btns-autorize .btn {
+    float: left;
+    height: 38px;
+    margin-left: -4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    line-height: 18px; }
+  /* line 167, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+  .btns-autorize .form-control {
+    float: left;
+    width: 180px;
+    border-color: #00AE76; }
+    @media screen and (max-width: 570px) {
+      /* line 167, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+      .btns-autorize .form-control {
+        width: 130px; } }
+  @media screen and (max-width: 570px) {
+    /* line 151, /Users/Leo/workspace/invest-new/css/_carrito.scss */
+    .btns-autorize {
+      width: 225px; } }
 
 /*$negro-footer: #242424;*/
 /* line 3, /Users/Leo/workspace/invest-new/css/_loader.scss */
@@ -3922,5 +4029,43 @@ footer {
   40% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+/*$negro-footer: #242424;*/
+/* line 6, /Users/Leo/workspace/invest-new/css/_user.scss */
+.table-user > tbody > tr > td {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle; }
+  /* line 10, /Users/Leo/workspace/invest-new/css/_user.scss */
+  .table-user > tbody > tr > td small {
+    color: #999;
+    font-size: .8em; }
+  /* line 14, /Users/Leo/workspace/invest-new/css/_user.scss */
+  .table-user > tbody > tr > td p {
+    font-size: .9em; }
+  /* line 17, /Users/Leo/workspace/invest-new/css/_user.scss */
+  .table-user > tbody > tr > td p.c-aqua {
+    max-width: 100px; }
+  /* line 21, /Users/Leo/workspace/invest-new/css/_user.scss */
+  .table-user > tbody > tr > td p.name {
+    max-width: 160px; }
+  @media screen and (max-width: 570px) {
+    /* line 24, /Users/Leo/workspace/invest-new/css/_user.scss */
+    .table-user > tbody > tr > td.sxs-hide {
+      display: none; } }
+  @media screen and (max-width: 570px) {
+    /* line 6, /Users/Leo/workspace/invest-new/css/_user.scss */
+    .table-user > tbody > tr > td {
+      border: 0; } }
+
+/* line 33, /Users/Leo/workspace/invest-new/css/_user.scss */
+.table-user > tbody > tr.row-users-sxs {
+  display: none; }
+  @media screen and (max-width: 570px) {
+    /* line 33, /Users/Leo/workspace/invest-new/css/_user.scss */
+    .table-user > tbody > tr.row-users-sxs {
+      display: table-row;
+      text-align: right;
+      border-bottom: 1px solid #ddd; } }
 
 /*# sourceMappingURL=invest-new.css.map */

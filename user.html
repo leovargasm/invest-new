@@ -13,13 +13,12 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,400italic,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/calendar.css" />
     <link href="css/invest-new.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,11 +34,11 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand hidden-xs">
                     <a href="#">
-                       <img src="img/logo-blanco.svg" alt="">
+                       <img src="img/logo.png" alt="">
                     </a>
                     
                 </li>
-                <li>
+                <li class="actv">
                     <a href="resumen.html">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 31.3 18" style="enable-background:new 0 0 31.3 18;" xml:space="preserve">
@@ -111,7 +110,7 @@
                     </svg>
                     Mis préstamos</a>
                 </li>
-                <li class="actv">
+                <li>
                     <a href="mis-movimientos.html">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 31.3 18" style="enable-background:new 0 0 31.3 18;" xml:space="preserve">
@@ -213,7 +212,7 @@
         <div id="page-content-wrapper">
            <header>
               <img src="img/logo.svg" class=" visible-xs-block logo" alt="">
-               <h1>Mis Movimientos</h1>
+               <h1>Inicio</h1>
                <nav class="hidden-xs">
                  
                    <a class="carrito" href="">
@@ -242,255 +241,143 @@
                <div class="clearfix"></div>
            </header>
             <div class="container-fluid">
-                <div class="row" id="movements">
-                   <div class="col-sm-12 visible-sm-block visible-xs-block">
-                       <div class="form-group">
-                           <button class="btn btn-gris" id="btn-filter">
-                               Filtrar movimientos
-                           </button>
-                       </div>
-                   </div>
-                   <div class="clearfix"></div>
-                    <div class= "col-lg-3 col-md-4" id="mismo-filter">
-                        <div class="card">
-                            <h2>Filtrar</h2>
-                            <div class="form-group">
-                              <div class="row">
-                                  <div class="col-xs-6">
-                                      <label for="">Desde</label>
-                                       <!--<div class="input_fake">---</div>-->
-                                       <input type="text" class="form-control" id="start">
-                                  </div>
-                                  <div class="col-xs-6">
-                                      <label for="">Hasta</label>
-                                       <input type="text" class="form-control" id="end">
-                                  </div>
-                              </div>
+                <div class="row">
+                    <div class=" col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                       <div class="row">
+                           <div class="col-sm-6">
+                               <div class="card">
+                                   <h2>NombreDeUsuario</h2>
+                                   <div class="text-center">
+                                       <button class="btn btn-line">
+                                           Cambiar contraseña
+                                       </button>
+                                   </div>
                                </div>
-                               <div class="form-group">
-                                <label for="">Tipo de Movimiento</label>
-                                <select name="" id="" class="form-control">
-                                   <option value="">--Seleccionar--</option>
-                                    <option value="">Pago</option>
-                                    <option value="">Comisión</option>
-                                    <option value="">Retiro</option>
-                                    <option value="">Préstamo</option>
-                                    <option value="">Abono</option>
-                                </select>
-                               <!--plazo-->
-                            </div>
-                            <div class="text-right">
-                                <button class="btn btn-gris"> Borrar<span class="icon-tacha" style="font-size:12px;"></span></button>
-                                <button class="btn btn-aqua"> Aplicar</button>
-                            </div>
-                            
-                        </div>
-                        <div class="card">
-                          <div class="card-margin-lr card-margin-tp">
-                              <table class="table table-aside">
-                                  <tbody>
-                                      <tr>
-                                          <td>Total</td>
-                                          <td>$5,000.00</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Capital</td>
-                                          <td>$5,000.00</td>
-                                          
-                                      </tr>
-                                      <tr>
-                                          <td>Intereses</td>
-                                         <td>$5,000.00</td>
-                                          
-                                      </tr>
-                                      <tr>
-                                          <td>IVA de Intereses</td>
-                                          <td>$5,000.00</td>
-                                      </tr>
-                                      <tr>
-                                         <td>Intereses Moratorios</td>
-                                          <td>$5,000.00</td>
-                                      </tr>
-                                      <tr>
-                                          <td>IVA de Intereses Moratorios</td>
-                                          <td>$5,000.00</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                            </div>    
-                    </div><!--3-->
-                    <div class="col-lg-9 col-md-8">
-                     
-                      <!--tabla mayors-->
-                        <div class="card">
-                           <h2>Todos tus movimientos</h2>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="card">
+                                   <h2>Mis contratos</h2>
+                                   <div class="text-center">
+                                       <button class="btn btn-gris">
+                                           Contrato actual
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--row-->
+                       <div class="card">
+                           <h2 class="no-mar-b">Cuentas Bancarias</h2>
                            <div class="card-margin-lr">
-                            <table class="table table-striped text-center table-movements">
-                                <thead>
-                                    <tr>
-                                        <td>Aut.</td>
-                                        <td>Fecha</td>
-                                        <td>Tipo de Mov.</td>
-                                        <td>Importe</td>
-                                        <td>Referencia</td>
-                                        <td>Estado</td>
-                                        <td>Saldo</td>
-                                    </tr>
-                                    <tr>
-                                         <td class="mov-link">
-                                             <a href="" >
-                                                 <table>
-                                                     <tr>
-                                                       <td class="">Fecha</td>
-                                                        <td class="">Tipo de Mov.</td>
-                                                         <td class="">Importe</td>
-                                                         <td class="">Saldo</td>
-                                                     </tr>
-                                                 </table>
-                                             </a>
-                                         </td>
-                                    </tr>
-                                </thead>
-                                 <tr class="neg">
-                                     <td class="aut"><span>87765</span></td>
-                                     <td class="date">2016-04-27 <span>10:35am</span></td>
-                                     <td class="type">Comisión</td>
-                                     <td class="amount">-$0.21</td>
-                                     <td class="reference"><span title="Sin Referencia">Sin Referencia</span></td>
-                                     <td class="status">Aplicado</td>
-                                     <td class="balance">$158.20</td>
-                                     <td class="mov-link">
-                                         <a href="" >
-                                             <table>
-                                                 <tr>
-                                                   <td class="date">2016-04-27 <span>10:35am</span></td>
-                                                    <td class="type">Comisión</td>
-                                                     <td class="amount">-$0.21</td>
-                                                     <td class="balance">$158.20</td>
-                                                 </tr>
-                                             </table>
-                                         </a>
-                                     </td>
-                                 </tr>
-                                 <tr class="pos">
-                                     <td class="aut"><span>17977</span></td>
-                                     <td class="date">2016-04-27 <span>10:35am</span></td>
-                                     <td class="type">Comisión</td>
-                                     <td class="amount">-$0.21</td>
-                                     <td class="reference"><span title="Sin Referencia">Sin Referencia</span></td>
-                                     <td class="status">Aplicado</td>
-                                     <td class="balance">$158258.20</td>
-                                     <td class="mov-link">
-                                         <a href="" >
-                                             <table>
-                                                 <tr>
-                                                   <td class="date">2016-04-27 <span>10:35am</span></td>
-                                                    <td class="type">Comisión</td>
-                                                     <td class="amount">-$0.21</td>
-                                                     <td class="balance">$158258.20</td>
-                                                 </tr>
-                                             </table>
-                                         </a>
-                                     </td>
-                                 </tr>
-                                 <tr class="neg">
-                                     <td class="aut"><span>17977</span></td>
-                                     <td class="date">2016-04-27 <span>10:35am</span></td>
-                                     <td class="type">Comisión</td>
-                                     <td class="amount">-$0.21</td>
-                                     <td class="reference"><span title="Sin Referencia">Sin Referencia</span></td>
-                                     <td class="status">Aplicado</td>
-                                     <td class="balance">$158.20</td>
-                                     <td class="mov-link">
-                                         <a href="" >
-                                             <table>
-                                                 <tr>
-                                                   <td class="date">2016-04-27 <span>10:35am</span></td>
-                                                    <td class="type">Comisión</td>
-                                                     <td class="amount">-$0.21</td>
-                                                     <td class="balance">$158.20</td>
-                                                 </tr>
-                                             </table>
-                                         </a>
-                                     </td>
-                                 </tr>
-                                 <tr class="pos">
-                                     <td class="aut"><span>17977</span></td>
-                                     <td class="date">2016-04-27 <span>10:35am</span></td>
-                                     <td class="type">Comisión</td>
-                                     <td class="amount">-$0.21</td>
-                                     <td class="reference"><span title="APP-127104">APP-127104</span></td>
-                                     <td class="status">Aplicado</td>
-                                     <td class="balance">$158.20</td>
-                                     <td class="mov-link">
-                                         <a href="" >
-                                             <table>
-                                                 <tr>
-                                                   <td class="date">2016-04-27 <span>10:35am</span></td>
-                                                    <td class="type">Comisión</td>
-                                                     <td class="amount">-$0.21</td>
-                                                     <td class="balance">$158.20</td>
-                                                 </tr>
-                                             </table>
-                                         </a>
-                                     </td>
-                                 </tr>
-                             </table>
-                             </div>
-                        </div>
-                        
-                        
-                    </div><!--6-->
-                    <!--3-->
-                </div>
-                <div class="row" id="movement">
-                    <div class="col-xs-12 visible-xs-block">
-                       <div class="form-group">
-                           <button class="btn btn-gris" id="back">Regresar</button>
-                       </div>
-                        <div class="card movement">
-                            <h2>Movimiento 87765</h2>
-                            <div class="card-margin-lr">
-                                <table class="table table-striped  table-movement">
-                                    <tr>
-                                        <td>Aut.</td>
-                                        <td>87765</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fecha</td>
-                                        <td class="date">
-                                            2016-04-27 <span>10:35am</span>
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Tipo de Mov.</td>
-                                        <td>Comisión</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Importe</td>
-                                        <td>-$300,00.00</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Referencia</td>
-                                        <td>APP-127104</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Estado</td>
-                                        <td>Aplicado</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>Saldo</td>
-                                        <td>$158258.20</td>
-                                    </tr>
-                                </table>
-                            </div><!--//card mrgn-->
-                        </div>
+                               <table class="table table-user"> 
+                                   <tr>
+                                       <td>
+                                           <small>Alias</small>
+                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
+                                       </td>
+                                       
+                                       <td>
+                                           <small>Banco</small>
+                                           <p>Banorte</p>
+                                       </td>
+                                       
+                                       <td>
+                                           <small>CLABE</small>
+                                           <p>...7890</p>
+                                       </td>
+                                       
+                                       <td class="sxs-hide">
+                                           <button class="btn btn-w">Editar</button>
+                                       </td>
+                                       <td class="sxs-hide">
+                                           <button class="btn btn-w c-error">Eliminar</button>
+                                       </td>
+                                   </tr>
+                                   <tr class="row-users-sxs">
+                                       <td colspan="2">
+                                           <button class="btn btn-w">Editar</button>
+                                       </td>
+                                       <td>
+                                           <button class="btn btn-w c-error">Eliminar</button>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <small>Alias</small>
+                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
+                                       </td>
+                                       
+                                       <td>
+                                           <small>Banco</small>
+                                           <p>Banorte</p>
+                                       </td>
+                                       
+                                       <td >
+                                           <small>CLABE</small>
+                                           <p>...7890</p>
+                                       </td>
+                                       
+                                       <td class="sxs-hide">
+                                           <button class="btn btn-w">Editar</button>
+                                       </td>
+                                       <td class="sxs-hide">
+                                           <button class="btn btn-w c-error">Eliminar</button>
+                                       </td>
+                                   </tr>
+                                   <tr class="row-users-sxs" >
+                                       <td colspan="2">
+                                           <button class="btn btn-w">Editar</button>
+                                       </td>
+                                       <td colspan="">
+                                           <button class="btn btn-w c-error">Eliminar</button>
+                                       </td>
+                                   </tr>
+                               </table>
+                           </div>
+                           <div class="form-group text-center">
+                               <button class="btn btn-line">
+                                   Agregar cuenta
+                               </button>
+                           </div>
+                       </div><!--card-->
+                       <div class="card">
+                           <h2 class="no-mar-b">Beneficiarios</h2>
+                           <div class="card-margin-lr">
+                               <table class="table table-user table-benef">
+                                   <tr>
+                                       <td>
+                                           <small>Nombre</small>
+                                           <p class="name elipsis"> Laura Malena Romero Kanesta</p>
+                                       </td>
+                                       
+                                       <td>
+                                           <small>Teléfono</small>
+                                           <p>4496666666</p>
+                                       </td>
+                                       
+                                       <td class="sxs-hide">
+                                           <button class="btn btn-w">Editar</button>
+                                       </td>
+                                       <td class="sxs-hide">
+                                           <button class="btn btn-w c-error">Eliminar</button>
+                                       </td>
+                                   </tr>
+                                   
+                                   <tr class="row-users-sxs" >
+                                       <td >
+                                           <button class="btn btn-w">Editar</button>
+                                       </td>
+                                       <td>
+                                           <button class="btn btn-w c-error">Eliminar</button>
+                                       </td>
+                                   </tr>
+                               </table>
+                           </div>
+                           <div class="form-group text-center">
+                               <button class="btn btn-line">
+                                   Agregar beneficiario
+                               </button>
+                           </div>
+                       </div><!--card-->
                     </div>
                 </div>
             </div><!--fluid-->
@@ -658,12 +545,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!--<script src="https://code.highcharts.com"></script>-->
-     
-<script type="text/javascript" src="js/jquery.plugin.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap-datepicker.js"></script> 
-<script type="text/javascript" src="js/bootstrap-datepicker.es.min.js"></script> 
-<!--<script type="text/javascript" src="js/jquery.datepick.js"></script>
-<script type="text/javascript" src="js/jquery.datepick-es.js"></script>-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="js/jquery.calendario.js"></script>
 
 
     <!-- Menu Toggle Script -->
@@ -694,54 +578,6 @@
         $("#wrapper").toggleClass("toggled");
         $('body, html').toggleClass('tog');
     });
-        $("#btn-filter").click(function(e) {
-        $("#mismo-filter").slideToggle();
-    });
-        $("#back").click(function(e) {
-            $("#movements").slideDown();
-            $("#movement").slideUp();
-        });
-        $(".mov-link a").click(function(e) {
-            e.preventDefault();
-            $("#movements").slideUp();
-            $("#movement").slideDown();
-        });
-       function bottomPosition(){
-            if($(window).height()>$('#page-content-wrapper').height()+125){
-               $('footer').addClass('ftr-btm')
-            }
-            else{
-                $('footer').removeClass('ftr-btm')
-            }
-        }
-        $(document).ready(function(){
-            /*$('#start').datepick({dateFormat: 'yyyy-mm-dd'});*/
-            
-           bottomPosition();
-        });
-        $('#start').datepicker({
-                format: "dd-mm-yy",
-                todayBtn: true,
-                multidate: false,
-                autoclose: true,
-                todayHighlight: true
-            });
-        $('#end').datepicker({
-                format: "dd-mm-yy",
-                todayBtn: true,
-                multidate: false,
-                autoclose: true,
-                todayHighlight: true
-            });
-        $('#collapseExample').on('shown.bs.collapse', function () {
-            bottomPosition();
-        }).on('hidden.bs.collapse', function(){
-            bottomPosition();
-        });
-        $(window).resize(function() {
-          bottomPosition();
-        });
-       
     </script>
 </body>
 
