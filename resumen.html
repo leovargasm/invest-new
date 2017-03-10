@@ -265,8 +265,8 @@
                                     <div class="dash-dat valor-cuenta">
                                         <label for="">Valor de tu cuenta:</label>
                                         <p>$39,198.23</p>
-                                        <a href="" class="hidden-xs"><small>Ver flujo de efectivo</small></a>
-                                    </div><!--valor-cuenta-->
+                                        <a href="" class="hidden-xs" data-toggle="modal" data-target="#myModal"><small>Ver flujo de efectivo</small></a>
+                                                               </div><!--valor-cuenta-->
                                 </div><!--3-->
                                 <div class="col-sm-3">
                                     <div class="dash-dat">
@@ -334,7 +334,7 @@
                                    <div class="dash-dat rendimiento">
                                         <label for="">Has ganado:</label>
                                         <p>$3,100.00</p>
-                                        <a href=""><small>Ver detalle</small></a>
+                                        <a href="" data-toggle="modal" data-target="#myModal2"><small>Ver detalle</small></a>
                                     </div><!--valor-cuenta-->
                                </div>
                            </div><!--row-->
@@ -552,6 +552,66 @@
 
     </div>
     <!-- /#wrapper -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Flujo de efectivo</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <ul class="lst_flujo">
+                                        <li>Recursos fondeados<span class="pull-right">$11,544.00</span>
+                                        </li>
+                                        <li>Pagos recibidos<span class="pull-right">$120.65</span>
+                                        </li>
+                                        <li>Recompensas yotepresto<span class="pull-right">$0.00</span>
+                                        </li>
+                                        <li>Recuperación cartera vencida<span class="pull-right">$0.00</span>
+                                        </li>
+                                        <li class="tt c-bot">Total <b>Ingresos</b><span class="pull-right">$11,664.65</span></li>
+                                    </ul>
+                                    <ul class="lst_flujo">
+                                        <li>
+                                        Préstamos realizados
+                                        <span class="pull-right">$5,700.00</span>
+                                        </li>
+                                        <li>
+                                        Comisiones pagados
+                                        <span class="pull-right">$6.45</span>
+                                        </li>
+                                        <li>
+                                        Recursos retirados de tu cuenta
+                                        <span class="pull-right">$0.00</span>
+                                        </li>
+                                        <li>
+                                        Pérdidas por cartera vencida
+                                        <span class="pull-right">$0.00</span>
+                                        </li>
+                                        <li class="tt c-bot">Total <b>Egresos</b><span class="pull-right">$5,706.45</span></li>
+                                        </ul>
+                                    <ul class="lst_flujo">
+                                        <li>
+                                        Ingresos - Egresos
+                                        <span class="pull-right">$5,958.20</span>
+                                        </li>
+                                        <li>
+                                        Capital prestado pendiente de pago
+                                        <span class="pull-right">$5,627.47</span>
+                                        </li>
+                                        <li class="tt c-bot">Valor <b>de tu cuenta</b><span class="pull-right">$11,585.67</span></li>
+                                        </ul>
+                                </div><!--6-->
+                            </div><!--row-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
  <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

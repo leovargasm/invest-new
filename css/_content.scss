@@ -347,3 +347,30 @@ label{
         width: 100%;
     }
 }
+.lst_flujo{
+    padding: 0;
+    border: 0 solid #ddd;
+    border-width: 0 0 1px 1px;
+    border-radius: 3px;
+    overflow: hidden;
+    li{
+        border: 0 solid #ddd;
+        border-width: 1px 1px 0 0;
+        list-style: none; 
+        text-align: left;
+        padding:6px 10px;
+        font-size: .9em;
+        &.tt{
+            font-size:1.1em;
+            border-top-color: #999;
+
+        }
+        span{
+                font-weight: 500;
+                @include bp-small{
+                    float: none;
+                    display: block;
+                }
+            }
+    }
+}
