@@ -168,5 +168,5 @@
     display: none;
 }
 #mobement, #movements{
-    @include transition(none)
+    @include transition(none);
 }

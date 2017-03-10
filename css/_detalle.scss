@@ -1,17 +1,382 @@
 .c_desp {
     margin-top: 20px;
+    @include transition(none);
     display: none;
+    .table{
+        >thead>tr{
+            td{
+                font-weight: 500;
+                &:last-child{
+                    text-align: right;
+                }
+                
+            }
+        }
+        >tbody>tr{
+            td{
+                color: #666;
+                &:last-child{
+                    text-align: right;
+                    font-size: .9em;
+                }
+                &:first-child{
+                    color: $gris-parrafo;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+#btn-borrow{
+    display: none;
+    @include transition(none);
+}
+.table-borrow{
+    margin: 0;
+        >thead>tr{
+            td{
+                display: none;
+                font-weight: 500;
+                border-bottom: 1px solid #ddd;
+                background: #f9f9f9;
+                color: #666;
+                font-size: 1.2em;
+                text-align: center;
+                @include bp-small{
+                    display: table-cell;
+                }
+                &:last-child{
+                }
+                
+            }
+        }
+        >tbody>tr{
+            &:first-child{
+                >td{
+                    border: 0;
+                }
+            }
+            td{
+                padding:11px 8px;
+                color: #666;
+                &:last-child{
+                    text-align: right;
+                    font-size: .9em;
+                    font-weight: 500;
+                }
+                &:first-child{
+                    color: $gris-parrafo;
+                    
+                }
+            }
+        }
+    }
+.card .tit{
+    display: block;
+    text-decoration: none !important;
+    font-size: 1.2em;
+    span{
+        @include transition(none);
+        font-size: .8em;
+    }
+    .tacha{
+        display: block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/tacha-green.svg);
+        margin-top: -5px;
+        margin-left: 10px;
+        &.closs {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        &.opp {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover{
+        text-decoration: none !important;
+        color: $lima-logo;
+    }
 }
 .table-detail-general{
     width: 100%;
     >tbody>tr{
         >td{
-            padding: 10px;
+            padding:4px 8px;
             text-align: center;
             border-right: 1px solid #eee;
+            small{
+                color: #999;
+            }
+            p{
+                margin: 0;
+            }
             &:last-child{
                 border: 0;
             }
         }
+    &.por-bar{
+        display: none;
+        @include bp-small{
+            display:table-row;
+        }
+        >td{
+            background: #f4f4f4;
+            text-align: left;
+            padding: 10px;
+             color: $gris-parrafo;
+            position: relative;
+            .info{
+                position: relative;
+                z-index: 3;
+            }
+            .bar{
+                position: absolute;
+                height: 100%;
+                width: 80%;
+                background: rgba(0,224,11,0.3);
+                top: 0;
+                left: 0;
+                z-index:2;
+            }
+        }
+    }
     }//tr
 }//table-detail-general
+.tbl_grf, .table-detail-bar{ 
+    width: 100%;
+    max-width: 360px;
+    td{
+        color: #999;
+        border: none;
+        padding: 4px 0px;
+        font-size: 12px;
+        text-align: left;
+        &:last-child{
+            text-align: right;
+            border: none;
+        }
+    }
+    .perc td{
+        border-radius: 4px;
+        &.c1{
+            background: $lima-logo;
+        }
+        &.c2{
+            background: #ddd;
+            .perv {
+                border-radius: 4px;
+	            background: $lima-logo;
+                height: 8px;
+                margin: -4px 0;
+            }
+        }
+    }
+}
+.detail-name {
+	margin:  -20px -20px 10px -20px;
+    padding:10px 20px;
+    border-bottom: 1px solid #ddd;
+    span{
+        font-size: 1.2;
+        &.id{
+            padding: 2px;
+            background: #eee;
+            font-size: .9em;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+    }
+}
+.card-amounts{
+    .col-sm-3 {
+        @extend .clearx;
+	     min-height: auto;
+        p{
+            margin: 0;
+            @include bp-small{
+                float: right;
+            }
+        }
+        small{
+            color: #999;
+            @include bp-small{
+                float: left;
+                font-size: 1em;
+            }
+        }
+        @include bp-small{
+            padding: 10px 10px;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+        }//small
+    }
+}
+.detail{
+    h4{
+        font-weight: 400;
+        color: $gris-parrafo;
+        font-size: 1.2em;
+    }
+    p{
+        line-height: normal;
+    }
+}
+.list-questions{
+    padding: 0;
+    >li{
+        list-style: none;
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        background: #fafafa;
+        li{
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 0px;
+            font-size: 12px;
+            line-height: normal;
+        }
+        .respuesta{
+            color: #999;
+            margin-top: 10px;
+        }
+        textarea{
+            margin: 10px 0px 0px 0px;
+            height: 56px;
+        }
+        button{
+            display: block;
+            margin: 10px 0px;
+            padding: 6px;
+            background: #fff;
+            float: right;
+            font-weight: 500;
+             @include transition(all 0.2s ease);
+            &:hover{
+                 
+                color: white;
+                background: $lima-logo;
+                @include transition(all 0.2s ease);
+            }
+        }
+    }
+}
+.already-invest {
+	margin: -10px -20px 20px -20px;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    background: #e3feed;
+    color:$botella-logo;
+}
+.card.already-invest {
+	margin: auto;
+    margin-bottom: 20px;
+}
+.detail-add-cart{
+    .form-control {
+	    display: block;
+        width: 40%;
+        float: left;
+        @include bp-small{
+            width: 50%;
+        }
+    }
+    .btn{
+        display: block;
+        width: 60%;
+        float: left;
+        height: 38px;
+        margin-left: -4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        @include bp-small{
+            width: 50%;
+        }
+    }
+}
+
+
+.tbl_rs{
+    thead{
+        font-weight: bold;
+    }
+    tbody{
+        tr:nth-child(odd){
+            background: #f3f3f3;
+        }
+    }
+    @include sols-xs{
+         thead{
+             display: none;
+         }
+         > tbody > tr{
+             padding:10px 0px;
+             display: block;
+             border-top: 0;
+             margin-bottom: 0px;
+             
+             &:nth-child(odd){
+                background: #fff;
+            }
+                > td{
+                    
+                     display: block;
+                    font-weight: 500;
+                    text-align: right !important;
+                    border: 1px solid #ddd;
+                    border-bottom: 0;
+                    &:last-child{
+                        border: 1px solid #ddd;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                    &:first-child{
+                        background: #f4f4f4;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                    &:nth-child(even){
+                        /*background: #f9f9f9;*/
+                    }
+                    &:before{
+                            content: attr(data-label);
+                            float: left;
+                            font-weight: normal;
+                            /*padding: 14px 0px 14px 14px;*/
+                         }
+                 }
+             }
+     
+    }
+}
+.t_tp {
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #2EC4FF;
+    padding: 1px 6px;
+    color: #2EC4FF;
+    border-radius: 100%;
+}

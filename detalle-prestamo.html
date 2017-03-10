@@ -246,86 +246,99 @@
    <div class="col-xs-12">
        <div class="form-group">
          <button class="btn btn-gris">Regresar</button>
-         <button class="btn btn-normal pull-right hidden-lg hidden-md" id="btn-trigger-borrow">
-             Prestar
-         </button>
      </div>
    </div>
    <div class="clearfix"></div>
    <div class="col-md-8">
-    <div class="card" id="btn-borrow">
-        <div class="detail-add-cart">
-             <input type="text" class="form-control" placeholder="$" required>
-             <button class="btn btn-aqua">Añadir a carrito</button>
-         </div>
-    </div>
-     <div class="card already-invest hidden-lg hidden-md">
-         Ya le prestaste $300.00
-     </div>
-      <div class="card">
-         <div class="card-margin">
-             <table class="table-detail-general">
-                <tbody>
-                   <tr >
-                      <td class="calif"><small>Calif.</small><p>B7</p></td>
-                      <td><small>Tasa</small><p>14.9%</p></td>
-                      <td><small>Monto</small><p>$30,000</p></td>
-                      <td><small>Plazo</small><p>36</p></td>
-                      <td rowspan="2" class="hidden-xs">
-                         <table class="table-detail-bar">
-                            <tbody>
+      <div class="row row-ins">
+            <div class="col-lg-5">
+                <div class="card">
+                    <div class="card-margin">
+                        <table class="table table-borrow">
+                           <thead>
                                <tr>
-                                  <td >36.833%</td>
-                                  <td >Restan <b>24 días</b></td>
+                                   <td colspan="2">Detalle solicitud #121015</td>
                                </tr>
-                               <!-- <tr class="perc">
-                                  <td class="c1" ng-style="getPercentage(loan.porc_fondeado)"></td>
-                                  <td class="c2" ng-style="getPercentageRest(loan.porc_fondeado)"></td>
-                                  </tr> -->
-                               <tr class="perc">
-                                  <td class="c2" width="100%" colspan="2">
-                                     <div class="perv" style="width: 36.8333%;"></div>
-                                  </td>
-                               </tr>
-                               <tr>
-                                  <td >Fondeado: $44,200</td>
-                                  <td >Faltan: $75,800</td>
-                               </tr>
-                            </tbody>
-                         </table>
-                      </td>
-                   </tr>
-                   <tr class="por-bar">
-                     <td colspan="4">
-                        <div class="bar"></div>
-                         <div class="info">
-                             <b>4% </b> $148,800 por fondear <b class="pull-right">Faltan 23 días</b>
-                         </div>
-                     </td>
-                   </tr>
-                   <!--<tr>
-                      <td data-label="Calif.">
-                         <div class="calif-b"><strong >B3</strong></div>
-                      </td>
-                      <td data-label="Tasa" >14.9%</td>
-                      <td data-label="Monto" >$120,000</td>
-                      <td data-label="Plazo" >36 meses</td>
-                   </tr>-->
-                </tbody>
-             </table>
-         </div>
-      </div>
+                           </thead>
+                            <tr class="deti">
+                                <td>Prestado</td>
+                                <td>$200.00</td>
+                            </tr>
+                            <tr class="deti c_ver">
+                                <td>Pagado</td>
+                                <td>$12.00</td>
+                            </tr>
+                            <tr>
+                                <td>Capital</td>
+                                <td>$00.00</td>
+                            </tr>
+                            <tr>
+                                <td>Intereses Ordinarios</td>
+                                <td>$12.00</td>
+                            </tr>
+                            <tr>
+                                <td>Intereses Moratorios</td>
+                                <td>$12.00</td>
+                            </tr>
+                            <tr>
+                                <td>IVA Intereses</td>
+                                <td>$12.00</td>
+                            </tr>
+                                   
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+               <div class="card">El prestamo se encuentra <b>Al corriente</b></div>
+                <div class="card">
+                 <div class="card-margin">
+                     <table class="table-detail-general">
+                        <tbody>
+                           <tr >
+                              <td><small>Calif.</small><p>B7</p></td>
+                              <td><small>Tasa</small><p>14.9%</p></td>
+                              <td><small>Monto</small><p>$30,000</p></td>
+                              <td><small>Plazo</small><p>36</p></td>
+                              <td>
+                                  <small>Destino</small><p>Pagar Deudas</p>
+                              </td>
+                           </tr>
+                           <!--<tr>
+                              <td data-label="Calif.">
+                                 <div class="calif-b"><strong >B3</strong></div>
+                              </td>
+                              <td data-label="Tasa" >14.9%</td>
+                              <td data-label="Monto" >$120,000</td>
+                              <td data-label="Plazo" >36 meses</td>
+                           </tr>-->
+                        </tbody>
+                     </table>
+                 </div>
+              </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <p><small>Se dispersó</small></p>
+                            <p><strong>24/02/2016</strong></p>
+                        </div>
+                        <div class="col-sm-4 text-center c_ver">
+                            <p><small>Próximo pago</small></p>
+                            <p><strong class="c-error">24/02/2016</strong></p>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <p><small>Último pago</small></p>
+                            <p><strong>24/02/2016</strong></p>
+                        </div>
+           
+                    </div>
+                </div>
+            </div>
+       </div>
+     
+      
       <!--basico-->
-      <div class="card detail">
-          <div class="detail-name">
-              <span class="id">121015</span>
-              <span class="user">pepejojo78-miljaus</span>
-          </div>
-          <h4>Destino: Pagar Deudas</h4>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, labore exercitationem. Magnam velit dicta reiciendis voluptatibus corporis delectus cupiditate eligendi nulla numquam perspiciatis, dignissimos recusandae, rerum quae ex quidem eaque.
-          </p>
-      </div>
+      
       <div class="card border-column card-amounts">
          <div class="row">
             <div class="col-sm-3 text-center">
@@ -347,7 +360,125 @@
          </div>
       </div>
       <!--información solicitante-->
+      <div class="card detail" id="descripcion">
+         <a href="" class="tit">Histórico de pagos<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
+         <div class="c_desp">
+             
+           <table class="table tbl_rs">
+           <thead>
+               <tr>
+                     <td>Fecha de Aplicación</td>
+                     <td>Monto Pagado</td>
+                     <td>Capital</td>
+                     <td>Int. Ordinario + IVA</td>
+                     <td>Int. Moratorio + IVA</td>
+                     <td><strong>Saldo</strong></td>
+                   </tr>
+           </thead>
+                   <tbody>
+                   <!-- ngRepeat: p in historial --><tr>
+                     <td data-label="Fecha de Aplicación">29/03/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$10.31</td>
+                     <td data-label="Interés Ordinario con IVA" >$8.17</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$489.69</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >27/04/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$10.48</td>
+                     <td data-label="Interés Ordinario con IVA" >$8.00</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$479.21</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >27/05/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$10.65</td>
+                     <td data-label="Interés Ordinario con IVA" >$7.83</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$468.56</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >29/06/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$10.83</td>
+                     <td data-label="Interés Ordinario con IVA" >$7.65</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$457.73</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >27/07/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$11.00</td>
+                     <td data-label="Interés Ordinario con IVA" >$7.48</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$446.73</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >29/08/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$11.18</td>
+                     <td data-label="Interés Ordinario con IVA" >$7.30</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$435.55</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >28/09/2016</td>
+                     <td data-label="Monto pagado" >$18.49</td>
+                     <td data-label="Capital" >$11.37</td>
+                     <td data-label="Interés Ordinario con IVA" >$7.12</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$424.18</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >27/10/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$11.55</td>
+                     <td data-label="Interés Ordinario con IVA" >$6.93</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$412.63</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >29/11/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$11.74</td>
+                     <td data-label="Interés Ordinario con IVA" >$6.74</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$400.89</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >28/12/2016</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$11.93</td>
+                     <td data-label="Interés Ordinario con IVA" >$6.55</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$388.96</td>
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >26/01/2017</td>
+                     <td data-label="Monto pagado" >$18.48</td>
+                     <td data-label="Capital" >$12.13</td>
+                     <td data-label="Interés Ordinario con IVA" >$6.35</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$376.83</td>                    
+                   </tr><!-- end ngRepeat: p in historial --><tr >
+                     <td data-label="Fecha de Aplicación" >28/02/2017</td>
+                     <td data-label="Monto pagado" >$18.49</td>
+                     <td data-label="Capital" >$12.33</td>
+                     <td data-label="Interés Ordinario con IVA" >$6.16</td>
+                     <td data-label="Interés Moratorio con IVA" >$0.00</td>
+                     <td data-label="Saldo de Capital" >$364.50</td>
+                   </tr><!-- end ngRepeat: p in historial -->
+                 </tbody></table>
+         </div>
+      </div>
       
+      <div class="card detail" id="descripcion">
+         <a href="" class="tit">Descripción<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
+         <div class="c_desp">
+             
+          <div class="detail-name">
+              <span class="id">121015</span>
+              <span class="user">pepejojo78-miljaus</span>
+          </div>
+          <h4>Destino: Pagar Deudas</h4>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, labore exercitationem. Magnam velit dicta reiciendis voluptatibus corporis delectus cupiditate eligendi nulla numquam perspiciatis, dignissimos recusandae, rerum quae ex quidem eaque.
+          </p>
+         </div>
+      </div>
       <div id="descripcion" class="card">
          <a href="" class="tit">Datos de solicitante<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
          <div class="c_desp" >
@@ -364,7 +495,7 @@
                         <td >Si</td>
                      </tr>
                      <tr>
-                        <td>Antiguedad Laboral</td>
+                        <td>Antigüedad Laboral</td>
                         <td >1 año(s)</td>
                      </tr>
                      <tr>
@@ -399,320 +530,185 @@
          </div><!--row-->
          </div>
       </div>
-      <div>
-         <div id="gastos" class="card" href="#">
-            <a class="tit" href="">Gastos<span class="pull-right">Ver más <div class="tacha closs"></div></span></a>
-            <div class="c_desp">
-               <div class="row">
-                  <div class="col-md-6">
-                     <table class="table">
-                        <tbody>
-                           <tr>
-                              <td>Tarjetas / Otras Deudas</td>
-                              <td >$5,000.00</td>
-                           </tr>
-                           <tr>
-                              <td>Entretenimiento</td>
-                              <td >$2,000.00</td>
-                           </tr>
-                           <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen" ng-click="tooltipIsOpen = !tooltipIsOpen" uib-tooltip="Luz / Agua / Cable / Internet / Gas">
-                              <td>Servicios <span c="" class="t_tp">?</span></td>
-                              <td >$200.00</td>
-                           </tr>
-                           <tr>
-                              <td>Seguros</td>
-                              <td >$2,000.00</td>
-                           </tr>
-                           <tr>
-                              <td>Alimentos, salud y ropa</td>
-                              <td >$5,000.00</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="col-md-6">
-                     <table class="table">
-                        <tbody>
-                           <tr>
-                              <td>Gastos de Renta / Casa</td>
-                              <td >$11,000.00</td>
-                           </tr>
-                           <tr>
-                              <td>Gastos Autotransporte</td>
-                              <td >$1,000.00</td>
-                           </tr>
-                           <tr>
-                              <td>Colegiaturas</td>
-                              <td >$0.00</td>
-                           </tr>
-                           <tr>
-                              <td>Otros</td>
-                              <td >$3,000.00</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
+      <div id="gastos" class="card" href="#">
+         <a class="tit" href="">Gastos<span class="pull-right">Ver más <div class="tacha closs"></div></span></a>
+         <div class="c_desp">
+            <div class="row">
+               <div class="col-md-6">
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <td>Tarjetas / Otras Deudas</td>
+                           <td >$5,000.00</td>
+                        </tr>
+                        <tr>
+                           <td>Entretenimiento</td>
+                           <td >$2,000.00</td>
+                        </tr>
+                        <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen" ng-click="tooltipIsOpen = !tooltipIsOpen" uib-tooltip="Luz / Agua / Cable / Internet / Gas">
+                           <td>Servicios <span c="" class="t_tp">?</span></td>
+                           <td >$200.00</td>
+                        </tr>
+                        <tr>
+                           <td>Seguros</td>
+                           <td >$2,000.00</td>
+                        </tr>
+                        <tr>
+                           <td>Alimentos, salud y ropa</td>
+                           <td >$5,000.00</td>
+                        </tr>
+                     </tbody>
+                  </table>
                </div>
-               <!--row-->
+               <div class="col-md-6">
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <td>Gastos de Renta / Casa</td>
+                           <td >$11,000.00</td>
+                        </tr>
+                        <tr>
+                           <td>Gastos Autotransporte</td>
+                           <td >$1,000.00</td>
+                        </tr>
+                        <tr>
+                           <td>Colegiaturas</td>
+                           <td >$0.00</td>
+                        </tr>
+                        <tr>
+                           <td>Otros</td>
+                           <td >$3,000.00</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-            <!--desp-->
+            <!--row-->
          </div>
-         <!--card-->
+         <!--desp-->
       </div>
-      <div current-loan="loan" class="ng-isolate-scope">
-         <div id="historial" class="card" href="#">
-            <a class="tit" href="">Historial Crediticio<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
-            <div class="c_desp">
-               <div class="row">
-                  <div class="col-md-12">
-                     <table class="table">
-                        <tbody>
-                           <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" uib-tooltip="Es un indicador de riesgo que calcula Buró de Crédito que va desde 400 hasta 850. Un score más alto representa un menor riesgo de pago. En yotepresto.com solo autorizamos a personas con bajo riesgo de pago." tooltip-is-open="tooltipIsOpen1" ng-click="tooltipIsOpen1 = !tooltipIsOpen1">
-                              <td>Score <span c="" class="t_tp">?</span></td>
-                              <td >715</td>
-                           </tr>
-                           <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen2" ng-click="tooltipIsOpen2 = !tooltipIsOpen2" uib-tooltip="Años que lleva su cuenta con registro en Buró de Crédito. Un mayor historial nos permite evaluar de mejor forma una solicitud">
-                              <td>Duración de historial <span c="" class="t_tp">?</span></td>
-                              <td >12</td>
-                           </tr>
-                           <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen3" ng-click="tooltipIsOpen3 = !tooltipIsOpen3" uib-tooltip="Cuántas instituciones de crédito han consultado su historial en los últimos 6 meses.">
-                              <td>Consultas al Buró <span c="" class="t_tp">?</span></td>
-                              <td >4</td>
-                           </tr>
-                           <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen4" ng-click="tooltipIsOpen4 = !tooltipIsOpen4" uib-tooltip="Un mayor número de cuentas abiertas permite evaluar de mejor forma un crédito pero tener demasiadas cuentas abiertas puede significar un riesgo de sobreendeudamiento. Consideramos que un rango de 5 a 10 cuentas abiertas es saludable.">
-                              <td>Cuentas Abiertas <span c="" class="t_tp">?</span></td>
-                              <td >8</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <!--col12-->
+      <!--card-->
+      <div id="historial" class="card" href="#">
+         <a class="tit" href="">Historial Crediticio<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
+         <div class="c_desp">
+            <div class="row">
+               <div class="col-md-12">
+                  <table class="table">
+                     <tbody>
+                        <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" uib-tooltip="Es un indicador de riesgo que calcula Buró de Crédito que va desde 400 hasta 850. Un score más alto representa un menor riesgo de pago. En yotepresto.com solo autorizamos a personas con bajo riesgo de pago." tooltip-is-open="tooltipIsOpen1" ng-click="tooltipIsOpen1 = !tooltipIsOpen1">
+                           <td>Score <span c="" class="t_tp">?</span></td>
+                           <td >715</td>
+                        </tr>
+                        <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen2" ng-click="tooltipIsOpen2 = !tooltipIsOpen2" uib-tooltip="Años que lleva su cuenta con registro en Buró de Crédito. Un mayor historial nos permite evaluar de mejor forma una solicitud">
+                           <td>Duración de historial <span c="" class="t_tp">?</span></td>
+                           <td >12</td>
+                        </tr>
+                        <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen3" ng-click="tooltipIsOpen3 = !tooltipIsOpen3" uib-tooltip="Cuántas instituciones de crédito han consultado su historial en los últimos 6 meses.">
+                           <td>Consultas al Buró <span c="" class="t_tp">?</span></td>
+                           <td >4</td>
+                        </tr>
+                        <tr tooltip-placement="bottom-right" tooltip-class="customTooltip" tooltip-is-open="tooltipIsOpen4" ng-click="tooltipIsOpen4 = !tooltipIsOpen4" uib-tooltip="Un mayor número de cuentas abiertas permite evaluar de mejor forma un crédito pero tener demasiadas cuentas abiertas puede significar un riesgo de sobreendeudamiento. Consideramos que un rango de 5 a 10 cuentas abiertas es saludable.">
+                           <td>Cuentas Abiertas <span c="" class="t_tp">?</span></td>
+                           <td >8</td>
+                        </tr>
+                     </tbody>
+                  </table>
                </div>
-               <!--row-->
+               <!--col12-->
             </div>
-            <!--desp-->
+            <!--row-->
          </div>
-         <!--card-->
+         <!--desp-->
       </div>
-      <quienes current-loan="loan" class="ng-isolate-scope">
-         <div>
-            <div id="quienes" class="card" href="#">
-               <a class="tit" href="">¿Quiénes ya prestaron?<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
-               <div class="c_desp">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <!-- ngIf: loan.prestamistas.length > 0 -->
-                        <table class="table ng-scope" ng-if="loan.prestamistas.length > 0 ">
-                           <thead>
-                              <tr>
-                                 <td><strong>Usuario</strong> </td>
-                                 <td><strong>Monto</strong></td>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <!-- ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >traviesoybueno</td>
-                                 <td >$500.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >juanbilletes</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >instfund1</td>
-                                 <td >$30,000.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >jgonza</td>
-                                 <td >$2,000.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >gerard0</td>
-                                 <td >$500.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >robertordz</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >lncrls</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >maovi86</td>
-                                 <td >$500.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >cachano65</td>
-                                 <td >$500.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >travois</td>
-                                 <td >$1,000.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >tlazolteotl</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >villa7823</td>
-                                 <td >$500.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >hiroshige</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >GOETHEMMX1</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >ilmano</td>
-                                 <td >$800.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >tamez</td>
-                                 <td >$500.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >Elias-Yotepresto</td>
-                                 <td >$4,000.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >mymoney</td>
-                                 <td >$800.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >cva1959</td>
-                                 <td >$600.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >huds</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >edmundodantes</td>
-                                 <td >$200.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                              <tr >
-                                 <td >erandy lozano</td>
-                                 <td >$400.00</td>
-                              </tr>
-                              <!-- end ngRepeat: p in loan.prestamistas -->
-                           </tbody>
-                        </table>
-                        <!-- end ngIf: loan.prestamistas.length > 0 -->
-                        <!-- ngIf: loan.prestamistas.length <= 0 -->
-                     </div>
-                     <!--col12-->
-                  </div>
-                  <!--row-->
-               </div>
-               <!--desp-->
-            </div>
-            <!--card-->
+      <!--card-->
+      <div class="card detail" id="descripcion">
+         <a href="" class="tit">Bitacora de cobranza<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
+         <div class="c_desp">
+             
+           <table class="table tbl_rs">
+           <thead>
+               <tr>
+          <td><b>Fecha y hora</b></td>
+          <td><b>Actividad</b></td>
+          <td><b>Resultado</b></td>
+        </tr>
+           </thead>
+        <tbody>
+        <!-- ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >06/09/2016 10:03AM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >21/10/2016 9:34AM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >03/11/2016 5:54PM</td>
+          <td data-label="Actividad" >Llamada a trabajo del titular</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >15/11/2016 11:06AM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >15/11/2016 11:07AM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >12/12/2016 5:04PM</td>
+          <td data-label="Actividad" >Llamada a Referencia</td>
+          <td data-label="Resultado" >Se dejó mensaje</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >12/12/2016 5:04PM</td>
+          <td data-label="Actividad" >Llamada a Referencia</td>
+          <td data-label="Resultado" >Se dejó mensaje</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >12/12/2016 5:04PM</td>
+          <td data-label="Actividad" >Llamada a Referencia</td>
+          <td data-label="Resultado" >Se dejó mensaje</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >13/12/2016 10:39AM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >13/12/2016 3:43PM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >20/12/2016 11:27AM</td>
+          <td data-label="Actividad" >Llamada al celular del titular</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >06/01/2017 11:10AM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >11/01/2017 3:57PM</td>
+          <td data-label="Actividad" >Whatsapp</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >14/02/2017 12:12PM</td>
+          <td data-label="Actividad" >Llamada al celular del titular</td>
+          <td data-label="Resultado" >Cliente contactado</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >17/02/2017 1:16PM</td>
+          <td data-label="Actividad" >Llamada al celular del titular</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora --><tr>
+          <td data-label="Fecha y hora" >22/02/2017 2:31PM</td>
+          <td data-label="Actividad" >Llamada al celular del titular</td>
+          <td data-label="Resultado" >Promesa de pago</td>
+        </tr><!-- end ngRepeat: p in bitacora -->
+      </tbody></table>
          </div>
-      </quienes>
-      <preguntas current-loan="loan" user="current_user" class="ng-isolate-scope">
-         <div>
-            <div id="preguntas" class="card" href="#">
-               <a class="tit" href="">Preguntas al solicitante<span class="pull-right closs">Ver más <div class="tacha closs"></div></span></a>
-               <div class="c_desp">
-                  <div class="row comen">
-                     <!--col12-->
-                     <div class="col-xs-12" ng-form="messageForm">
-                        <div class="form-group">
-                            <textarea name="" id="" class="form-control"  required></textarea>
-                        </div>
-                        <div class="form-group text-right">
-                            <button class="btn btn-primary">Enviar</button>
-                        </div>
-                     <ul class="list-questions">
-                     <li>
-                       <ul>
-                           <li>
-                               <span class=" bld_600">Useraa <small>(07/08/12)</small>: </span>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.</p><!--
-                                 <button>Responder</button>-->
-                                 
-                           </li>
-                           <button class="btn btn_nrm">Responder</button>
-                            <div class="clearfix"></div>
-                       </ul>
-                     </li>
-                     <li>
-                       <ul>
-                           <li>
-                               <span class=" bld_600">Useraa <small>(07/08/12)</small>: </span>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.</p><!--
-                                 <button>Responder</button>-->
-                                 
-                           </li>
-                            <textarea name="" id="" class="form-control"></textarea>
-                         <button class="btn btn_nrm">Enviar</button>
-                            <div class="clearfix"></div>
-                       </ul>
-                     </li>
-                     <li>
-                       <ul>
-                           <li>
-                               <span class=" bld_600">Useraa <small>(07/08/12)</small>: </span>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.</p><!--
-                                 <button>Responder</button>-->
-                           </li>
-                           <li>
-                               <span class=" bld_600 c_aqua">Tu <small>(07/08/12)</small>: </span>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.Et voluptate nulla hic suscipit.</p><!--
-                                 <button>Responder</button>-->
-                           </li>
-                       </ul>
-                           <button class="btn btn_nrm">Responder</button>
-                            <div class="clearfix"></div>
-                     </li>
-                 </ul>
-                     </div>
-                     <div class="clearfix"></div>
-                  </div>
-                  <!--row-->
-               </div>
-            </div>
-            <!--card-->
-         </div>
-      </preguntas>
+      </div>
+      
    </div>
    <!--6-->
    <div class="col-md-4">
       <div class="card">
-         <h2>Prestar</h2>
-         <div class="already-invest">
-             Ya le prestaste $300.00
-         </div>
-         <div class="detail-add-cart">
-             <input type="text" class="form-control" placeholder="$" required>
-             <button class="btn btn-aqua">Añadir a carrito</button>
-         </div>
+        <h2>Rendimiento del prestamo</h2>
+         <div id="new-chart"></div>
       </div>
       <div class="form-group">
           <button class="btn btn-gris">
@@ -893,9 +889,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!--<script src="https://code.highcharts.com"></script>-->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script type="text/javascript" src="js/jquery.calendario.js"></script>
+    <script src="http://code.highcharts.com/js/highcharts.js"></script>
 
 
     <!-- Menu Toggle Script -->
@@ -921,14 +915,196 @@
         $('body, html').toggleClass('tog');
         
     });
-        $("#btn-trigger-borrow").click(function(){
-            $("#btn-borrow").slideToggle();
-        })
         $(".op").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
         $('body, html').toggleClass('tog');
     });
+        Highcharts.chart('new-chart', {
+    chart: {
+        type: 'line',
+        height: 280,
+        marginTop:30,
+    },
+    title: {
+        text:''
+        /*style:{    
+            "font-family": "'Open Sans', sans-serif",
+        },
+        useHTML: true,
+        text: 'Rendimiento anual: <b>20.34%</b> <button data-placement="bottom" type="button" class="btn btn-default" data-toggle="popover" data-trigger="hover" data-content="Rendimiento promedio de nuestras tasas">?</button>'*/
+    },
+    subtitle: {
+        text: ''/*Inversión inicial: $8,000.00*/
+    },
+    xAxis: [{
+       categories: [ '6 meses', '12 meses', '18 meses', '24 meses', '30 meses', '36meses'],
+        crosshair: false
+    }],
+    yAxis: [{ // Primary yAxis
+        floor: 50000,
+        ceiling: 90000,
+        labels: {
+            formatter: function () {
+                    return '<b>$' + (this.value).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + '</b>';
+                }
+            /*format: '${value}',*/
+        },
+        title: {
+            text: ''
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: ''
+        },
+        labels: {
+            enabled:false,
+            format: '${value}'
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true,
+        enabled:true
+    },
+          
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        x: 120,
+        verticalAlign: 'top',
+        y: 100,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+    },
+    plotOptions: {
+        series: {
+            /*pointStart:40000,*/
+            dataLabels: {
+                align: 'center',
+                className:'chart-label',
+                allowOverlap:true,
+                /*format: '${y}',*/
+                enabled: true,
+                borderRadius: 3,
+                backgroundColor: 'rgba(252, 255, 197, 0.7)',
+                borderWidth: 0,
+                y: -10,
+                x:-3,
+                formatter: function () {
+                    return '$' + (this.y).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+                }//formatter
+            }//datalabels
+        },
+        enableMouseTracking: false
+    },
+          credits: {
+        enabled: false
+    },
+           legend: {
+        enabled: false
+    },
+    series: [{
+        type: 'column',
+        borderRadius: 5,
+        name: 'Rendimiento',
+        data: [ 54131.19, 58603.71,63445.76,68687.89,74363.14,80507.3],
+        tooltip: {
+            valueDecimals: 2,
+            enabled: false,
+            shared: true,
+            /*padding:19,*/
+            pointFormat: '<b>{point.y}</b><br/>',
+            
+            pointFormatter: function () {
+                    return '<b>$' + (this.y).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' MX</b>';
+                }
+            
+        }
+            
+        
+    }/*, {
+        name: 'Temperature',
+        type: 'spline',
+        yAxis: 1,
+        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0],
+        tooltip: {
+            valueSuffix: '°C'
+        }
+    }*/]
+          
+          ,
+          responsive: {
+              rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                  
+                chartOptions: {
+                    chart:{
+                        height: 200,
+                        marginTop:30
+                    },
+                    legend: {
+                        align: 'center',
+                        verticalAlign: 'bottom',
+                        layout: 'horizontal'
+                    },
+                    title: {
+                        /*text:'sdsd'*/
+                    },
+                    tooltip: {
+                         enabled: false
+                    },
+                    xAxis: [{
+                       categories: [ '6 meses', '1año', '3 años'],
+                        crosshair: false
+                    }],
+                    yAxis:[{
+                        labels: {
+                            /*formatter: function () {
+                                    return '$' + (this.value).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+                                },*/
+                             enabled:false,
+                            format: '${value}'
+                        }
+                    }],
+                    series: [{
+                        type: 'column',
+                        borderRadius: 5,
+                        name: 'Rendimiento',
+                        data: [ 54131.19, 58603.71,80507.3]
+                    }]/*,
+                    yAxis: {
+                        labels: {
+                            align: 'left',
+                            x: 0,
+                            y: -5
+                        },
+                        title: {
+                            text: null
+                        }
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    series: [{
+                        name: 'Christmas Eve',
+                        data: [1,7, 3]
+                    }, {
+                        name: 'Christmas Day before dinner',
+                        data: [1, 4, 2]
+                    }, {
+                        name: 'Christmas Day after dinner',
+                        data: [8, 4, 3]
+                    }],
+                    credits: {
+                        enabled: true
+                    }*/
+                }
+            }]//rules
+          }//responsive
+});  
     </script>
 </body>
 

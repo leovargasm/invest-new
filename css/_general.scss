@@ -288,24 +288,43 @@ button:focus {outline:0;}
 
 
 //
-
+.row-ins {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
 @media (min-width: 768px) 
 { 
     div[class^="col"]{padding-left:5px; padding-right:5px;}
+    
+}
+@include bp-small{
+    .row-ins {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) 
 {   
+    .row-ins {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
     div[class^="col"]{padding-left:10px; padding-right:10px;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) 
 {   
+    .row-ins {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
     /*default so you don't need this*/
     div[class^="col"]{padding-left:10px; padding-right:10px;}
 }
+
 .container-fluid{
     padding: 20px;
     max-width: 1300px;

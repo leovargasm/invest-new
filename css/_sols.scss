@@ -101,8 +101,8 @@
                 font-size: .9em;
                 }
         }
-        &.tasa{width: 73px;@include max(850px){width: 54px;}
-            @include min-max(605px,570px){
+        &.tasa{width: 55px;@include max(850px){width: 54px;}
+            @include min-max(610px,570px){
                                display: none;
                             }
             @include min-max(805px,768px){
@@ -134,9 +134,9 @@
         }
         
         &.monto{ 
-            width: 85px;
+            width: 100px;
             @include max(950px){
-                width: 81px;
+                width: 82px;
             }
         }
         &.prestar{width: 95px;}
@@ -218,7 +218,7 @@
                 border-right: 1px solid #fff;
                 > ul {
                     >li{
-                        
+                        text-align: center;
                         @include max(850px){
                                 font-size: .9em;
                                 padding: 10px 8px;
@@ -254,6 +254,7 @@
                         &.user{
                             font-size: .9em;
                             line-height: 1.9em;
+                            
                             @include max(910px){
                                 width: 6em;
                             }
@@ -283,8 +284,10 @@
                             }
                         }
                         &.tasa{
+                            width: 56px;
+                            padding: 10px 8px;
                             @extend .sxs-hide;
-                            @include min-max(605px,570px){
+                            @include min-max(610px,570px){
                                display: none;
                             }
                             @include min-max(805px,768px){
@@ -293,14 +296,16 @@
                         }
                         &.monto{
                             /*font-weight: 500;*/
-                            
+                            width: 100px;
+                            text-align: center;
                             color: #444;
                             @extend .sxs-hide;
                             border-right: 1px solid #eee;
-                            @include max(950px){
-                                padding: 10px 12px;
-                                line-height: 1.9em;
-                                font-size: .9em;
+                            @include max(960px){
+                                width: 82px;
+                                padding: 10px 8px;
+                                line-height: 2em;
+                                font-size: .8em;
                             }
                         }
                     }
@@ -498,7 +503,7 @@
             max-width: 200px;
             padding: 6px 10px;
             position: relative;
-            @include transition(none)
+            @include transition(none);
             @extend .clearx;
             .form-control{
                 padding: 4px 33px 4px 4px;
@@ -841,7 +846,7 @@
     } 
 }
 .mispre-filters {
-    @include transition(none)
+    @include transition(none);
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;

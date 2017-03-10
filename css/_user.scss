@@ -38,5 +38,39 @@
                     border-bottom: 1px solid #ddd;
                 }
             }
+        
     }//tr
+    margin-bottom: 0;
 }//banks
+.add-bank{
+    width: 100%;
+    
+    >tbody>tr{
+            background: #fafafa;
+            display: block;
+        >td{
+            border: 0;
+        }
+            select{
+                background-color:#fff; padding-right: 30px; 
+            }
+            @include bp-small{
+                display: block;
+                td{
+                    padding: 10px 20px;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }}
+.add-edit-ben {
+    @extend .clearx;
+    background: #fafafa;
+	padding: 10px;
+    .form-control {
+	background-color: #fff;
+}
+    li{
+        margin-bottom: 6px;
+    }
+}
