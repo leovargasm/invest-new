@@ -147,6 +147,13 @@ button:focus {outline:0;}
         background: $botella-hover;
     }
 }
+.btn-success {
+    background: $lima-logo;
+    border-color: $lima-hover;
+    &:hover,&:focus,&:active{
+        background: $lima-hover;
+    }
+}
 .btn-aqua {
     color: #fff;
     background: $aqua;
@@ -329,4 +336,10 @@ button:focus {outline:0;}
     padding: 20px;
     max-width: 1300px;
     margin: auto;
+}
+.hidden-element{
+ display: none;
+}
+.no-trans{
+    @include transition(none);
 }

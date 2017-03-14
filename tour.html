@@ -207,7 +207,7 @@
                     <h1>Solicitudes en fondeo</h1>
                     <nav class="hidden-xs">
 
-                        <a class="carrito" href="">
+                        <a class="carrito bootstro" data-bootstro-content="Para terminar, deberás hacer clic aquí y autorizar con tu contraseña." data-bootstro-placement="bottom" data-bootstro-step="3" href="">
                             <div class="num animated swing">
                                 <div class="border ">2</div>
                             </div>
@@ -256,7 +256,7 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class=" col-md-9">
+                        <div class=" col-md-9 ">
 
                             <ul class="titulos">
                                 <li class="id"><span>ID</span></li>
@@ -276,8 +276,8 @@
                         </div>
                         <!---->
                         <div class="clearfix"></div>
-                        <div class=" col-md-9">
-                            <ul class="solicitud">
+                        <div class=" col-md-9 bootstro" data-bootstro-content="Aquí te explicaremos cómo empezar a invertir, ¡es muy fácil!" data-bootstro-placement="top" data-bootstro-step="0">
+                            <ul class="solicitud bootstro" data-bootstro-content="Aquí verás las solicitudes de préstamos en las que puedes invertir." data-bootstro-placement="bottom" data-bootstro-step="1" >
                                 <li class="sxs-top">
                                     <a href="#">
                                         <ul class="sol">
@@ -306,7 +306,7 @@
                                 </li>
                                 <!--sxs-->
 
-                                <li class="prestar">
+                                <li class="prestar bootstro" data-bootstro-content="Aquí indicarás la cantidad que deseas invertir, recuerda que puede ser desde $200." data-bootstro-placement="left" data-bootstro-step="2">
                                     <div class="sxs-bar">
                                         <span class="por">4%</span>
                                         <span><b>$148,998</b> por fondear</span>
@@ -1786,7 +1786,8 @@
         <!-- /#wrapper -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
+        <script src="js/bootstro.js"></script>
+    
 
         <!-- Menu Toggle Script -->
         <script>
@@ -1831,9 +1832,16 @@
             $(document).ready(function() {
                 bottomPosition();
                 $('[data-toggle="popover"]').popover()
+                if ($(window).width()>768){
+                    
+                bootstro.start();
+                }
             });
             $(window).resize(function() {
                 bottomPosition();
+                if ($(window).width()<768){
+                    bootstro.stop() 
+                }
             });
 
         </script>

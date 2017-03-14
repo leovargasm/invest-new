@@ -350,12 +350,12 @@ label{
 .lst_flujo{
     padding: 0;
     border: 0 solid #ddd;
-    border-width: 0 0 1px 1px;
+    border-width: 0 0 1px 0px;
     border-radius: 3px;
     overflow: hidden;
     li{
         border: 0 solid #ddd;
-        border-width: 1px 1px 0 0;
+        border-width: 0px 0px 0 0;
         list-style: none; 
         text-align: left;
         padding:6px 10px;
@@ -374,3 +374,104 @@ label{
             }
     }
 }
+.modal-footer {
+    border: 0;
+}
+.modal-title {
+    color: $gris-parrafo;
+    font-weight: normal;
+}
+.modal-header{
+    background: #f9f9f9;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.tbl_rs{
+    thead{
+        font-weight: bold;
+    }
+    tbody{
+        tr:nth-child(odd){
+            background: #f3f3f3;
+        }
+    }
+    @include sols-xs{
+         thead{
+             display: none;
+         }
+         > tbody > tr{
+             padding:10px 0px;
+             display: block;
+             border-top: 0;
+             margin-bottom: 0px;
+             
+             &:nth-child(odd){
+                background: #fff;
+            }
+                > td{
+                    
+                     display: block;
+                    font-weight: 500;
+                    text-align: right !important;
+                    border: 1px solid #ddd;
+                    border-bottom: 0;
+                    &.tat{
+                        text-align: center !important;
+                    }
+                    &:last-child{
+                        border: 1px solid #ddd;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                    &:first-child{
+                        background: #f4f4f4;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                    &:nth-child(even){
+                        /*background: #f9f9f9;*/
+                    }
+                    &:before{
+                            content: attr(data-label);
+                            float: left;
+                            font-weight: normal;
+                        color: $gris-parrafo;
+                            /*padding: 14px 0px 14px 14px;*/
+                         }
+                 }
+             }
+     
+    }
+}
+.tbl_rso {
+    > tbody > tr{
+             
+                > td{
+                    
+                    background: #fff;
+                    &.tat{
+                        text-align: right;
+                        @include sols-xs{
+                        text-align: center !important;
+                        }
+                    }
+                    
+                 }
+        &:last-child{
+            td{
+                padding-top: 30px;
+                font-weight: 500;
+            }
+            
+        }
+        &:nth-child(even){
+            td{
+                background: #f9f9f9;
+            }
+                        
+                    }
+             }
+}
+    
