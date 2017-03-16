@@ -13,28 +13,28 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic,400italic,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/calendar.css" />
     <link href="css/invest-new.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
-<body>
+<body class="guide">
     <div id="wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand hidden-xs">
                     <a href="#">
-                       <img src="img/logo.png" alt="">
+                       <img src="img/logo-blanco.svg" alt="">
                     </a>
                     
                 </li>
@@ -202,8 +202,8 @@
                 </li>
             </ul><!--lista 1-->
             <ul class="profile">
-                <li>Disponible: <br>MX <strong>$900.00</strong></li>
-                 <li>Disponible: <br>MX <strong>$900.00</strong></li>
+                <li><span>Disponible:</span> <br>MX <strong>$900.00</strong></li>
+                 <li><span>Valor de tu cuenta:</span> <br>MX <strong>$900.00</strong></li>
             </ul>
         </div><!-- /#sidebar-wrapper -->
 
@@ -212,11 +212,11 @@
         <div id="page-content-wrapper">
            <header>
               <img src="img/logo.svg" class=" visible-xs-block logo" alt="">
-               <h1>Inicio</h1>
+               <!--<h1>Retirar fondos</h1>-->
                <nav class="hidden-xs">
                  
                    <a class="carrito" href="">
-                      <div class="num"><div class="border hel">2</div></div>
+                      <div class="num animated swing"><div class="border hel">2</div></div>
                        Carrito de préstamos
                    </a>
                    <a href="" class="btn btn-default">
@@ -240,398 +240,212 @@
                <a href="#menu-toggle" class="visible-xs-block menu-toggle" ><span class="icon-ham"></span> <!--Menú--></a>
                <div class="clearfix"></div>
            </header>
-            <div class="container-fluid">
+            <div class="content">
+               <!--<div id="callToAction" class="hidden-xs">
                 <div class="row">
-                    <div class=" col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                       <div class="row row-ins">
-                           <div class="col-sm-6">
-                               <div class="card">
-                                   <h2>NombreDeUsuario</h2>
-                                   <div class="form-group text-center">
-                                       <button class="btn btn-line">
-                                           Cambiar contraseña
-                                       </button>
-                                   </div>
-                                       <div class="change-password text-left">
-                                           <div class="form-group">
-                                               <label for="">Contraseña actual</label>
-                                               <input type="text" class="form-control">
-                                           </div>
-                                           <div class="form-group">
-                                               <label for="">Nueva contraseña</label>
-                                               <input type="text" class="form-control">
-                                           </div>
-                                           <div class="form-group">
-                                               <label for="">Confirmar nueva contraseña</label>
-                                               <input type="text" class="form-control">
-                                           </div>
-                                           <div class="form-group text-right">
-                                               <button class="btn btn-normal">
-                                                   Cancelar
-                                               </button>
-                                               <button class="btn btn-primary">
-                                                   Actualizar
-                                               </button>
-                                           </div>
-                                       </div>
-                               </div>
-                           </div>
-                           <div class="col-sm-6">
-                               <div class="card">
-                                   <h2>Mis contratos</h2>
-                                   <div class="text-center">
-                                       <button class="btn btn-gris">
-                                           Contrato actual
-                                       </button>
-                                   </div>
-                               </div>
-                           </div>
-                       </div><!--row-->
-                       <div class="card">
-                           <h2 class="no-mar-b">Cuentas Bancarias</h2>
-                           <div class="card-margin-lr">
-                               <table class="table table-user"> 
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr class="row-users-sxs">
-                                       <td colspan="2">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td>
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td>
-                                           <small>Alias</small>
-                                           <p class="c-aqua elipsis">ASHJKJAHSKKjasjaj</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <p>Banorte</p>
-                                       </td>
-                                       
-                                       <td >
-                                           <small>CLABE</small>
-                                           <p>...7890</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   <tr class="row-users-sxs" >
-                                       <td colspan="2">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td colspan="">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   
-                                   
-                               </table>
-                               <table class="add-bank table">
-                                   <tr >
-                                       <td>
-                                           <small>Alias</small>
-                                           <input type="text" class="form-control">
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Banco</small>
-                                           <select name="" class="form-control" id="">
-                                               <option value="">--Banco--</option>
-                                           </select>
-                                       </td>
-                                       
-                                       <td >
-                                           <small>CLABE</small>
-                                           <input type="text" class="form-control">
-                                       </td>
-                                       
-                                       <td class="text-right" colspan="2"><br>
-                                           <button class="btn btn-primary">Agregar</button>
-                                       </td>
-                                   </tr>
-                               </table>
-                           </div>
-                           <div class="form-group text-center">
-                               <button class="btn btn-line">
-                                   Agregar cuenta
-                               </button>
-                           </div>
-                       </div><!--card-->
-                       <div class="card">
-                           <h2 class="no-mar-b">Beneficiarios</h2>
-                           <div class="card-margin-lr">
-                               <table class="table table-user table-benef">
-                                   <tr>
-                                       <td>
-                                           <small>Nombre</small>
-                                           <p class="name elipsis"> Laura Malena Romero Kanesta</p>
-                                       </td>
-                                       
-                                       <td>
-                                           <small>Teléfono</small>
-                                           <p>4496666666</p>
-                                       </td>
-                                       
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td class="sxs-hide">
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                                   
-                                   <tr class="row-users-sxs" >
-                                       <td >
-                                           <button class="btn btn-w">Editar</button>
-                                       </td>
-                                       <td>
-                                           <button class="btn btn-w c-error">Eliminar</button>
-                                       </td>
-                                   </tr>
-                               </table>
-                               <ul class="add-edit-ben">
-                                   <li class="col-sm-6
-                                      ">
-                                       <small>Nombre</small>
-                                       <input type="text" class="form-control">
-                                   </li>
-                                   <li class="col-sm-6
-                                      ">
-                                       <small>Segundo Nombre</small>
-                                       <input type="text" class="form-control">
-                                   </li>
-                                   <li class="col-sm-6
-                                      ">
-                                       <small>Apellido Paterno</small>
-                                       <input type="text" class="form-control">
-                                   </li>
-                                   <li class="col-sm-6
-                                      ">
-                                       <small>Apellido Materno</small>
-                                       <input type="text" class="form-control">
-                                   </li>
-                                   
-                                   <li class="col-sm-6
-                                      ">
-                                       <small>Telefono</small>
-                                       <input type="text" class="form-control">
-                                   </li>                                       
-                                   <li  class="col-sm-6">
-                                       <small>Relación</small>
-                                       <select name="" class="form-control" id="">
-                                         <option value="">Papá / Mamá</option>
-                                         <option value="">Conyuge</option>
-                                         <option value="">Hijo(a)</option>
-                                         <option value="">Hermano(a)</option>
-                                         <option value="">Otro</option>
-                                       </select>
-                                   </li>
-                                   
-                                   <li class="text-right col-sm-12"><br>
-                                       <button class="btn btn-primary">Agregar</button>
-                                   </li>
-                               </ul>
-                           </div>
-                           <div class="form-group text-center">
-                               <button class="btn btn-line">
-                                   Agregar beneficiario
-                               </button>
-                           </div>
-                       </div><!--card-->
+                    <div class=" col-sm-push-8 col-sm-3 " id="navbar-example">
+                        <ul class="nav nav-tabs nav-stacked navfix" data-offset-top="120" >
+                            <li><a href="#agregar" onclick="moveToId(agregar)" >Agregar fondos</a></li>
+                            <li><a href="#revisar" onclick="moveToId(revisar)" >Revisar solicitudes</a></li>
+                            <li><a href="#realizar" onclick="moveToId(realizar)" >  Realizar préstamos</a></li>
+                            <li><a href="#analizar" onclick="moveToId(analizar)" >Analizar tu cuenta</a></li>
+                            <li><a href="#retirar" onclick="moveToId(retirar)" >Retirar fondos</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div><!--fluid-->
+            </div>--><!--affix-->
+            <!--<div class="container">
+                <div class="row">
+                    <div class="col-sm-12" >
+         
+                        <ul>
+                            <li><a href="">Agregar fondos</a></li>
+                            <li><a href="">Revisar solicitudes</a></li>
+                            <li><a href="">Realizar préstamos</a></li>
+                            <li><a href="">Analizar tu cuenta</a></li>
+                            <li><a href="">Retirar fondos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+         <div class="">
+                <div class="row">
+         
+                    <div class="col-md-8">
+                       <div class="text-center card">
+                           <h1>Bienvenido a nuestra
+                            comunidad de inversionistas
+                             </h1>
+                             <p class="text-center">Con esta guía de bienvenida aprenderás lo
+                            básico para operar tu cuenta:</p>
+                       </div>
+         
+                        <div id="agregar" class="card">
+                            <h2>1. Agregar fondos</h2>
+                            <h3>1) En el menú principal haz clic en “Agregar fondos”</h3>
+                            <img src="img/guide/add-1.png" alt="">
+                            <hr>
+                            <h3>2) Sigue las instrucciones para realizar SPEI desde tu banco</h3>
+                            <ul class="lst_2">
+                                <li>En la página web de tu banco selecciona la opción enviar un SPEI.</li>
+                                <li>En el listado de bancos selecciona <strong class="c_vrd1">STP (Sistema de Transferencias y Pagos).</strong></li>
+                                <li>Ingresa tu cuenta CLABE personalizada XXXXXXXXXXXXXXXXXXX.</li>
+                                <li>En el campo "referencia" o "concepto" escribe tu número de cliente XXXXX.</li>
+                                <li>En el campo "beneficiario" escribe tu nombre completo.</li>
+         
+                            </ul>
+                            <hr>
+                <h4>Te dejamos una lista de guías de algunos bancos para hacer depósitos SPEI</h4>
+                <ul class="lst_2">
+                    <li>
+                        <a href="https://www.banamex.com/resources/bancanets/bne/esp/contenedor/Otras-cuentas.htm" target="_blank">Banamex</a>
+                    </li>
+                    <li>
+                        <a href="http://www.santander.com.mx/demo/demo1.html" target="_blank" >Santander</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hsbc.com.mx/1/2/PIB/banca-personal-por-internet/ayudas/demo/ayuda-transferir-a-otros-bancos" target="_blank" >HSBC</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bancomer.com/PIBEE/TutorialesPDF/pdf/pagos_transferencias.pdf" target="_blank">Bancomer</a>
+                    </li>
+                    <li>
+                        <a href="http://www.scotiabank.com.mx/es-mx/bankonline/transferencia-a-otro-banco.aspx" target="_blank">Scotiabank</a>
+                    </li>
+                    <li>
+                        <a href="https://www.yumpu.com/es/document/view/12479193/guia-para-alta-de-cuentas-de-terceros-en-bxi-banorte" target="_blank">Banorte</a>
+                    </li>
+                </ul>
+                            
+         
+                            <hr>
+                            
+                              <p>Una vez que hayamos acreditado los fondos a tu cuenta, los
+                            verás reflejados en el detalle del valor de tu cuenta:</p>
+                            <img src="img/guide/add-2.png" alt="">
+                            <hr>
+                            <p class="cong">¡Listo! Ya tienes recursos
+         para invertir</p>
+                        </div><!--agregar-->
+                         <div id="revisar"  class="card">
+                             <h2>2. Revisar solicitudes</h2>
+                             <h3>En el menú principal haz clic en “Ir a prestar”</h3>
+                             <img src="img/guide/rev-1.png" alt="">
+                             <hr>
+                             <h3>Aparecerá el listado de todos los préstamos que están en
+         proceso de fondeo:</h3>
+                           <img src="img/guide/rev-2.png" alt="">
+                           <hr>
+                        <h3>Haz clic en cualquier solicitud para ver el detalle:</h3>
+                        <img src="img/guide/rev-3.png" alt="">
+                           <hr>
+                        <h3>Si tienes dudas sobre la solicitud, pregúntale
+         directamente al solicitante.</h3>
+                        <p>No debes hacer preguntas que revelen la identidad
+         del solicitante como su nombre, domicilio o lugar
+         de trabajo. El anonimato es muy importante.</p>
+                         </div><!--revisar-->
+                         <div id="realizar" class="card">
+                             <h2>3. Realizar préstamos</h2>
+                             <h3>Prestar es como comprar artículos en una tienda en línea:</h3>
+                             <table class="table table-bordered text-center hidden-xs">
+                           <tbody>
+                               <tr>
+                                   <td><strong class="c-aqua">1.</strong> Seleccionar préstamos  &raquo;</td>
+                                   <td><strong  class="c-aqua">2.</strong> Agregar préstamos al carrito  &raquo;</td>
+                                   <td><strong  class="c-aqua">3.</strong> Autorizar carrito (check-out)</td>
+                               </tr>
+                           </tbody>
+                       </table>
+                             <h3>Hay 2 formas de agregar préstamos al carrito:
+         </h3>
+                        <p><b>1)</b> En la parte superior de la ficha del detalle del préstamo:
+         </p>
+                       <img src="img/guide/rea-1.png" alt="">
+                             <hr>
+                        <p><b>2)</b> Haz clic en el botón “Prestar” en la columna de la
+         derecha, en el listado de préstamos en fondeo:</p>
+                       <img src="img/guide/rea-2.png" alt="">
+                       <hr>
+                        <h3>Cuando agregas un préstamo a tu carrito, el ícono del
+         carrito te informa el número de préstamos que tienes
+         por autorizar:</h3>
+                       <img src="img/guide/rea-3.png" alt="">
+                       <hr>
+                        <h3>Para autorizar definitivamente tus préstamos, haz clic
+         en el ícono del carrito, revisa tus préstamos y autoriza
+         con tu contraseña:</h3>
+                        <img src="img/guide/rea-4.png" alt="">
+                        <hr>
+                        <h3>También puedes autorizar definitivamente tus préstamos desde un acceso rápido en el listado de solicitudes.</h3>
+                        <img src="img/guide/rea-5.png" alt="">
+                         </div><!--realizar-->
+                         <div id="analizar" class="card">
+                         <h2>4. Analizar el resumen de tu cuenta</h2>
+                         <h3>Somos fans de la transparencia, por eso te informaremos sobre el valor de tu cuenta mediante 3 formas. Haz clic en “Resumen”:</h3>
+                       <img src="img/guide/ana-1.png" alt="">
+                       <hr>
+                       <p><b>1) Estatus de tus recursos:</b> <br>
+                        ¿En dónde está tu dinero?
+         </p>
+                      <img src="img/guide/ana-1-1.png" alt=""><hr>
+                       <p><b>2) Flujo de efectivo:</b> <br>
+                        ¿Cómo se ha movido tu dinero?
+         </p>
+                      <img src="img/guide/ana-1-2.png" alt=""><hr>
+                       <p><b>3) Resultados obtenidos:</b> <br>
+                       ¿Cuánto has ganado con tu dinero?
+         </p>
+                      <img src="img/guide/ana-1-3.png" alt="">
+                       <hr>
+                        <div class="nar">Los 3 reportes reflejan
+         el mismo valor de tu cuenta</div>
+                        <hr>
+                        <h3>Haz clic en el menú “Mis Préstamos” para ver una
+         lista resumen de todos los préstamos que has hecho.</h3>
+                        <img src="img/guide/ana-2.png" alt="">
+                        <hr>
+                        <h3>Haz clic en cualquiera de los préstamos para revisar su estatus: pagos, vencimientos, etc.</h3>
+                        <img src="img/guide/ana-3.png" alt="">
+                        <hr>
+                        <h3>En el menú “Movimientos” te presentaremos el detalle
+         de cada transacción que incrementa o disminuye el
+         valor de tu cuenta:</h3>
+                        <img src="img/guide/ana-4.png" alt="">
+                        <hr>
+                        <p class="nar">Estamos convencidos de que la transparencia
+         es vital para reforzar la confianza de nuestra
+         comunidad. </p>
+                         </div><!--analizar-->
+                         <div class="card" id="retirar">
+                             <h2>5. Retirar fondos</h2>
+                             <h3>Si necesitas retirar fondos que tengas disponibles en tu
+         cuenta, haz clic en el menú “Retirar Fondos”</h3>
+                       <div>
+                           <img src="img/guide/ret-1.png" alt="">
+                       </div>
+                       <hr>
+                        <p class="nar">Sin excepción, todos los retiros se
+         depositarán por transferencia electrónica a
+         una cuenta bancaria a nombre del usuario
+         de yotepresto.com</p>
+                         </div><!--retirar-->
+                    </div><!--8-->
+                    <div class="col-md-4 hidden-sm hidden-xs">
+                        <div class="shit" style="position:fixed">
+                            <div class="" id="navbar-example">
+                        <ul class="nav nav-tabs nav-stacked navfix" data-offset-top="120" >
+                            <li><a href="#agregar" onclick="moveToId(agregar)" >Agregar fondos</a></li>
+                            <li><a href="#revisar" onclick="moveToId(revisar)" >Revisar solicitudes</a></li>
+                            <li><a href="#realizar" onclick="moveToId(realizar)" >  Realizar préstamos</a></li>
+                            <li><a href="#analizar" onclick="moveToId(analizar)" >Analizar tu cuenta</a></li>
+                            <li><a href="#retirar" onclick="moveToId(retirar)" >Retirar fondos</a></li>
+                        </ul>
+                    </div>
+                        </div>
+                    </div>
+                </div><!--ron-->
+            </div><!--con--></div>
             <footer>
                 <div class="container-fluid">
                     <div class="col-sm-3">
@@ -829,6 +643,39 @@
         $("#wrapper").toggleClass("toggled");
         $('body, html').toggleClass('tog');
     });
+        $(document).ready(function(){
+           if($(window).height()>$('#page-content-wrapper').height()){
+               $('footer').addClass('ftr-btm')
+            }
+        });
+        
+    $('body').scrollspy({ target: '#navbar-example' });
+    function moveToId(elem) {
+            event.preventDefault(elem)
+            console.log(elem)
+    $("html, body").animate({
+        scrollTop: $( elem ).offset().top
+    }, "slow");
+        }
+    $('#menuAffix').affix({
+          offset: {
+            top: 0,
+            bottom: /*function () {
+              return (this.bottom = $('.footer').outerHeight(true))
+                return (2000)
+            }*/0
+          }
+        })
+        $('#callToAction').affix({
+          offset: {
+            top: 0,
+            bottom: function () {
+              return (this.bottom = $('.footer').outerHeight(true))
+            }
+          }
+        })//affix
+        
+    
     </script>
 </body>
 
